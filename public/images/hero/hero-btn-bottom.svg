@@ -1,0 +1,14 @@
+<svg width="432" height="25" viewBox="0 0 432 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M153 9H39.4086H1L10 13.9189H30.5L39.4086 23H90.5L102 13.9189H146.5L153 9Z" fill="#FF6701"/>
+<path d="M162.5 13.9189L169 9H184L177.5 13.9189H162.5Z" fill="#FF6701"/>
+<path d="M192 13.9189L198 9H206.5L200.5 13.9189H192Z" fill="#FF6701"/>
+<path d="M153 9H39.4086H1L10 13.9189H30.5L39.4086 23H90.5L102 13.9189H146.5L153 9Z" stroke="#FF6701" stroke-width="3"/>
+<path d="M162.5 13.9189L169 9H184L177.5 13.9189H162.5Z" stroke="#FF6701" stroke-width="3"/>
+<path d="M192 13.9189L198 9H206.5L200.5 13.9189H192Z" stroke="#FF6701" stroke-width="3"/>
+<path d="M250.824 15L247 9H295.176L291.353 15H250.824Z" fill="#FF6701"/>
+<path d="M295.176 9L291.353 15H250.824L247 9H295.176ZM295.176 9H312" stroke="#FF6701" stroke-width="3"/>
+<path d="M312 8.38462H322.735L329.341 3H350.811L359.068 13H421" stroke="#FF6701"/>
+<path d="M366 9H391.627L398.24 3H428" stroke="#FF6701"/>
+<ellipse cx="429" cy="2.5" rx="3" ry="2.5" fill="#FF6701"/>
+<circle cx="422.5" cy="12.5" r="2.5" fill="#FF6701"/>
+</svg>

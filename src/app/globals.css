@@ -11,6 +11,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-header: #212121;
+  --color-bec: #FF6701;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,15 +23,40 @@
 }
 
 body {
-  background: #181916;
+  background: var(--color-background);
   color: #ededed;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 28px;
+  font-size: 22px;
 }
 
-.container {
-  max-width: 1800px;
+.header-container {
+  max-width: 1380px;
   margin: 0 auto;
+  
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.hero-btn {
+  background-image: url('/images/hero/hero-btn.svg');
+}
+
+.hero-btn:hover {
+  background-image: url('/images/hero/hero-btn-hover.svg');
+}
+/* @media (max-width: 1720px) {
+  .container {
+    max-width: 1600px;
+  }
+} */
+
+button {
+  background-color: #fff;
+  color: var(--color-background);
+  box-shadow: inset -3 1 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }

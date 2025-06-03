@@ -1,44 +1,50 @@
 import Image from 'next/image'; 
+import Link from 'next/link'; 
 
 const Header = () => {
+
+
+
   return (
-    <header className="bg-header">
-        <div className="container pt-9 pb-9 flex text-center items-center justify-between">
+    <header className="bg-header fixed top-0 left-0 w-full z-50">
+        <div className="header-container pt-7 pb-7 pl-5 pr-5 flex text-center items-center justify-between">
             <div className="">
-                <a href="">
+                <Link href="">
                     <Image 
-                    src="/images/hero/BEC_logo.svg" // Make sure this path is correct for Next.js
+                    src="/images/header/BEC_logo.svg" // Make sure this path is correct for Next.js
                     alt="Logo"
-                    width={234}
-                    height={94}
+                    width={134}
+                    height={44}
                     />
-                </a>
+                </Link>
             </div>
-            <ul className='flex gap-5'>
+            <ul className='flex gap-37'>
                 <li>
-                    <a href="#">
+                    <Link href="#">
                         Про нас
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link href="#">
                         Пропозиції
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link href="#">
                         Статистика
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link href="#">
                         Контакти
-                    </a>
+                    </Link>
                 </li>
             </ul>
-            <button>
-                Стати партнером
-            </button>
+            <Link href="#">
+                <button className='h-10 text-center pl-6 pr-6 text-base'>
+                    Стати партнером
+                </button>
+            </Link>
         </div>
     </header>
   )
