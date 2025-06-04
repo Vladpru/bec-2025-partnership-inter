@@ -45,9 +45,6 @@ body {
   background-image: url('/images/hero/hero-btn.svg');
 }
 
-.hero-btn:hover {
-  background-image: url('/images/hero/hero-btn-hover.svg');
-}
 /* @media (max-width: 1720px) {
   .container {
     max-width: 1600px;

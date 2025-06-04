@@ -1,9 +1,27 @@
 import Image from 'next/image'
 const HeroBtn = () => {
   return (
-    <div className="relative aspect-[655/367] w-full max-w-[270px] max-h-[98px] bg-center bg-contain bg-no-repeat cursor-pointer transition-all duration-300 hero-btn">
-      <span className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold select-none">
+    <div className="relative aspect-[655/367] w-full max-w-[270px] max-h-[98px] bg-center bg-contain bg-no-repeat cursor-pointer hero-btn group">
+      <span className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold select-none transition-all duration-400 ease-out group-hover:scale-105">
         СТАТИ ПАРТНЕРОМ
+      </span>
+      <span className=''>
+        <Image
+          src="/images/hero/btn-bottom-left.svg" 
+          alt="Decorative line 3"
+          width={110}
+          height={7}
+          className='absolute left-2 bottom-[-20px] transition-all duration-500 ease-out group-hover:-translate-x-5 group-hover:opacity-0'
+        >
+        </Image>
+        <Image
+          src="/images/hero/btn-bottom-right.svg" 
+          alt="Decorative line 3"
+          width={110}
+          height={7}
+          className='absolute right-2 bottom-[-16px] transition-all duration-500 ease-out group-hover:translate-x-5 group-hover:opacity-0'
+        >
+        </Image>
       </span>
     </div>
   );

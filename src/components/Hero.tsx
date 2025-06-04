@@ -70,8 +70,6 @@ const Hero = () => {
             />
         </div>
 
-
-
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
             <div className="space-y-6 z-10">
                 <h2 className="text-3xl uppercase tracking-wider pl-2">Майбутнє за інженерами</h2>
