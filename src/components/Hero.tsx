@@ -12,7 +12,7 @@ const Hero = () => {
             alt="Decorative line 1"
             width={250}
             height={50}
-            // className="animate-pulse"
+            className=""
             />
         </div>
         <div className="absolute top-26 z-0 right-120">
@@ -21,7 +21,7 @@ const Hero = () => {
             alt="Decorative line 2"
             width={200}
             height={70}
-            className="animate-pulse"
+            className=""
             />
         </div>
         <div className="absolute top-32 right-0 z-10">
@@ -30,7 +30,7 @@ const Hero = () => {
             alt="Decorative line 2"
             width={430}
             height={70}
-            className="animate-pulse"
+            className=""
             />
         </div>
         <div className="absolute bottom-10">
@@ -39,7 +39,7 @@ const Hero = () => {
             alt="Decorative line 3"
             width={150}
             height={60}
-            className="animate-pulse"
+            className=""
             />
         </div>
         <div className="absolute bottom-32 right-80">
@@ -48,7 +48,7 @@ const Hero = () => {
             alt="Decorative line 3"
             width={430}
             height={60}
-            className="animate-pulse"
+            className=""
             />
         </div>
         <div className="absolute bottom-50 right-80">
@@ -57,7 +57,7 @@ const Hero = () => {
             alt="Decorative line 3"
             width={250}
             height={60}
-            className="animate-pulse"
+            className="" // animate-pulse
             />
         </div>
         <div className="absolute bottom-2 right-0">

@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
-import Image from "next/image";
 import Hero from "@/components/Hero"
 import About from "@/components/About";
+import Categories from "@/components/Categories";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Categories />
     </>
   );
 }

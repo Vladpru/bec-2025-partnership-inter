@@ -3,8 +3,6 @@ import Link from 'next/link';
 
 const Header = () => {
 
-
-
   return (
     <header className="bg-header fixed top-0 left-0 w-full z-50">
         <div className="header-container pt-7 pb-7 pl-5 pr-5 flex text-center items-center justify-between">
