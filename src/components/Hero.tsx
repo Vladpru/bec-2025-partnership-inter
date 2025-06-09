@@ -1,6 +1,13 @@
+import { Audiowide } from 'next/font/google';
 import Image from "next/image"
 import Link from "next/link"
 import HeroBtn from "./Hero-btn"
+
+
+const awide = Audiowide({
+  weight: ['400'],
+  subsets: ['latin'],
+});
 
 const Hero = () => {
   return (
@@ -73,10 +80,11 @@ const Hero = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
             <div className="space-y-6 z-10">
                 <h2 className="text-3xl uppercase tracking-wider pl-2">Майбутнє за інженерами</h2>
-                <p className="text-5xl md:text-7xl tracking-wide font-bold text-secondary w-3xl text-bec"
-                style={{ textShadow: 'inset 0 2px 4px rgba(0,0,0,0.5)' }}
+                <p
+                  className={`text-5xl md:text-7xl tracking-wide font-bold text-secondary w-3xl text-bec ${awide.className}`}
+                  style={{ textShadow: 'inset 0 2px 4px rgba(0,0,0,0.5)' }}
                 >
-                    BEST Engineering <span>Competition</span>
+                    BEST Engineering Competition
                 </p>
                 <p className="text-3xl pl-2">
                     Дати проведення: 24-28 жовтня

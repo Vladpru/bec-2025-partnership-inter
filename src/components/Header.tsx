@@ -1,10 +1,16 @@
+import { Exo_2 } from 'next/font/google';
 import Image from 'next/image'; 
 import Link from 'next/link'; 
+
+const exo2 = Exo_2({
+  weight: ['400'],
+  subsets: ['latin'],
+});
 
 const Header = () => {
 
   return (
-    <header className="bg-header fixed top-0 left-0 w-full z-50">
+    <header className={`${exo2.className} font-audiowide bg-header fixed top-0 left-0 w-full z-50`}>
         <div className="header-container pt-7 pb-7 pl-5 pr-5 flex text-center items-center justify-between">
             <div className="">
                 <Link href="">
@@ -20,11 +26,6 @@ const Header = () => {
                 <li>
                     <Link href="#">
                         Про нас
-                    </Link>
-                </li>
-                <li>
-                    <Link href="#">
-                        Пропозиції
                     </Link>
                 </li>
                 <li>
