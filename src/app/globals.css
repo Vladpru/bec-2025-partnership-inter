@@ -30,17 +30,6 @@ body {
   font-size: 22px;
 }
 
-.header-container {
-  max-width: 1380px;
-  margin: 0 auto;
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .hero-btn {
   background-image: url('/images/hero/hero-btn.svg');
 }
@@ -50,4 +39,34 @@ button {
   box-shadow: inset -3px 1px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   color: #171717;
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (min-width: 1940px) {
+  .container {
+    max-width: 1860px;
+  }
+}
+@media (min-width: 1720px) and (max-width: 1939px) {
+  .container {
+    max-width: 1780px;
+  }
+}
+@media (min-width: 1580px) and (max-width: 1719px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+@media (max-width: 1579px) {
+  .container{
+    max-width: 1440px;
+  }
 }

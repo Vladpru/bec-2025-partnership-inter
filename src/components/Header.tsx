@@ -10,8 +10,8 @@ const exo2 = Exo_2({
 const Header = () => {
 
   return (
-    <header className={`${exo2.className} font-audiowide bg-header fixed top-0 left-0 w-full z-50`}>
-        <div className="header-container pt-7 pb-7 pl-5 pr-5 flex text-center items-center justify-between">
+    <header className={`${exo2.className} font-audiowide bg-header fixed top-0 left-0 w-full z-50 backdrop-blur`}>
+        <div className="container pt-7 pb-7 flex text-center items-center justify-between">
             <div className="">
                 <Link href="">
                     <Image 
