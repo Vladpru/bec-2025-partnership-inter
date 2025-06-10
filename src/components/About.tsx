@@ -7,25 +7,28 @@ const About = () => {
 
   const photosDict = [
     { img: "/images/about/ab_slide1.png", alt: "slide1" },
+    { img: "/images/about/ab_slide2.png", alt: "slide2" },
+    { img: "/images/about/ab_slide3.png", alt: "slide3" },
+    { img: "/images/about/ab_slide4.png", alt: "slide4" },
   ]
 
   return (
-    <section className="h-72 mt-50 mb-50">
+    <section className={`h-72 mt-50 mb-35`}>
       <div className="container flex flex-col">
-        <div className="flex flex-col md:flex-row gap-10">
-          <div className="flex flex-col gap-10">
-            <h1 className="uppercase text-bec text-4xl font-bold">Про наш івент</h1>
+        <div className="flex flex-col md:flex-row gap-30">
+          <div className="flex flex-col gap-5 text-xl">
+            <h1 className="uppercase text-bec text-5xl font-bold">Про наш івент</h1>
             <p>
-              <span className='text-bec font-bold'>BEC</span> - змагання, які мають на меті дати можливість молодим інженерам продемонструвати свої знання,
+              <span className='text-bec font-extrabold'>BEC</span> – змагання, які мають на меті дати можливість молодим інженерам продемонструвати свої знання,
               командну роботу та практичні навички для вирішення прикладних задач, які є реальними викликами сучасності.
               Учасники зможуть проявити себе в двох категоріях Team Design (TD) та Innovative Design (ID).
             </p>
-            <p>
+            <p className='mt-4'>
               <span className='text-bec font-bold'>Наша ціль:</span> Сформувати спільноту компетентних і вмотивованих студентів-інженерів,
               готових вирішувати нестандартні задачі.
             </p>
           </div>
-          <div className="">
+          <div className="mr-15">
             <Swiper
               modules={[Autoplay]}
               spaceBetween={0}

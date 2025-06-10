@@ -42,20 +42,19 @@ button {
 }
 
 .backdrop-blur {
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
-@media (min-width: 1940px) {
+@media (min-width: 1920px) {
   .container {
-    max-width: 1860px;
+    max-width: 1820px;
   }
 }
-@media (min-width: 1720px) and (max-width: 1939px) {
+@media (min-width: 1720px) and (max-width: 1919px) {
   .container {
     max-width: 1780px;
   }

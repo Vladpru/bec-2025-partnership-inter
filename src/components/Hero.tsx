@@ -1,7 +1,7 @@
 import { Audiowide } from 'next/font/google';
 import Image from "next/image"
 import Link from "next/link"
-import HeroBtn from "./Hero-btn"
+import HeroBtn from "./ui/Hero-btn"
 
 
 const awide = Audiowide({
@@ -11,9 +11,8 @@ const awide = Audiowide({
 
 const Hero = () => {
   return (
-    <section className="mt-25 pt-26">
-        {/* Декоративні палочки */}
-        <div className="absolute top-32">
+    <section className="mt-15 pt-26">
+        {/* <div className="absolute top-32">
             <Image
             src="/images/hero/left-top-el.svg" 
             alt="Decorative line 1"
@@ -21,7 +20,7 @@ const Hero = () => {
             height={50}
             className=""
             />
-        </div>
+        </div> */}
         <div className="absolute top-16 z-0 right-120">
             <Image
             src="/images/hero/top-el.svg" 
@@ -31,7 +30,7 @@ const Hero = () => {
             className=""
             />
         </div>
-        <div className="absolute top-32 right-0">
+        <div className="absolute top-35 right-0">
             <Image
             src="/images/hero/top-right-el.svg" 
             alt="Decorative line 2"
@@ -40,16 +39,16 @@ const Hero = () => {
             className="opacity-45"
             />
         </div>
-        <div className="absolute bottom-32 right-80">
+        <div className="absolute bottom-22 right-80">
             <Image
             src="/images/hero/bottom-right-el.svg" 
             alt="Decorative line 3"
-            width={430}
+            width={400}
             height={60}
             className=""
             />
         </div>
-        <div className="absolute bottom-50 right-80">
+        <div className="absolute bottom-35 right-65">
             <Image
             src="/images/hero/right-el.svg" 
             alt="Decorative line 3"
@@ -58,26 +57,26 @@ const Hero = () => {
             className="" // animate-pulse
             />
         </div>
-        <div className="absolute bottom-2 right-0">
+        <div className="absolute right-0">
             <Image
             src="/images/hero/hero-robot.png" 
             alt="Decorative line 3"
-            width={380}
+            width={400}
             height={60}
             className=""
             />
         </div>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-            <div className="space-y-6 z-10">
+            <div className="space-y-2 z-10">
                 <h2 className="text-3xl uppercase tracking-wider pl-2">Майбутнє за інженерами</h2>
                 <p
-                  className={`text-5xl md:text-7xl tracking-wide font-bold text-secondary w-3xl text-bec ${awide.className}`}
+                  className={`text-5xl md:text-7xl tracking-wide font-bold text-secondary w-3xl text-bec ${awide.className} leading-[1.3]`}
                   style={{ textShadow: 'inset 0 2px 4px rgba(0,0,0,0.5)' }}
                 >
                     BEST Engineering Competition
                 </p>
-                <p className="text-3xl pl-2">
-                    Дати проведення: 24-28 жовтня
+                <p className="text-3xl pl-2 font-semibold mb-12 mt-5 tracking-wider">
+                    24-28 жовтня
                 </p>
                 <Link href="#" className="max-w-3xs flex">
                     <HeroBtn/>

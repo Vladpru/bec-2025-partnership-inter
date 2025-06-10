@@ -2,7 +2,7 @@ import Image from 'next/image'
 const HeroBtn = () => {
   return (
     <div className="relative aspect-[655/367] w-full max-w-[270px] max-h-[98px] bg-center bg-contain bg-no-repeat cursor-pointer hero-btn group">
-      <span className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold select-none transition-all duration-400 ease-out group-hover:scale-105">
+      <span className="pt-2 absolute inset-0 flex items-center justify-center text-white text-[20px] font-bold select-none transition-all duration-400 ease-out group-hover:scale-105">
         СТАТИ ПАРТНЕРОМ
       </span>
       <span className=''>

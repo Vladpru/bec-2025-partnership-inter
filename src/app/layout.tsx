@@ -1,10 +1,11 @@
-import { Work_Sans } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import type { Metadata } from "next";
 import "./globals.css";
 
-const Work_San = Work_Sans({
-  weight: ['400'],
+const Work_San = Roboto({
+  weight: ['400', '700'],
   subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
