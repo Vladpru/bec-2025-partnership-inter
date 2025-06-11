@@ -1,16 +1,22 @@
-import Image from "next/image" 
+'use client'
+import Image from "next/image"
+import { useOnScreen } from "@/hooks/useOnScreen" 
+
 
 const Categories = () => {
+  
+  const [arrowsRef, isVisible] = useOnScreen(0.1) as [React.RefObject<HTMLDivElement>, boolean];
+  
   return (
     <section className="mb-50">
       <div className="container">
-        <div className="flex justify-between pr-40 pl-40">
+        <div className="flex justify-between pr-40 pl-40" ref={arrowsRef}>
           <Image
             src="/images/categories/left-arrow.svg" 
             alt="Decorative line 3"
             width={300}
             height={60}
-            className=""
+            className={`transition-opacity duration-1000 ${(isVisible) ? "opacity-100" : "opacity-0"}`}
           />
           <div className="flex flex-col text-center justify-center">
             <h3 className="text-bec">Тема:</h3>
@@ -21,7 +27,7 @@ const Categories = () => {
             alt="Decorative line 3"
             width={300}
             height={60}
-            className=""
+            className={`transition-opacity duration-1000 ${(isVisible) ? "opacity-100" : "opacity-0"}`}
           />
         </div>
         <div className="">
