@@ -3,23 +3,27 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --headercolor: rgba(33, 33, 33, 0.32);
+  --headercolor: rgba(33, 33, 33, 0.322);
   --color-bec: #FF6701;
+  
 }
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-header: var(--headercolor);
   --color-bec: var(--color-bec);
+  --color-becblack: #181916;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #181916;
+    --background: #131411;
     --foreground: #ededed;
     --headercolor: rgba(33, 33, 33, 0.32);
   }
+}
+.shadoww-bec {
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -32,13 +36,15 @@ body {
 
 .hero-btn {
   background-image: url('/images/hero/hero-btn.svg');
+
 }
 
 button {
-  background-color: #fff;
+  background-color: #5A5A58;
   box-shadow: inset -3px 1px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  color: #171717;
+  color: #CFCFCF;
+  border: 1px solid #CFCFCF;
 }
 
 .backdrop-blur {
@@ -68,4 +74,16 @@ button {
   .container{
     max-width: 1440px;
   }
+}
+
+.swiper_skl .swiper-slide {
+  transition: transform 0.3s ease;
+}
+.swiper_skl .slide_card_img {
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+.swiper_skl .swiper-slide-next .slide_card_img {
+  transform: scale(1);
+  z-index: 10;
 }

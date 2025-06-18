@@ -11,7 +11,7 @@ const HeroBtn = () => {
           alt="Decorative line 3"
           width={110}
           height={7}
-          className='absolute left-2 bottom-[-20px] transition-all duration-500 ease-out group-hover:-translate-x-5 group-hover:opacity-0'
+          className='absolute left-2 bottom-[-20px] transition-all duration-500 ease-out group-hover:-translate-x-5 group-hover:opacity-0 '
         >
         </Image>
         <Image

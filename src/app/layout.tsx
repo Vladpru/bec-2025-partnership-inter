@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const Interr = Inter({
-  weight: ['400', '700'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
   display: 'swap',
 });
