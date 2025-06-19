@@ -1,6 +1,21 @@
 import Image from "next/image"
 
 const WhyBec = () => {
+
+  const majors = [
+    'Інженерія програмного забезпечення',
+    'Кібербезпека',
+    'Системна інженерія',
+    'Архітектура і містобудування',
+    'Обчислювальна техніка',
+    'Телекомунікації та радіотехніка',
+    'Електроніка',
+    'Промислове та цивільне будівництво',
+    'Робототехніка',
+    'Електроніка',
+    'Інші'
+  ]
+
   return (
     <section className="mt-30">
       <div className="container">
@@ -78,8 +93,27 @@ const WhyBec = () => {
           />
         </div>
         <h1 className="font-black text-center text-4xl uppercase text-bec">Портрет учасника</h1>
-        <div className="xl:max-w-120 whybec-bg bg-center bg-contain bg-no-repeat group">
-
+        <div className="flex justify-center items-center gap-40 mx-auto whybec-bg py-45 px-35 max-h-[1000px]">
+          <div className="flex flex-col items-start gap-10">
+            <Image 
+              src="/images/whybec/portrait.png"
+              alt="participant"
+              width={400}
+              height={70}
+              className=""
+            />
+            <h1 className="uppercase font-black text-2xl">Студенти ВікОМ 17-21 рік</h1>
+          </div>
+          <div className="flex flex-col">
+            <h1 className="uppercase font-black text-2xl">Спеціальності учасників:</h1>
+            <ul className="space-y-2 md:text-base">
+            {majors.map((item, i) => (
+              <li key={i} className="flex items-start gap-2 text-md">
+                <span>→</span> <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          </div>
         </div>
       </div>
     </section>

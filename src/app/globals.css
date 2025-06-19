@@ -37,11 +37,27 @@ body {
 
 .hero-btn {
   background-image: url('/images/hero/hero-btn.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .whybec-bg {
   background-image: url('/images/whybec/bg-portrait.png');
-  background: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info_bg {
+  background: linear-gradient(to right, #5A5A58, #181916);
+}
+
+.border_is {
+  border: 4px solid rgb(255, 103, 1, 1);
+}
+.border_not {
+  border: 4px solid #00000000;
+  border-right: 4px solid #181916;
 }
 
 .backdrop-blur {
@@ -49,7 +65,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 @media (min-width: 1920px) {
@@ -84,3 +100,14 @@ body {
   transform: scale(1);
   z-index: 10;
 }
+
+.clip-notch {
+    clip-path: polygon(
+      10px 0%,
+      100% 0%,
+      100% calc(100% - 10px),
+      calc(100% - 10px) 100%,
+      0% 100%,
+      0% 10px
+    );
+  }

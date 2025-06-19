@@ -5,6 +5,7 @@ import Categories from "@/components/Categories";
 import WhyBec from "@/components/WhyBec";
 import Statistics from "@/components/Statistics";
 import Propositions from "@/components/Propositions";
+import Cart from "@/components/Cart";
 
 export default function Home() {
   return (
@@ -14,8 +15,9 @@ export default function Home() {
       <About />
       <Categories />
       <WhyBec />
-      <Statistics/>
-      <Propositions/>
+      <Statistics />
+      <Propositions />
+      <Cart />
     </>
   );
 }

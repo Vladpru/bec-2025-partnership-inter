@@ -42,7 +42,7 @@ const About = () => {
             >
               {photosDict.map((photo) => (
                 <SwiperSlide>
-                  <div className="slide_card">
+                  <div className="slide_card ">
                     <img className="slide_card_img" src={photo.img} alt={photo.alt} />
                   </div>
                 </SwiperSlide>

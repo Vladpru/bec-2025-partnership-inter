@@ -1,0 +1,22 @@
+
+export interface Package {
+	id: string;
+	name: string;
+	price: string;
+	features: string[];
+	descriptions: string[];
+}
+
+export interface AdditionalOption {
+	id: string;
+	name: string;
+	price: string;
+	description: string;
+}
+
+export interface DetailsProps {
+  onClose: () => void;
+  pack: Package;
+}
+
+
