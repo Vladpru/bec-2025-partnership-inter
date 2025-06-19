@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import Image from 'next/image';
 
 const About = () => {
 
@@ -43,7 +44,7 @@ const About = () => {
               {photosDict.map((photo, index) => (
                 <SwiperSlide key={index}>
                   <div className="slide_card ">
-                    <img className="slide_card_img" src={photo.img} alt={photo.alt} />
+                    <Image className="slide_card_img" width={550} height={300} src={photo.img} alt={photo.alt} />
                   </div>
                 </SwiperSlide>
               ))}
