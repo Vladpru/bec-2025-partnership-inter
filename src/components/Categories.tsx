@@ -64,7 +64,7 @@ const Categories = () => {
               />
               <div className="flex flex-col justify-between">
                 <h1 className="text-3xl font-black uppercase pb-1">Innovative design</h1>
-                <p className="pt-">
+                <p className="">
                   Концептуальна категорія, що орієнтована на креативні інженерні ідеї. Команди 
                   пропонують абсолютно нові проєктні рішення для актуальних проблем, які потребують 
                   розв&apos;язання. Таким чином учасники у своїх проєктах демонструють інноваційний підхід, 
@@ -78,8 +78,8 @@ const Categories = () => {
             </div>
           </div>
         </div>
-        <CategoriesSlider/>
       </div>
+      <CategoriesSlider/>
     </section>
   )
 }

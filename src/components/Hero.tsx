@@ -12,15 +12,6 @@ const awide = Audiowide({
 const Hero = () => {
   return (
     <section className="mt-15 pt-26">
-        {/* <div className="absolute top-32">
-            <Image
-            src="/images/hero/left-top-el.svg" 
-            alt="Decorative line 1"
-            width={250}
-            height={50}
-            className=""
-            />
-        </div> */}
         <div className="absolute top-16 z-0 right-120">
             <Image
             src="/images/hero/top-el.svg" 

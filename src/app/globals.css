@@ -13,12 +13,13 @@
   --color-header: var(--headercolor);
   --color-bec: var(--color-bec);
   --color-becblack: #181916;
+  --color-becwhite: #CFCFCF;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #131411;
-    --foreground: #ededed;
+    --foreground: #CFCFCF;
     --headercolor: rgba(33, 33, 33, 0.32);
   }
 }
@@ -36,15 +37,11 @@ body {
 
 .hero-btn {
   background-image: url('/images/hero/hero-btn.svg');
-
 }
 
-button {
-  background-color: #5A5A58;
-  box-shadow: inset -3px 1px 15px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  color: #CFCFCF;
-  border: 1px solid #CFCFCF;
+.whybec-bg {
+  background-image: url('/images/whybec/bg-portrait.png');
+  background: no-repeat;
 }
 
 .backdrop-blur {

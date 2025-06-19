@@ -40,7 +40,7 @@ const Header = () => {
                 </li>
             </ul>
             <Link href="#">
-                <button className='h-10 text-center pl-6 pr-6 text-base'>
+                <button className='h-10 text-center pl-6 pr-6 text-base bg-[#5A5A58] text-[#CFCFCF] border border-[#CFCFCF] shadow-[inset_-3px_1px_15px_rgba(0,0,0,0.5)] cursor-pointer'>
                     Стати партнером
                 </button>
             </Link>

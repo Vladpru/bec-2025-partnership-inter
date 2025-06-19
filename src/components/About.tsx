@@ -35,7 +35,7 @@ const About = () => {
               slidesPerView={1}
               loop={true}
               autoplay={{
-                delay: 1500,
+                delay: 2000,
                 disableOnInteraction: false,
               }}
               className="swiper_skl w-xl"
