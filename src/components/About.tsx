@@ -40,8 +40,8 @@ const About = () => {
               }}
               className="swiper_skl w-xl"
             >
-              {photosDict.map((photo) => (
-                <SwiperSlide>
+              {photosDict.map((photo, index) => (
+                <SwiperSlide key={index}>
                   <div className="slide_card ">
                     <img className="slide_card_img" src={photo.img} alt={photo.alt} />
                   </div>

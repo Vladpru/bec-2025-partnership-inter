@@ -36,8 +36,8 @@ const CategoriesSlider = () => {
         className="swiper_skl"
         slidesPerView={3}
       >
-        {photosDict.map((photo) => (
-          <SwiperSlide>
+        {photosDict.map((photo, index) => (
+          <SwiperSlide key={index}>
             <div className="slide_card">
               <Image
                 src={photo.img}

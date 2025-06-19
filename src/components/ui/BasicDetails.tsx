@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { DetailsProps, Package } from "@/types/types";
+import { DetailsProps } from "@/types/types";
 import { Audiowide } from "next/font/google";
 
 const awide = Audiowide({
