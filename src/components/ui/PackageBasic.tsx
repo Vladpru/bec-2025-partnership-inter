@@ -39,12 +39,12 @@ const PackageBasic = () => {
         ))}
       </ul>
       <div className={`text-start ${awide.className} leading-[1.3]`}>
-        <button className="text-center px-12 py-3 text-xl bg-[#5A5A58] text-[#CFCFCF] border-2 border-[#CFCFCF] shadow-[inset_-3px_1px_15px_rgba(0,0,0,0.5)] cursor-pointer
+        <button className="text-center px-12 py-3 text-3xl bg-[#5A5A58] text-[#CFCFCF] border-2 border-[#CFCFCF] shadow-[inset_-3px_1px_15px_rgba(0,0,0,0.5)] cursor-pointer
                 hover:bg-[#727270] hover:text-white hover:border-white hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-400 ease-out">
           {pack1.price}
         </button>
       </div>
-      <div className="absolute top-5 right-8">
+      <div className="absolute top-6 right-4">
         <span
           className="flex items-center justify-center text-sm font-bold text-becblack bg-becwhite rounded-full w-5 h-5 cursor-pointer hover:scale-125 transition-all ease-in"
           onClick={handleInfoClick}

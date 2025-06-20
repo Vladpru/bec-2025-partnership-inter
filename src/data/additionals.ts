@@ -1,6 +1,6 @@
 import { AdditionalOption } from "@/types/types";
 
-const additionalOptions: AdditionalOption[] = [ 
+const addOptions: AdditionalOption[] = [ 
   {
     id: "1",
     name: "Відео-представлення компанії",
@@ -63,4 +63,4 @@ const additionalOptions: AdditionalOption[] = [
   },
 ];
 
-export default additionalOptions;
+export default addOptions;

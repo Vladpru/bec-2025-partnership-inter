@@ -18,7 +18,7 @@ const RecruiterDetails = ({ onClose, pack }: DetailsProps) => {
 
   return (
     <div className="fixed inset-0 bg-opacity-50 flex items-center justify-center z-50" onClick={handleClickOutside}>
-      <div className="info_bg border-4 border-becwhite p-4 max-w-[600px] relative" ref={modalRef}>
+      <div className="extra_bg border-4 border-becwhite p-4 max-w-[600px] relative" ref={modalRef}>
         <button
           onClick={onClose}
           className="absolute top-2 right-4 text-white text-4xl cursor-pointer font-light hover:scale-125 transition-all ease-in"

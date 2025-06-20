@@ -51,6 +51,9 @@ body {
 .info_bg {
   background: linear-gradient(to right, #5A5A58, #181916);
 }
+.extra_bg {
+    background: linear-gradient(180deg, #5A5A58 0%, #181916 100%);
+}
 
 .border_is {
   border: 4px solid rgb(255, 103, 1, 1);

@@ -19,4 +19,18 @@ export interface DetailsProps {
   pack: Package;
 }
 
+export interface AdditionalOptionsProps {
+  selectedServices: string[];
+  onToggleService: (name: string) => void;
+	selectedPackageServices: string[];
+};
 
+export interface SelectedPackage {
+  name: string;
+  includedServices: string[];
+};
+
+export interface PackageProps {
+  onChoose: (packageName: string) => void;
+	selectedPackageName?: string;
+};
