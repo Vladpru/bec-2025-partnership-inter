@@ -1,4 +1,4 @@
-import addOptions from '../data/additionals'
+import addOptions from '../../data/additionals'
 import { Audiowide } from 'next/font/google';
 import { AdditionalOptionsProps } from '@/types/types';
 

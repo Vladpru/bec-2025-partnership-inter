@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react"
-import AdditionalOptions from "./AdditionalOptions"
+import AdditionalOptions from "./ui/AdditionalOptions"
 import Cart from "./Cart"
 import PackageBasic from "./ui/PackageBasic"
 import PackageEngineer from "./ui/PackageEngineer"
@@ -54,8 +54,16 @@ const Propositions = () => {
   const servicesPrice = Object.fromEntries(
     addOptions.map(opt => [opt.name, extractPrice(opt.price)])
   );
+  const handleRemovePackage = (name: string) => {
+    setSelectedPackages(prev => prev.filter(pkg => pkg.name !== name));
+  };
+
+  const handleRemoveService = (name: string) => {
+    setSelectedServices(prev => prev.filter(service => service !== name));
+  };
+
   return (
-    <section className="mt-10 mb-70">
+    <section className="mt-10 mb-50">
         <div className="container">
             <h1 className='uppercase font-black text-4xl text-bec mb-10 text-center'>Пропозиції</h1>
             <PackageBasic />
@@ -75,6 +83,8 @@ const Propositions = () => {
           customServices={selectedServices}
           servicesPrice={servicesPrice}
           packagesPrice={packagesPrice}
+          onRemovePackage={handleRemovePackage}
+          onRemoveService={handleRemoveService}
         />
     </section>
   )

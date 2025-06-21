@@ -5,6 +5,8 @@ import Categories from "@/components/Categories";
 import WhyBec from "@/components/WhyBec";
 import Statistics from "@/components/Statistics";
 import Propositions from "@/components/Propositions";
+import Sponsors from "@/components/Sponsors";
+import Organisers from "@/components/Organisers";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <WhyBec />
       <Statistics />
       <Propositions />
+      <Sponsors />
+      <Organisers />
     </>
   );
 }
