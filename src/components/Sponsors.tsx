@@ -21,7 +21,7 @@ const Sponsors = () => {
         НАС ПІДТРИМУЮТЬ
       </h2>
       <div className="flex flex-col gap-8 justify-center items-center">
-        <div className="grid grid-cols-2 gap-10 max-w-[400px] justify-items-center">
+        <div className="grid grid-cols-2 gap-30 max-w-[400px] justify-items-center">
           {logos.slice(0, 2).map((logo, idx) => (
             <div key={idx} className="w-[220px] h-[100px] relative transition">
               <Image src={logo.src} alt={logo.alt} fill className="object-contain" />
@@ -29,7 +29,7 @@ const Sponsors = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-3 w-full justify-items-center">
+        <div className="flex w-full justify-around items-center">
           {logos.slice(2, 5).map((logo, idx) => (
             <div key={idx + 2} className="w-[220px] h-[100px] relative transition">
               <Image src={logo.src} alt={logo.alt} fill className="object-contain" />
@@ -37,7 +37,7 @@ const Sponsors = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-3 w-full justify-items-center">
+        <div className="flex w-full justify-around items-center">
           {logos.slice(5, 8).map((logo, idx) => (
             <div key={idx + 5} className="w-[220px] h-[100px] relative transition">
               <Image src={logo.src} alt={logo.alt} fill className="object-contain" />
@@ -45,7 +45,7 @@ const Sponsors = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-10 max-w-[400px] justify-items-center">
+        <div className="grid grid-cols-2 gap-30 max-w-[400px] justify-items-center">
           {logos.slice(8, 10).map((logo, idx) => (
             <div key={idx + 8} className="w-[320px] h-[100px] relative transition">
               <Image src={logo.src} alt={logo.alt} fill className="object-contain" />

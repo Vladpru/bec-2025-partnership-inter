@@ -68,7 +68,6 @@ body {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
 }
 @media (min-width: 1920px) {
@@ -81,14 +80,14 @@ body {
     max-width: 1780px;
   }
 }
-@media (min-width: 1580px) and (max-width: 1719px) {
+@media (min-width: 1610px) and (max-width: 1719px) {
   .container {
     max-width: 1600px;
   }
 }
-@media (max-width: 1579px) {
+@media (max-width: 1609px) {
   .container{
-    max-width: 1440px;
+    max-width: 1400px;
   }
 }
 

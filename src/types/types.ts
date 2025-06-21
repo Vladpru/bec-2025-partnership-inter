@@ -34,3 +34,15 @@ export interface PackageProps {
   onChoose: (packageName: string) => void;
 	selectedPackageName?: string;
 };
+
+export interface CartProps {
+	selectedPackages: {
+		name: string
+		includedServices: string[]
+	}[]
+	customServices: string[]
+	servicesPrice: { [key: string]: number }
+	packagesPrice: { [key: string]: number }
+	onRemovePackage: (name: string) => void
+	onRemoveService: (name: string) => void
+}

@@ -1,19 +1,8 @@
 'use client'
+import { CartProps } from '@/types/types';
 import { Audiowide } from 'next/font/google'
 import Image from 'next/image'
 import React from 'react'
-
-type CartProps = {
-  selectedPackages: {
-    name: string
-    includedServices: string[]
-  }[]
-  customServices: string[]
-  servicesPrice: { [key: string]: number }
-  packagesPrice: { [key: string]: number }
-  onRemovePackage: (name: string) => void
-  onRemoveService: (name: string) => void
-}
 
 const awide = Audiowide({
   weight: ['400'],
@@ -37,7 +26,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
 
   return (
     <div className="container pt-10">
-      <h2 className="text-center text-5xl text-bec font-bold mb-8 uppercase">Кошик</h2>
+      <h1 className="text-center text-4xl text-bec font-black mb-8 uppercase">Кошик</h1>
       <div className="relative flex justify-center mt-10 p-16 gap-20 z-10">
         <div className="flex justify-center absolute top-0">
           <Image 
