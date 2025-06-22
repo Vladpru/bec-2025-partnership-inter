@@ -1,6 +1,10 @@
+import { refPropSt } from "@/types/types";
 import Image from "next/image"
+import { forwardRef } from "react";
 
-const Statistics = () => {
+
+
+const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
 
   const socialData = [
     { icon: "/images/statistics/inst.svg", number: "3400+", label: "підписників" },
@@ -9,7 +13,7 @@ const Statistics = () => {
   ];
 
   return (
-    <section className="text-center">
+    <section className="text-center scroll-m-40" ref={ref}>
       <div className="container">
         <h1 className="uppercase font-black text-3xl text-bec mb-10">
           Статистика з соцмереж:
@@ -85,6 +89,6 @@ const Statistics = () => {
       </div>
     </section>
   )
-}
+})
 
 export default Statistics

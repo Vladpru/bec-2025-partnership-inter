@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react"
+import { forwardRef, useState } from "react"
 import AdditionalOptions from "./ui/AdditionalOptions"
 import Cart from "./Cart"
 import PackageBasic from "./ui/PackageBasic"
@@ -9,7 +9,7 @@ import { SelectedPackage } from "@/types/types"
 import packages from "@/data/packages"
 import addOptions from "@/data/additionals"
 
-const Propositions = () => {
+const Propositions = forwardRef<HTMLDivElement, {}>((props, ref) => {
 
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [selectedPackages, setSelectedPackages] = useState<SelectedPackage[]>([]);
@@ -63,7 +63,7 @@ const Propositions = () => {
   };
 
   return (
-    <section className="mt-10 mb-50">
+    <section className="mt-10 mb-50 scroll-m-32" ref={ref}>
         <div className="container">
             <h1 className='uppercase font-black text-4xl text-bec mb-10 text-center'>Пропозиції</h1>
             <PackageBasic />
@@ -88,5 +88,5 @@ const Propositions = () => {
         />
     </section>
   )
-}
+})
 export default Propositions

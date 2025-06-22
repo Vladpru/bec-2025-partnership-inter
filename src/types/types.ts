@@ -46,3 +46,15 @@ export interface CartProps {
 	onRemovePackage: (name: string) => void
 	onRemoveService: (name: string) => void
 }
+
+export interface refPropSt {
+  statisticsRef: React.RefObject<HTMLElement | null>;
+}
+
+export interface refPropOrg {
+  contactsRef: React.RefObject<HTMLElement | null>;
+}
+
+export interface refPropSpon {
+  refPropSpon: React.RefObject<HTMLElement | null>;
+}
