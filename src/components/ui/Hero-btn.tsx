@@ -1,7 +1,15 @@
 import Image from 'next/image'
-const HeroBtn = () => {
+
+
+interface HeroBtnProps {
+  scrollToSection: (ref: React.RefObject<HTMLElement | null>) => void;
+  sposorRef: React.RefObject<HTMLElement | null>;
+}
+
+const HeroBtn = ({ scrollToSection, sposorRef }: HeroBtnProps) => {
   return (
-    <div className="relative aspect-[655/367] w-full max-w-[270px] max-h-[98px] bg-center bg-contain bg-no-repeat cursor-pointer hero-btn group">
+    <div className="relative aspect-[655/367] w-full max-w-[270px] max-h-[98px] bg-center bg-contain bg-no-repeat cursor-pointer hero-btn group"
+    onClick={() => scrollToSection(sposorRef)}>
       <span className="pt-2 absolute inset-0 flex items-center justify-center text-white text-[20px] font-bold select-none transition-all duration-400 ease-out group-hover:scale-105">
         СТАТИ ПАРТНЕРОМ
       </span>

@@ -14,6 +14,7 @@ import Contacts from "@/components/ui/Contacts";
 export default function Home() {
 
   const topRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
   const statisticsRef = useRef<HTMLElement>(null);
   const contactsRef = useRef<HTMLDivElement>(null);
   const sposorRef = useRef<HTMLDivElement>(null);
@@ -26,9 +27,9 @@ export default function Home() {
   return (
     <>
       <div className='scroll-m-20' ref={topRef} />
-      <Header scrollToSection={scrollToSection} refs={{ topRef, statisticsRef, contactsRef, sposorRef }}/>
-      <Hero />
-      <About />
+      <Header scrollToSection={scrollToSection} refs={{ topRef, statisticsRef, contactsRef, sposorRef, aboutRef }}/>
+      <Hero scrollToSection={scrollToSection} sposorRef={sposorRef}/>
+      <About ref={aboutRef}/>
       <Categories />
       <WhyBec />
       <Statistics ref={statisticsRef}/>

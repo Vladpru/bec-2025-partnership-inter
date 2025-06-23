@@ -1,22 +1,12 @@
+import { HeaderProps } from '@/types/types';
 import { Exo_2 } from 'next/font/google';
 import Image from 'next/image'; 
-import Link from 'next/link'; 
 import { RefObject, useState } from 'react';
 
 const exo2 = Exo_2({
   weight: ['400'],
   subsets: ['latin'],
 });
-
-type HeaderProps = {
-  scrollToSection?: React.RefObject<HTMLElement | null> | ((ref: React.RefObject<HTMLElement | null>) => void);
-  refs?: {
-    topRef: React.RefObject<HTMLElement | null>;
-    statisticsRef: React.RefObject<HTMLElement | null>;
-    contactsRef: React.RefObject<HTMLElement | null>;
-    sposorRef: React.RefObject<HTMLElement | null>;
-  };
-};
 
 const Header = ({scrollToSection, refs}: HeaderProps) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +15,6 @@ const Header = ({scrollToSection, refs}: HeaderProps) => {
         setMenuOpen(!menuOpen);
     }
     
-
     const handleMenuClick = (ref: RefObject<HTMLElement | null>) => {
         if (typeof scrollToSection === 'function') {
             scrollToSection(ref);
@@ -49,7 +38,7 @@ const Header = ({scrollToSection, refs}: HeaderProps) => {
             <ul className='flex gap-37'>
                 <li>
                     <a className='hover:text-white hover:text-shadow-sm/30 hover:text-shadow-white transition-all duration-400 ease-in-out cursor-pointer'
-                    onClick={() => handleMenuClick(refs?.topRef!)}>
+                    onClick={() => handleMenuClick(refs?.aboutRef!)}>
                         Про нас
                     </a>
                 </li>

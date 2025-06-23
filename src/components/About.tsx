@@ -3,8 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import Image from 'next/image';
+import { forwardRef } from 'react';
 
-const About = () => {
+const About = forwardRef<HTMLDivElement, {}>((props, ref) => {
 
   const photosDict = [
     { img: "/images/about/ab_slide1.png", alt: "slide1" },
@@ -14,7 +15,7 @@ const About = () => {
   ]
 
   return (
-    <section className={`h-72 mt-50 mb-35`}>
+    <section className={`h-72 mt-50 mb-35 scroll-m-35`} ref={ref}>
       <div className="container flex flex-col">
         <div className="flex flex-col md:flex-row gap-30">
           <div className="flex flex-col gap-5 text-xl">
@@ -54,6 +55,6 @@ const About = () => {
       </div>
     </section>
   )
-}
+})
 
 export default About

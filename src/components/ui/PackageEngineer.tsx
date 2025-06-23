@@ -21,9 +21,7 @@ const PackageEngineer = ({ onChoose, selectedPackageName }: PackageProps) => {
     onChoose(pack1.name);
   };
   
-  const handleInfoClick = () => {
-    setIsTooltipVisible(!isTooltipVisible);
-  };
+  const handleInfoClick = () => setIsTooltipVisible(tl => !tl);
 
   const isSelected = selectedPackageName === pack1.name;
 

@@ -47,14 +47,17 @@ export interface CartProps {
 	onRemoveService: (name: string) => void
 }
 
-export interface refPropSt {
-  statisticsRef: React.RefObject<HTMLElement | null>;
-}
-
-export interface refPropOrg {
-  contactsRef: React.RefObject<HTMLElement | null>;
-}
-
 export interface refPropSpon {
   refPropSpon: React.RefObject<HTMLElement | null>;
 }
+
+export interface HeaderProps {
+	scrollToSection?: React.RefObject<HTMLElement | null> | ((ref: React.RefObject<HTMLElement | null>) => void);
+	refs?: {
+		topRef: React.RefObject<HTMLElement | null>;
+		aboutRef: React.RefObject<HTMLElement | null>;
+		statisticsRef: React.RefObject<HTMLElement | null>;
+		contactsRef: React.RefObject<HTMLElement | null>;
+		sposorRef: React.RefObject<HTMLElement | null>;
+	};
+};

@@ -70,8 +70,13 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
               />
             </div>
             <div className="relative flex flex-col w-[500px] justify-center pt-17">
-              <p className="mb-2 text-lg px-10">ЗАГАЛЬНА ОЦІНКА ВІД ПАРТНЕРІВ ПРОВЕДЕННЯ ВЕСЬ 2024</p>
-              <div className="text-sm border-1 border-bec bg-bec text-becblack font-black mx-10">9.6/10</div>
+              <p className="mb-3 text-lg px-10 leading-tight">ЗАГАЛЬНА ОЦІНКА ВІД ПАРТНЕРІВ ПРОВЕДЕННЯ ВЕСЬ 2024</p>
+              <div className="relative h-5 mx-10 border border-bec bg-becblack">
+                <div className="absolute inset-0 bg-bec" style={{ width: '95%' }}></div>
+                <div className="absolute inset-0 flex items-center justify-center text-sm font-black text-becblack">
+                  9.6/10
+                </div>
+              </div>
               <Image
                 src="/images/statistics/right-block.svg"
                 alt="фон"

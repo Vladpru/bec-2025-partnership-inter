@@ -32,7 +32,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
           <Image 
             src="/images/propositions/bg-cart.png"
             alt=""
-            width={1200}
+            width={1150}
             height={200}
             className="object-cover -z-10"
           />

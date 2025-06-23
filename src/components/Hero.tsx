@@ -9,7 +9,12 @@ const awide = Audiowide({
   subsets: ['latin'],
 });
 
-const Hero = () => {
+interface HeroProps {
+  scrollToSection: (ref: React.RefObject<HTMLElement | null>) => void;
+  sposorRef: React.RefObject<HTMLElement | null>;
+}
+
+const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
   return (
     <section className="mt-15 pt-26">
         <div className="absolute top-16 z-0 right-120">
@@ -69,9 +74,9 @@ const Hero = () => {
                 <p className="text-3xl pl-2 font-semibold mb-12 mt-5 tracking-wider">
                     24-28 жовтня
                 </p>
-                <Link href="#" className="max-w-3xs flex">
-                    <HeroBtn/>
-                </Link>
+                <a className="max-w-3xs flex">
+                    <HeroBtn scrollToSection={scrollToSection} sposorRef={sposorRef} />
+                </a>
             </div>
         </div>
     </section>
