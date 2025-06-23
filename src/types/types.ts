@@ -12,6 +12,7 @@ export interface AdditionalOption {
 	name: string;
 	price: string;
 	description: string;
+	available: number;
 }
 
 export interface DetailsProps {

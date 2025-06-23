@@ -15,9 +15,9 @@ const About = forwardRef<HTMLDivElement, {}>((props, ref) => {
   ]
 
   return (
-    <section className={`h-72 mt-50 mb-35 scroll-m-35`} ref={ref}>
-      <div className="container flex flex-col">
-        <div className="flex flex-col md:flex-row gap-30">
+    <section className={`h-72 mt-70 mb-35 scroll-m-35 relative`} ref={ref}>
+      <div className="relative">
+        <div className="container flex flex-col md:flex-row gap-30">
           <div className="flex flex-col gap-5 text-xl">
             <h1 className="uppercase text-bec text-5xl font-bold">Про наш івент</h1>
             <p>
@@ -30,7 +30,7 @@ const About = forwardRef<HTMLDivElement, {}>((props, ref) => {
               готових вирішувати нестандартні задачі.
             </p>
           </div>
-          <div className="mr-15">
+          <div className="">
             <Swiper
               modules={[Autoplay]}
               spaceBetween={0}
@@ -40,18 +40,32 @@ const About = forwardRef<HTMLDivElement, {}>((props, ref) => {
                 delay: 2000,
                 disableOnInteraction: false,
               }}
-              className="swiper_skl w-xl"
+              className="swiper_skl max-w-[560px]"
             >
               {photosDict.map((photo, index) => (
-                <SwiperSlide key={index}>
-                  <div className="slide_card ">
-                    <Image className="slide_card_img" width={550} height={300} src={photo.img} alt={photo.alt} />
+                <SwiperSlide key={index} className='w-[560px]'>
+                  <div className="slide_card w-[560px]">
+                    <Image className="slide_card_img" width={560} height={300} src={photo.img} alt={photo.alt} />
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
         </div>
+        <Image 
+          width={530}
+          height={530}
+          alt='2'
+          src="/images/elipses/about_right.png"
+          className='-right-10 -bottom-50 select-none z-0 absolute'
+        />
+        <Image 
+          width={530}
+          height={530}
+          alt='2'
+          src="/images/elipses/about_left.png"
+          className='-left-10 -top-20 select-none z-0 absolute'
+        />
       </div>
     </section>
   )

@@ -15,13 +15,13 @@ const CategoriesSlider = () => {
   ]
 
   return (
-    <div className="mt-60">
+    <div className="mt-60 relative">
       <div className="relative">
         <Image
           src="/images/categories/slider-top.svg" 
           width={1200}
           height={65}
-          className="absolute left-0 bottom-10 w-full h-auto object-cover"
+          className="absolute left-0 bottom-5 w-full h-auto object-cover"
           alt="line"
         />
       </div>
@@ -29,10 +29,10 @@ const CategoriesSlider = () => {
         modules={[Autoplay]}
         spaceBetween={10}
         loop={true}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // }}
         className="swiper_skl"
         slidesPerView={3}
       >
@@ -43,7 +43,7 @@ const CategoriesSlider = () => {
                 src={photo.img}
                 width={500}
                 height={400}
-                className="slide_card_img "
+                className="slide_card_img w-full"
                 alt={photo.alt}
               />
             </div>
@@ -55,10 +55,17 @@ const CategoriesSlider = () => {
           src="/images/categories/slider-bottom.svg" 
           width={1600}
           height={65}
-          className="absolute left-0 top-10 w-full h-auto"
+          className="absolute left-0 top-5 w-full h-auto"
           alt="line"
         />
       </div>
+      <Image
+        src="/images/elipses/slider.png" 
+        width={450}
+        height={65}
+        alt="line"
+        className="absolute left-0 bottom-15 opacity-70"
+      />
     </div>
   )
 }

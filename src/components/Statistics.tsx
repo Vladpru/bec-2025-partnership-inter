@@ -1,8 +1,5 @@
-import { refPropSt } from "@/types/types";
 import Image from "next/image"
 import { forwardRef } from "react";
-
-
 
 const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
 
@@ -51,14 +48,14 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
           </div>
         </div>
 
-        </div>
+      </div>
       <div className="pt-20 container">
-          <h1 className="uppercase font-black text-3xl text-bec">
-            Статистика івенту 2024
-          </h1>
-          <div className="flex gap-2 mt-20 justify-center">
-            <div className="relative flex flex-col w-[500px] h-[350px]">
-              <p className="mb-2 text-lg">РЕЄСТРАЦІЙ <span className="text-bec">199</span></p>
+        <h1 className="uppercase font-black text-3xl text-bec">
+          Статистика івенту 2024
+        </h1>
+        <div className="flex gap-2 mt-20 justify-center">
+          <div className="relative flex flex-col w-[500px] h-[350px]">
+            <p className="mb-2 text-lg">РЕЄСТРАЦІЙ <span className="text-bec">199</span></p>
               <p className="mb-2 text-lg">КОМАНД <span className="text-bec">12</span></p>
               <p className="text-lg">УЧАСНИКІВ <span className="text-bec">48</span></p>
               <Image
@@ -69,28 +66,35 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
                 className="absolute bottom-15 left-0 w-full h-full -z-10"
               />
             </div>
-            <div className="relative flex flex-col w-[500px] justify-center pt-17">
-              <p className="mb-3 text-lg px-10 leading-tight">ЗАГАЛЬНА ОЦІНКА ВІД ПАРТНЕРІВ ПРОВЕДЕННЯ ВЕСЬ 2024</p>
-              <div className="relative h-5 mx-10 border border-bec bg-becblack">
-                <div className="absolute inset-0 bg-bec" style={{ width: '95%' }}></div>
-                <div className="absolute inset-0 flex items-center justify-center text-sm font-black text-becblack">
-                  9.6/10
-                </div>
+          <div className="relative flex flex-col w-[500px] justify-center pt-17">
+            <p className="mb-3 text-lg px-10 leading-tight">ЗАГАЛЬНА ОЦІНКА ВІД ПАРТНЕРІВ ПРОВЕДЕННЯ ВЕСЬ 2024</p>
+            <div className="relative h-5 mx-10 border border-bec bg-becblack">
+              <div className="absolute inset-0 bg-bec" style={{ width: '95%' }}></div>
+              <div className="absolute inset-0 flex items-center justify-center text-sm font-black text-becblack">
+                9.6/10
               </div>
-              <Image
-                src="/images/statistics/right-block.svg"
-                alt="фон"
-                width={40}
-                height={40}
-                className="absolute bottom-16 left-0 w-full h-full -z-10"
-              />
-              <p className="text-sm text-gray-300 text-start pt-10 pl-4">
-                *Компанії-партнери заново оцінили форму зворотнього зв’язку
-                щодо проведених івентів, напряки які цього тижня будуть
-                вражені у відзвіті
-              </p>
             </div>
+            <Image
+              src="/images/statistics/right-block.svg"
+              alt="фон"
+              width={40}
+              height={40}
+              className="absolute bottom-16 left-0 w-full h-full -z-10"
+            />
+            <p className="text-sm text-gray-300 text-start pt-10 pl-4">
+              *Компанії-партнери заново оцінили форму зворотнього зв’язку
+              щодо проведених івентів, напряки які цього тижня будуть
+              вражені у відзвіті
+            </p>
           </div>
+          <Image
+            alt="фон"
+            src="/images/elipses/left_inst.png"
+            width={240}
+            height={240}
+            className="absolute bottom-16 left-0 -z-10"
+          />
+        </div>
       </div>
     </section>
   )

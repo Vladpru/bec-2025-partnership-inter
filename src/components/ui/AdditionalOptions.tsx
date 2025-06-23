@@ -44,6 +44,9 @@ const AdditionalOptions = ({ selectedServices, onToggleService, selectedPackageS
               className="mr-2 w-9 h-9 border-2 border-becwhite rounded-[5px] appearance-none checked:bg-[url('/images/propositions/checkbox-line.svg')] checked:bg-center checked:bg-no-repeat checked:bg-contain cursor-pointer"
             />
             <span className="flex-grow">{service.name}</span>
+            {service.available != 0 &&
+              <p className="text-sm font-extralight text-center bg-[#585856] text-becwhite py-1 px-6 mr-5 border-1 border-becwhite max-w-[250px]">Залишилось {service.available}</p>
+            }
             <button className={`text-center px-7 py-1 text-xl bg-[#5A5A58] text-becwhite border-2 border-[#CFCFCF] shadow-[inset_-3px_1px_15px_rgba(0,0,0,0.5)] cursor-pointer
                 hover:bg-[#727270] hover:text-white hover:border-white hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-400 ease-out
                 ${awide.className} w-[120px]`}

@@ -1,6 +1,5 @@
 import Image from "next/image"
 
-
 const logos = [
   {src: "/images/sponsors/openlab.png", alt: "openlab"},
   {src: "/images/sponsors/bestshot.png", alt: "openlab"},

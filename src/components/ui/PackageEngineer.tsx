@@ -26,7 +26,7 @@ const PackageEngineer = ({ onChoose, selectedPackageName }: PackageProps) => {
   const isSelected = selectedPackageName === pack1.name;
 
   return (
-    <div className={`py-10 pl-6 pr-30 mt-10 relative max-w-[600px] info_bg border-bec border-3 ${isSelected ? "border_is" : "border_not"}`}>
+    <div className={`py-10 pl-6 pr-30 mt-10 relative max-w-[490px] info_bg border-bec border-3 ${isSelected ? "border_is" : "border_not"}`}>
       <h2 className={`pl-5 text-4xl font-bold text-becwhite mb-4 text-start ${awide.className} leading-[1.3]`}>Engineer</h2>
       <ul className="mb-6">
         {pack1.features.map((feature, index) => (

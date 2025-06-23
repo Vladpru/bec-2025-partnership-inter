@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { forwardRef } from "react";
-import { refPropOrg } from '@/types/types';
 import { Play } from "next/font/google";
 
  const play = Play({

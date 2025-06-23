@@ -8,7 +8,7 @@ const Categories = () => {
   const [arrowsRef, isVisible] = useOnScreen(0.1) as [React.RefObject<HTMLDivElement>, boolean];
   
   return (
-    <section className="mb-50">
+    <section className="mb-50 relative">
       <div className="container">
         <div className="flex justify-between items-start pr-40 pl-40 " ref={arrowsRef}>
           <Image
@@ -16,7 +16,7 @@ const Categories = () => {
             alt="Decorative line 3"
             width={300}
             height={60}
-            className={`transition-opacity duration-1000 ${(isVisible) ? "opacity-100" : "opacity-0"}`}
+            // className={`transition-opacity duration-1000 ${(isVisible) ? "opacity-100" : "opacity-0"}`}
           />
           <div className="flex flex-col text-center justify-center items-center">
             <h3 className="text-center text-becblack border font-bold px-13 py-1 bg-bec">Тема:</h3>
@@ -27,7 +27,7 @@ const Categories = () => {
             alt="Decorative line 3"
             width={300}
             height={60}
-            className={`transition-opacity duration-1000 ${(isVisible) ? "opacity-100" : "opacity-0"}`}
+            // className={`transition-opacity duration-1000 ${(isVisible) ? "opacity-100" : "opacity-0"}`}
           />
         </div>
         <div className="text-xl mt-30">
@@ -80,6 +80,13 @@ const Categories = () => {
         </div>
       </div>
       <CategoriesSlider/>
+      <Image
+        height={60}
+        alt="Decorative line 3"
+        width={400}
+        src="/images/elipses/categ_right.png" 
+        className="absolute top-40 right-0"
+      />
     </section>
   )
 }

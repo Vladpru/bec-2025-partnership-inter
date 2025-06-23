@@ -1,6 +1,5 @@
 import { Audiowide } from 'next/font/google';
 import Image from "next/image"
-import Link from "next/link"
 import HeroBtn from "./ui/Hero-btn"
 
 
@@ -35,7 +34,7 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             className="opacity-45"
             />
         </div>
-        <div className="absolute bottom-22 right-80">
+        <div className="absolute bottom-22 right-90">
             <Image
             src="/images/hero/bottom-right-el.svg" 
             alt="Decorative line 3"
@@ -44,7 +43,7 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             className=""
             />
         </div>
-        <div className="absolute bottom-35 right-65">
+        <div className="absolute bottom-35 right-75">
             <Image
             src="/images/hero/right-el.svg" 
             alt="Decorative line 3"
@@ -53,18 +52,18 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             className="" // animate-pulse
             />
         </div>
-        <div className="absolute right-0">
+        <div className="absolute right-10 top-15">
             <Image
             src="/images/hero/hero-robot.png" 
-            alt="Decorative line 3"
-            width={400}
+            alt="Decorative"
+            width={600}
             height={60}
             className=""
             />
         </div>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
             <div className="space-y-2 z-10">
-                <h2 className="text-3xl uppercase tracking-wider pl-2">Майбутнє за інженерами</h2>
+                <h2 className="text-3xl uppercase tracking-wider pl-2 font-light">Майбутнє за інженерами</h2>
                 <p
                   className={`text-5xl md:text-7xl tracking-wide font-bold text-secondary w-3xl text-bec ${awide.className} leading-[1.3]`}
                   style={{ textShadow: 'inset 0 2px 4px rgba(0,0,0,0.5)' }}

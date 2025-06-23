@@ -1,7 +1,5 @@
-  import { Audiowide, Play } from 'next/font/google';
+  import { Audiowide } from 'next/font/google';
   import Image from 'next/image'
-  import Contacts from './ui/Contacts';
-  import { forwardRef } from 'react';
 
   const awide = Audiowide({
     weight: ['400'],
