@@ -45,54 +45,68 @@ const Contacts = forwardRef<HTMLDivElement, {}>((props, ref) => {
           ))}
         </div>
       </div>
-      <div className="flex mt-30 justify-between px-10 text-center items-center">
-            <div className="flex gap-10 ">
-              <a href="https://www.linkedin.com/company/best-lviv/" target="_blank" rel="noopener noreferrer">
-                <Image 
-                  src="/images/statistics/linkedin.svg"
-                  alt="LinkedIn"
-                  width={50}
-                  height={50}
-                  className=""
-                />
-              </a>
-              <a href="https://t.me/bestlviv" target="_blank" rel="noopener noreferrer">
-                <Image 
-                  src="/images/statistics/tg.svg"
-                  alt="Telegram"
-                  width={50}
-                  height={50}
-                  className=""
-                />
-              </a>
-              <a href="https://www.facebook.com/BEST.Lviv" target="_blank" rel="noopener noreferrer">
-                <Image 
-                  src="/images/statistics/facebook.svg"
-                  alt="Facebook"
-                  width={50}
-                  height={50}
-                  className=""
-                />
-              </a>
-              <a href="https://www.instagram.com/best_lviv/" target="_blank" rel="noopener noreferrer">
-                <Image 
-                  src="/images/statistics/inst.svg"
-                  alt="Instagram"
-                  width={50}
-                  height={50}
-                  className=""
-                />
-              </a>
-            </div>
+      <div className="flex mt-30 justify-between px-10 text-center items-center relative">
+        <div className="flex gap-10 ">
+          <a href="https://www.linkedin.com/company/best-lviv/" target="_blank" rel="noopener noreferrer">
             <Image 
-              src="/images/statistics/best_logo.svg"
-              alt="e"
-              width={120}
+              src="/images/statistics/linkedin.svg"
+              alt="LinkedIn"
+              width={50}
               height={50}
-              className="object-cover mr-65"
+              className=""
             />
-            <p className={`${play.className} text-2xl`}>2025</p>
-          </div>
+          </a>
+          <a href="https://t.me/bestlviv" target="_blank" rel="noopener noreferrer">
+            <Image 
+              src="/images/statistics/tg.svg"
+              alt="Telegram"
+              width={50}
+              height={50}
+              className=""
+            />
+          </a>
+          <a href="https://www.facebook.com/BEST.Lviv" target="_blank" rel="noopener noreferrer">
+            <Image 
+              src="/images/statistics/facebook.svg"
+              alt="Facebook"
+              width={50}
+              height={50}
+              className=""
+            />
+          </a>
+          <a href="https://www.instagram.com/best_lviv/" target="_blank" rel="noopener noreferrer">
+            <Image 
+              src="/images/statistics/inst.svg"
+              alt="Instagram"
+              width={50}
+              height={50}
+              className=""
+            />
+          </a>
+        </div>
+        <Image 
+          src="/images/statistics/best_logo.svg"
+          alt="e"
+          width={120}
+          height={50}
+          className="object-cover mr-65"
+        />
+        <p className={`${play.className} text-2xl`}>2025</p>
+        <Image
+          height={60}
+          width={500}
+          alt="Decorative line 3"
+          src="/images/elipses/org_left.png" 
+          className="absolute bottom-65 -left-15 -z-1"
+        />
+        <Image
+          height={60}
+          width={300}
+          alt="Decorative line 3"
+          src="/images/elipses/add_right.png" 
+          className="absolute -bottom-5 -right-15 -z-1"
+        />
+      </div>
     </section>
   )
 })

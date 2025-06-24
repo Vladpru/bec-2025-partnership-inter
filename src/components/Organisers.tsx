@@ -9,7 +9,7 @@
   const Organisers = () => {
     return (
       <section className='mt-30 mb-7'>
-        <div className="container mb-20">
+        <div className="container mb-20 relative">
           <h1 className="text-center text-4xl text-bec font-black mb-10 uppercase">Про організаторів події</h1>
           <div className="flex justify-around">
             <div className="">
@@ -28,6 +28,20 @@
               студентів Європи.
             </p>
           </div>
+          <Image
+            height={60}
+            width={500}
+            alt="Decorative line 3"
+            src="/images/elipses/org_left.png" 
+            className="absolute -top-80 -left-15 -z-1"
+          />
+          <Image
+            height={60}
+            width={500}
+            alt="Decorative line 3"
+            src="/images/elipses/org_right.png" 
+            className="absolute -top-40 -right-15 -z-1"
+          />
         </div>
         <div className="flex justify-between container pb-20">
           <Image

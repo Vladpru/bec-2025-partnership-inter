@@ -15,24 +15,25 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
         <h1 className="uppercase font-black text-3xl text-bec mb-10">
           Статистика з соцмереж:
         </h1>
-        <div className="">
-          <div className=" relative flex justify-center flex-wrap gap-16">
+        <div className="relative">
+          <div className="relative flex justify-center flex-wrap gap-25">
             {socialData.map((item, i) => (
               <div key={i} className="flex items-center gap-1 text-md font-bold sm:text-base">
-                <Image src={item.icon} alt="icon" width={50} height={50} />
+                <Image src={item.icon} alt="icon" width={60} height={60} />
                 <h1 className="ml-2 text-xl font-black">{item.number}</h1>
                 <h1 className="text-xl">{item.label}</h1>
               </div>
             ))}
-            <Image
-              src="/images/statistics/inst-el.svg" // Шлях до вашого зображення
-              alt="Statistics line"
-              width={900}
-              height={100} // Встановіть висоту відповідно до зображення
-              className="absolute top-10 left-77"
-            />
+            <div className="w-[1000px] h-[320px] absolute top-1 left-61">
+              <Image
+                src="/images/statistics/inst-el.svg" // Шлях до вашого зображення
+                alt="Statistics line"
+                fill
+                className=""
+              />
+            </div>
           </div>
-          <div className="pt-18 space-y-3 text-xl font-extralight">
+          <div className="pt-18 space-y-3 text-2xl font-extralight">
             <p>
               Кількість переглядів наших публікацій під час івентів –{" "}
               <span className="font-semibold text-bec">20.5 тисяч</span>
@@ -46,6 +47,13 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
               <span className="font-semibold text-bec">675</span>
             </p>
           </div>
+           <Image
+            alt="фон"
+            src="/images/elipses/left_inst.png"
+            width={620}
+            height={240}
+            className="absolute -bottom-92 -left-16 z-10"
+          />
         </div>
 
       </div>
@@ -53,7 +61,7 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
         <h1 className="uppercase font-black text-3xl text-bec">
           Статистика івенту 2024
         </h1>
-        <div className="flex gap-2 mt-20 justify-center">
+        <div className="flex gap-2 mt-20 justify-center relative">
           <div className="relative flex flex-col w-[500px] h-[350px]">
             <p className="mb-2 text-lg">РЕЄСТРАЦІЙ <span className="text-bec">199</span></p>
               <p className="mb-2 text-lg">КОМАНД <span className="text-bec">12</span></p>
@@ -89,10 +97,10 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
           </div>
           <Image
             alt="фон"
-            src="/images/elipses/left_inst.png"
-            width={240}
+            src="/images/elipses/statist_right.png"
+            width={620}
             height={240}
-            className="absolute bottom-16 left-0 -z-10"
+            className="absolute -bottom-52 -right-16 -z-1"
           />
         </div>
       </div>

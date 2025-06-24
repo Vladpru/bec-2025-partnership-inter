@@ -25,16 +25,16 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
   const total = basicPackagePrice + selectedPackagePrice + totalServicesPrice;
 
   return (
-    <div className="container pt-10">
-      <h1 className="text-center text-4xl text-bec font-black mb-8 uppercase">Кошик</h1>
+    <div className="container pt-40 relative">
+      <h1 className="text-center text-5xl text-bec font-black mb-8 uppercase">Кошик</h1>
       <div className="relative flex justify-center mt-10 p-16 gap-20 z-10">
-        <div className="flex justify-center absolute top-0">
+        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1150px] -z-10">
           <Image 
             src="/images/propositions/bg-cart.png"
             alt=""
             width={1150}
             height={200}
-            className="object-cover -z-10"
+            className="object-cover"
           />
         </div>
         <div className="mb-4 w-[600px]">
@@ -63,23 +63,25 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
           <div className="mb-4">
             <h3 className="text-bec font-extrabold mb-2 mt-15 text-3xl uppercase">Додаткові пропозиції</h3>
             {customServices.length ? (
-              customServices.map(name => (
-                <div key={name} className="relative flex justify-between mb-5 border-b border-becwhite pl-2 pr-10">
-                  <span>{name}</span>
-                  <span className={`${awide.className}`}>{servicesPrice[name]}$</span>
-                  <button
-                    onClick={() => onRemoveService(name)}
-                    className="absolute bottom-[-1px] right-1 text-white text-4xl cursor-pointer font-light hover:scale-125 transition-all ease-in"
-                  >
-                    ×
-                  </button>
-                </div>
-              ))
+              <div className="max-h-[290px] overflow-y-auto pr-2 custom-scroll">
+                {customServices.map(name => (
+                  <div key={name} className="relative flex justify-between mb-5 border-b border-becwhite pl-2 pr-10">
+                    <span>{name}</span>
+                    <span className={`${awide.className}`}>{servicesPrice[name]}$</span>
+                    <button
+                      onClick={() => onRemoveService(name)}
+                      className="absolute bottom-[-1px] right-1 text-white text-4xl cursor-pointer font-light hover:scale-125 transition-all ease-in"
+                    >
+                      ×
+                    </button>
+                  </div>
+                ))}
+              </div>
             ) : (
               <div className="pl-2 text-becwhite">Немає</div>
             )}
           </div>
-          <div className="flex justify-end gap-7 text-3xl font-extrabold  pt-3 mt-3">
+          <div className="flex justify-end gap-7 text-3xl font-extrabold mt-3">
             <span className="text-bec">TOTAL:</span>
             <span className={`${awide.className} text-shadow-lg shadow-bec`}>{total}$</span>
           </div>
@@ -112,6 +114,34 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
           </div>
         </div>
       </div>
+      <Image
+        height={60}
+        width={300}
+        alt="Decorative line 3"
+        src="/images/propositions/cart-left.svg" 
+        className="absolute top-15 -left-15 -z-1"
+      />
+      <Image
+        height={60}
+        width={350}
+        alt="Decorative line 3"
+        src="/images/propositions/cart-right.svg" 
+        className="absolute top-15 -right-15 -z-1"
+      />
+      <Image
+        height={60}
+        width={500}
+        alt="Decorative line 3"
+        src="/images/elipses/about_right.png" 
+        className="absolute top-10 -right-15 -z-1"
+      />
+      <Image
+        height={60}
+        width={500}
+        alt="Decorative line 3"
+        src="/images/elipses/about_left.png" 
+        className="absolute top-30 -left-15 -z-1"
+      />
     </div>
   )
 }

@@ -2,6 +2,8 @@ import addOptions from '../../data/additionals'
 import { Audiowide } from 'next/font/google';
 import { AdditionalOptionsProps } from '@/types/types';
 import { useRef, useState } from 'react';
+import Image from 'next/image';
+import Modal from './Modal';
 
 const awide = Audiowide({
   weight: ['400'],
@@ -24,7 +26,7 @@ const AdditionalOptions = ({ selectedServices, onToggleService, selectedPackageS
   };
 
   return (
-    <div className="mt-25">
+    <div className="mt-25 relative">
       <h2 className="text-bec text-center mb-15 text-3xl font-black">
         ДОДАТКОВІ ПРОПОЗИЦІЇ
       </h2>
@@ -59,24 +61,38 @@ const AdditionalOptions = ({ selectedServices, onToggleService, selectedPackageS
               onClick={() => handleToggle(service.id)}
             >i</span>
             {openTooltipId === service.id && (
-            <div className="fixed inset-0 flex items-center justify-center z-10" onClick={handleClickOutside}>
-              <div className="relative extra_bg text-becwhite text-sm border-3 border-becwhite p-6 max-w-md w-full shadow-lg"
-              ref={modalRef}
-              onClick={(e) => e.stopPropagation()}>
-              <button
-                onClick={() => setOpenTooltipId(null)}
-                className="absolute top-1 right-3 text-white text-4xl cursor-pointer font-extralight hover:scale-125 transition-all ease-in"
-              >
-                ×
-              </button>
-              <h2 className='text-lg font-bold'>{service.name}</h2>
-              <p className='text-base'>{service.description}</p>
-              </div>
-            </div>
+              <Modal>
+                <div className="extra_bg text-becwhite text-sm border-3 border-becwhite p-6 max-w-md w-full shadow-lg relative z-[1000]"
+                    ref={modalRef}
+                    onClick={(e) => e.stopPropagation()}>
+                  <button
+                    onClick={() => setOpenTooltipId(null)}
+                    className="absolute top-1 right-3 text-white text-4xl cursor-pointer font-extralight hover:scale-125 transition-all ease-in"
+                  >
+                    ×
+                  </button>
+                  <h2 className='text-lg font-bold'>{service.name}</h2>
+                  <p className='text-base'>{service.description}</p>
+                </div>
+              </Modal>
             )}
           </div>
         ))}
       </div>
+      <Image
+        height={60}
+        width={600}
+        alt="Decorative line 3"
+        src="/images/elipses/about_right.png" 
+        className="absolute -top-40 -right-15 -z-1"
+      />
+      <Image
+        height={60}
+        width={600}
+        alt="Decorative line 3"
+        src="/images/elipses/about_left.png" 
+        className="absolute top-10 -left-15 -z-1"
+      />
     </div>
   );
 }

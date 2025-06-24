@@ -9,7 +9,7 @@ import Propositions from "@/components/Propositions";
 import Sponsors from "@/components/Sponsors";
 import Organisers from "@/components/Organisers";
 import { useRef } from "react";
-import Contacts from "@/components/ui/Contacts";
+import Contacts from "@/components/Contacts";
 
 export default function Home() {
 
