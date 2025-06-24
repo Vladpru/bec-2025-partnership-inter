@@ -7,7 +7,7 @@ const play = Play({
   subsets: ['latin'],
 });
 
-const Contacts = forwardRef<HTMLDivElement, Record<string, never>>((props, ref) => {
+const Contacts = forwardRef<HTMLDivElement, object>((props, ref) => {
   const teamMembers = [
     {
       name: "Соломія Ногаль",

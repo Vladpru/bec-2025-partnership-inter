@@ -10,7 +10,7 @@ import packages from "@/data/packages"
 import addOptions from "@/data/additionals"
 import { SelectedPackage } from "@/types/types"
 
-const Propositions = forwardRef<HTMLDivElement, Record<string, never>>((props, ref) => {
+const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [selectedPackages, setSelectedPackages] = useState<SelectedPackage[]>([]);
 

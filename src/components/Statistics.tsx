@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { forwardRef } from "react";
 
-const Statistics = forwardRef<HTMLElement, Record<string, never>>((props, ref) => {
+const Statistics = forwardRef<HTMLElement, object>((props, ref) => {
   const socialData = [
     { icon: "/images/statistics/inst.svg", number: "3400+", label: "підписників" },
     { icon: "/images/statistics/tg.svg", number: "900+", label: "підписників" },

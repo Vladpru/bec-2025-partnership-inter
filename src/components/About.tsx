@@ -5,7 +5,7 @@ import 'swiper/css';
 import Image from 'next/image';
 import { forwardRef } from 'react';
 
-const About = forwardRef<HTMLDivElement, void>((_, ref) => {
+const About = forwardRef<HTMLDivElement, object>((_, ref) => {
 
   const photosDict = [
     { img: "/images/about/ab_slide5.png", alt: "slide1" },
