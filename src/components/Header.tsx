@@ -1,7 +1,7 @@
 import { HeaderProps } from '@/types/types';
 import { Exo_2 } from 'next/font/google';
 import Image from 'next/image';
-import { RefObject, useState } from 'react';
+import { RefObject } from 'react';
 
 const exo2 = Exo_2({
   weight: ['400'],
