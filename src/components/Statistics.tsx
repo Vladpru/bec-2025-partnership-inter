@@ -1,8 +1,7 @@
-import Image from "next/image"
+import Image from "next/image";
 import { forwardRef } from "react";
 
-const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
-
+const Statistics = forwardRef<HTMLElement, Record<string, never>>((props, ref) => {
   const socialData = [
     { icon: "/images/statistics/inst.svg", number: "3400+", label: "підписників" },
     { icon: "/images/statistics/tg.svg", number: "900+", label: "підписників" },
@@ -26,7 +25,7 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
             ))}
             <div className="w-[1000px] h-[320px] absolute top-1 left-61">
               <Image
-                src="/images/statistics/inst-el.svg" // Шлях до вашого зображення
+                src="/images/statistics/inst-el.svg"
                 alt="Statistics line"
                 fill
                 className=""
@@ -47,7 +46,7 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
               <span className="font-semibold text-bec">675</span>
             </p>
           </div>
-           <Image
+          <Image
             alt="фон"
             src="/images/elipses/left_inst.png"
             width={620}
@@ -55,8 +54,8 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
             className="absolute -bottom-92 -left-16 z-10"
           />
         </div>
-
       </div>
+
       <div className="pt-20 container">
         <h1 className="uppercase font-black text-3xl text-bec">
           Статистика івенту 2024
@@ -64,18 +63,20 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
         <div className="flex gap-2 mt-20 justify-center relative">
           <div className="relative flex flex-col w-[500px] h-[350px]">
             <p className="mb-2 text-lg">РЕЄСТРАЦІЙ <span className="text-bec">199</span></p>
-              <p className="mb-2 text-lg">КОМАНД <span className="text-bec">12</span></p>
-              <p className="text-lg">УЧАСНИКІВ <span className="text-bec">48</span></p>
-              <Image
-                src="/images/statistics/left-block.svg"
-                alt="фон"
-                width={40}
-                height={40}
-                className="absolute bottom-15 left-0 w-full h-full -z-10"
-              />
-            </div>
+            <p className="mb-2 text-lg">КОМАНД <span className="text-bec">12</span></p>
+            <p className="text-lg">УЧАСНИКІВ <span className="text-bec">48</span></p>
+            <Image
+              src="/images/statistics/left-block.svg"
+              alt="фон"
+              width={40}
+              height={40}
+              className="absolute bottom-15 left-0 w-full h-full -z-10"
+            />
+          </div>
           <div className="relative flex flex-col w-[500px] justify-center pt-17">
-            <p className="mb-3 text-lg px-10 leading-tight">ЗАГАЛЬНА ОЦІНКА ВІД ПАРТНЕРІВ ПРОВЕДЕННЯ ВЕСЬ 2024</p>
+            <p className="mb-3 text-lg px-10 leading-tight">
+              ЗАГАЛЬНА ОЦІНКА ВІД ПАРТНЕРІВ ПРОВЕДЕННЯ ВЕСЬ 2024
+            </p>
             <div className="relative h-5 mx-10 border border-bec bg-becblack">
               <div className="absolute inset-0 bg-bec" style={{ width: '95%' }}></div>
               <div className="absolute inset-0 flex items-center justify-center text-sm font-black text-becblack">
@@ -105,7 +106,9 @@ const Statistics = forwardRef<HTMLElement, {}>((props, ref) => {
         </div>
       </div>
     </section>
-  )
-})
+  );
+});
 
-export default Statistics
+Statistics.displayName = 'Statistics';
+
+export default Statistics;

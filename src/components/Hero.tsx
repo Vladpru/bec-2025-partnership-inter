@@ -2,7 +2,6 @@ import { Audiowide } from 'next/font/google';
 import Image from "next/image"
 import HeroBtn from "./ui/Hero-btn"
 
-
 const awide = Audiowide({
   weight: ['400'],
   subsets: ['latin'],

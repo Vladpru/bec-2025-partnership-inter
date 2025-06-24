@@ -5,13 +5,14 @@ import 'swiper/css';
 import Image from 'next/image';
 import { forwardRef } from 'react';
 
-const About = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const About = forwardRef<HTMLDivElement, void>((_, ref) => {
 
   const photosDict = [
-    { img: "/images/about/ab_slide1.png", alt: "slide1" },
-    { img: "/images/about/ab_slide2.png", alt: "slide2" },
-    { img: "/images/about/ab_slide3.png", alt: "slide3" },
-    { img: "/images/about/ab_slide4.png", alt: "slide4" },
+    { img: "/images/about/ab_slide5.png", alt: "slide1" },
+    { img: "/images/about/ab_slide1.png", alt: "slide2" },
+    { img: "/images/about/ab_slide2.png", alt: "slide3" },
+    { img: "/images/about/ab_slide3.png", alt: "slide4" },
+    { img: "/images/about/ab_slide4.png", alt: "slide5" },
   ]
 
   return (
@@ -70,5 +71,6 @@ const About = forwardRef<HTMLDivElement, {}>((props, ref) => {
     </section>
   )
 })
+About.displayName = "About"; 
 
 export default About

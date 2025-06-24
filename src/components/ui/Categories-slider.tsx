@@ -29,10 +29,10 @@ const CategoriesSlider = () => {
         modules={[Autoplay]}
         spaceBetween={10}
         loop={true}
-        // autoplay={{
-        //   delay: 2000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         className="swiper_skl"
         slidesPerView={3}
       >
