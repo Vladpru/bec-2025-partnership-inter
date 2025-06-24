@@ -9,13 +9,13 @@ const exo2 = Exo_2({
 });
 
 const Header = ({ scrollToSection, refs }: HeaderProps) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuClick = (ref?: RefObject<HTMLElement | null>) => {
     if (ref && typeof scrollToSection === 'function') {
       scrollToSection(ref);
     }
-    setMenuOpen(false);
+    // setMenuOpen(false);
   };
 
   return (

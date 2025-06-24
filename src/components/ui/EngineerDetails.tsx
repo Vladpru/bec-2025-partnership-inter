@@ -17,11 +17,6 @@ const EngineerDetails = ({ onClose, pack }: DetailsProps) => {
     }
   };
 
-  const closeWithAnimation = () => {
-    setShow(false);
-    setTimeout(onClose, 200); // дає завершити анімацію
-  };
-
   useEffect(() => {
     setTimeout(() => setShow(true), 10);
   }, []);

@@ -5,7 +5,7 @@ import CategoriesSlider from "./ui/Categories-slider";
 
 const Categories = () => {
   
-  const [arrowsRef, isVisible] = useOnScreen(0.1) as [React.RefObject<HTMLDivElement>, boolean];
+  const [arrowsRef] = useOnScreen(0.1) as [React.RefObject<HTMLDivElement>, boolean];
   
   return (
     <section className="mb-50 relative">

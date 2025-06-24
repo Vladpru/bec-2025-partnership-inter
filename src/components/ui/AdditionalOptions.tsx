@@ -19,11 +19,6 @@ const AdditionalOptions = ({ selectedServices, onToggleService, selectedPackageS
   };
 
   const modalRef = useRef<HTMLDivElement>(null);
-  const handleClickOutside = (event: React.MouseEvent) => {
-    if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-      setOpenTooltipId(null);
-    }
-  };
 
   return (
     <div className="mt-25 relative">
