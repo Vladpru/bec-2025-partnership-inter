@@ -19,7 +19,7 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
   };
 
   return (
-    <header className={`${exo2.className} font-audiowide bg-header fixed top-0 left-0 w-full z-10 backdrop-blur`}>
+    <header className={`${exo2.className} font-audiowide bg-header fixed top-0 left-0 w-full z-20 backdrop-blur`}>
       <div className="container pt-7 pb-7 flex text-center items-center justify-between">
         <div>
           <a onClick={() => handleMenuClick(refs?.topRef)} className="cursor-pointer">

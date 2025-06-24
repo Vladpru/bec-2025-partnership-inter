@@ -61,7 +61,7 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             />
         </div>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-            <div className="space-y-2 z-10">
+            <div className="space-y-2 z-1">
                 <h2 className="text-3xl uppercase tracking-wider pl-2 font-light">Майбутнє за інженерами</h2>
                 <p
                   className={`text-5xl md:text-7xl tracking-wide font-bold text-secondary w-3xl text-bec ${awide.className} leading-[1.3]`}
