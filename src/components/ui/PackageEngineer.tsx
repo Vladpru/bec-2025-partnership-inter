@@ -30,12 +30,12 @@ const PackageEngineer = ({ onChoose, selectedPackageName }: PackageProps) => {
 
   return (
     <div
-      className={`py-10 pl-6 pr-30 mt-10 relative max-w-[490px] info_bg border-bec border-3 cursor-pointer transition-all duration-300 ease-in-out
+      className={`py-10 pl-6 pr-30 mt-10 relative max-w-[490px] 3xl:max-w-[540px] 4xl:max-w-[620px] info_bg border-bec border-3 cursor-pointer transition-all duration-300 ease-in-out
         ${isSelected ? 'border_is' : 'border_not'}
         `}
       onClick={handleChooseClick}
     >
-      <h2 className={`pl-5 text-4xl font-bold text-becwhite mb-4 text-start ${awide.className} leading-[1.3]`}>
+      <h2 className={`pl-5 text-4xl 4xl:text-5xl font-bold text-becwhite mb-4 text-start ${awide.className} leading-[1.3]`}>
         Engineer
       </h2>
 
@@ -48,12 +48,12 @@ const PackageEngineer = ({ onChoose, selectedPackageName }: PackageProps) => {
               width={40}
               height={40}
             />
-            <span className="flex items-center">{feature}</span>
+            <span className="flex items-center 4xl:text-[22px]">{feature}</span>
           </li>
         ))}
       </ul>
 
-      <p className="text-base font-extralight text-center text-becwhite mb-4 py-2 border-1 border-becwhite px-3 max-w-[250px]">
+      <p className="text-base 4xl:text-xl font-extralight text-center text-becwhite mb-4 py-2 border-1 border-becwhite px-3 max-w-[250px]">
         Залишилось 2
       </p>
 
@@ -68,7 +68,7 @@ const PackageEngineer = ({ onChoose, selectedPackageName }: PackageProps) => {
 
       <div className="absolute top-6 right-4">
         <span
-          className="flex items-center justify-center text-sm font-bold text-becblack bg-becwhite rounded-full w-5 h-5 cursor-pointer hover:scale-125 transition-all ease-in"
+          className="flex items-center justify-center text-sm font-bold text-becblack bg-becwhite rounded-full w-5 h-5 4xl:w-7 4xl:h-7 4xl:text-base cursor-pointer hover:scale-125 transition-all ease-in"
           onClick={e => handleInfoClick(e)}
         >
           i

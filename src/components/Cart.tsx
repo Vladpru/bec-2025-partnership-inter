@@ -59,20 +59,20 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
     <div className="container pt-40 relative">
       <h1 className="text-center text-5xl text-bec font-black mb-8 uppercase">Кошик</h1>
       <div className="relative flex justify-center mt-10 p-16 gap-20 z-10">
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1150px] -z-10">
+        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1150px] 4xl:w-[1350px] -z-10">
           <Image 
             src="/images/propositions/bg-cart.png"
             alt=""
             width={1150}
             height={200}
-            className="object-cover"
+            className="object-cover 4xl:w-[1350px]"
           />
         </div>
-        <div className="mb-4 w-[600px]">
+        <div className="mb-4 w-[600px] 4xl:w-[700px]">
           <div>
-            <h3 className="text-bec font-extrabold mb-2 text-3xl uppercase">Пакети</h3>
-            <div className="flex justify-between mb-5 border-b border-becwhite pl-2 pr-10">
-              <span className='font-bold text-2xl'>{basicPackageName}</span>
+            <h3 className="text-bec font-extrabold mb-2 4xl:mb-4 text-3xl uppercase 4xl:text-4xl">Пакети</h3>
+            <div className="flex justify-between mb-5 border-b border-becwhite pl-2 pr-10 4xl:text-3xl">
+              <span className='font-bold text-2xl 4xl:text-3xl'>{basicPackageName}</span>
               <span className={`${awide.className}`}>{basicPackagePrice}$</span>
             </div>
             {selectedPackages
@@ -91,15 +91,15 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
             ))}
           </div>
           <div className="mb-4">
-            <h3 className="text-bec font-extrabold mb-2 mt-15 text-3xl uppercase">Додаткові пропозиції</h3>
+            <h3 className="text-bec font-extrabold mb-2 4xl:mb-4 mt-15 text-3xl uppercase 4xl:text-4xl">Додаткові пропозиції</h3>
             {customServices.length ? (
               <div
                 className={`overflow-y-auto pr-2 custom-scroll
-                  ${selectedPackages.length >= 1 ? 'max-h-[200px]' : 'max-h-[280px]'}
+                  ${selectedPackages.length >= 1 ? 'max-h-[200px] 4xl:max-h-[270px]' : 'max-h-[280px] 4xl:max-h-[350px]'}
                 `}
               >
                 {customServices.map(name => (
-                  <div key={name} className="relative flex justify-between mb-5 border-b border-becwhite pl-2 pr-10">
+                  <div key={name} className="relative flex justify-between mb-5 border-b border-becwhite pl-2 pr-10 4xl:text-2xl">
                     <span>{name}</span>
                     <span className={`${awide.className}`}>{servicesPrice[name]}$</span>
                     <button
@@ -120,7 +120,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
             </div>
           </div>
         </div>
-        <div className="max-w-[350px] z-2">
+        <div className="max-w-[350px] 4xl:max-w-[400px] z-2">
           <form className="mt-6" onSubmit={handleSubmit}>
             <input
               type="email"
@@ -148,7 +148,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
 
           <div className="mt-6 text-sm text-becwhite">
             <h4 className="text-bec font-extrabold text-3xl uppercase">Акції</h4>
-            <ul className="mt-2">
+            <ul className="mt-2 4xl:text-lg">
               <li><span className="text-bec">-10%</span> при купівлі 3-х пакетів.</li>
               <li><span className="text-bec">-5%</span> для компаній–партнерів EBEC’2021 та/або BEC’2023 (застосовується після узгодження з організаторами).</li>              
               <li><span className="text-orange-500">-10%</span>для всіх партнерів, що працюють у сфері military та military–tech (застосовується після узгодження з організаторами).</li>

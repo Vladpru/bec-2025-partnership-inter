@@ -9,8 +9,8 @@
   const Organisers = () => {
     return (
       <section className='mt-30 mb-7'>
-        <div className="container mb-20 relative">
-          <h1 className="text-center text-4xl text-bec font-black mb-10 uppercase">Про організаторів події</h1>
+        <div className="container mb-20 relative 4xl:mb-40">
+          <h1 className="text-center text-4xl text-bec font-black mb-10 uppercase 3xl:text-[42px] 4xl:text-5xl">Про організаторів події</h1>
           <div className="flex justify-around">
             <div className="">
               <Image
@@ -18,10 +18,10 @@
                 alt="e"
                 width={300}
                 height={100}
-                className="object-cover"
+                className="object-cover 3xl:w-[350px] 4xl:w-[400px]"
               />
             </div>
-            <p className='max-w-[600px] text-lg'>
+            <p className='max-w-[600px] text-lg 3xl:text-xl 3xl:mt-10 4xl:text-2xl 4xl:max-w-[700px]'>
               <span className='font-bold'>BEST Lviv (Board of European Students of Technology)</span> – осередок міжнародної неприбуткової
               громадської організації, який об’єднує студентів технічних спеціальностей. Нашою місією
               є розвиток студентів через обмін знаннями та співпраці компаній, університетів та 
@@ -49,7 +49,7 @@
             alt="e"
             width={600}
             height={100}
-            className="object-cover ml-10"
+            className="object-cover ml-10 3xl:w-[650px] 4xl:w-[750px]"
           />
           <div className="flex flex-col gap-10 w-[500px] justify-center text-center mr-30">
             <div className="flex flex-col gap-5">

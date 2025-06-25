@@ -8,7 +8,7 @@ const Categories = () => {
   const [arrowsRef] = useOnScreen(0.1) as [React.RefObject<HTMLDivElement>, boolean];
   
   return (
-    <section className="mb-50 relative">
+    <section className="mb-50 relative 4xl:mt-20">
       <div className="container">
         <div className="flex justify-between items-start pr-40 pl-40 " ref={arrowsRef}>
           <Image
@@ -30,47 +30,47 @@ const Categories = () => {
             className="3xl:w-[350] 4xl:w-[400]"
           />
         </div>
-        <div className="text-xl mt-30">
-          <h1 className="uppercase text-center text-4xl font-black text-bec mt-15 mb-15">категорії змагань</h1>
+        <div className="text-xl mt-30 4xl:mt-40">
+          <h1 className="uppercase text-center text-4xl font-black text-bec mt-15 mb-15 3xl:text-[42px] 4xl:text-5xl">Категорії змагань</h1>
           <div className="flex font-light justify-between">
-            <div className="flex max-w-[600px]">
+            <div className="flex max-w-[600px] 3xl:max-w-[700px] 4xl:max-w-[800px]">
               <Image
                 src="/images/categories/text-divider.svg" 
                 alt="Decorative line 3"
                 width={75}
                 height={65}
-                className=""
+                className="3xl:w-[85px] 4xl:w-[95px]"
               />
               <div className="flex flex-col justify-between">
-                <h1 className="text-3xl font-black uppercase ">Team design</h1>
-                <p className="pt-">
+                <h1 className="text-3xl font-black uppercase 3xl:text-4xl 4xl:text-5xl">Team design</h1>
+                <p className="3xl:text-[22px] 4xl:text-[25px] text-xl">
                   Практична інженерна категорія, у якій команди студентів вирішують реальні 
                   прикладні задачі у сфері embedded-систем, IoT, електроніки та механіки, 
                   створюючи робочі прототипи пристроїв.
                 </p>
-                <p>
+                <p className="3xl:text-[22px] 4xl:text-[25px] text-xl">
                   <span className="font-bold">Приклад:</span> Розробити функціональну модель мінного тральщика для пошуку 
                   та розмінування морських мін, який може керуватися в ручному та автоматичному режимі
                 </p>
               </div>
             </div>
-            <div className="flex max-w-[700px]">
+            <div className="flex max-w-[700px] 3xl:max-w-[800px] 4xl:max-w-[900px]">
               <Image
                 src="/images/categories/text-divider.svg" 
                 alt="Decorative line 3"
                 width={75}
                 height={60}
-                className=""
+                className="3xl:w-[85px] 4xl:w-[95px]"
               />
               <div className="flex flex-col justify-between">
-                <h1 className="text-3xl font-black uppercase pb-1">Innovative design</h1>
-                <p className="">
+                <h1 className="text-3xl font-black uppercase 3xl:text-4xl 4xl:text-5xl">Innovative design</h1>
+                <p className="3xl:text-[22px] 4xl:text-[25px] text-xl">
                   Концептуальна категорія, що орієнтована на креативні інженерні ідеї. Команди 
                   пропонують абсолютно нові проєктні рішення для актуальних проблем, які потребують 
                   розв&apos;язання. Таким чином учасники у своїх проєктах демонструють інноваційний підхід, 
                   його переваги та реалістичність втілення, використовуючи креслення або 3D-моделі.
                 </p>
-                <p>
+                <p className="3xl:text-[22px] 4xl:text-[25px] text-xl">
                   <span className="font-bold">Приклад:</span> Розробити концепцію «розумного вулика» з датчиками температури, вологості та 
                   шуму, що передає дані бджоляру в реальному часі на смартфон або інший пристрій.
                 </p>

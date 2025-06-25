@@ -23,7 +23,7 @@ const PackageBasic = () => {
   return (
     <div className="p-10 border-4 border-bec mx-auto mt-10 relative max-w-[760px] info_bg">
       <h2 className={`text-4xl font-bold text-becwhite mb-4 text-start ${awide.className} leading-[1.3]`}>Basic</h2>
-      <p className="text-base font-extralight text-center text-becwhite mb-4 py-2 border-1 border-becwhite px-3 max-w-[250px]">Цей пакет є обов&apos;язковим</p>
+      <p className="text-base font-extralight text-center text-becwhite mb-4 py-2 border-1 border-becwhite px-3 max-w-[250px] 4xl:max-w-[300px] 4xl:text-xl">Цей пакет є обов&apos;язковим</p>
       <ul className="mb-6">
         {pack1.features.map((feature, index) => (
           <li key={index} className="text-lg flex font-extralight justify-start">
@@ -34,7 +34,7 @@ const PackageBasic = () => {
               height={40}
               className=""
             />
-            <span className='flex items-center'>{feature}</span>
+            <span className='flex items-center 4xl:text-[22px]'>{feature}</span>
           </li>
         ))}
       </ul>
@@ -46,7 +46,7 @@ const PackageBasic = () => {
       </div>
       <div className="absolute top-6 right-4">
         <span
-          className="flex items-center justify-center text-sm font-bold text-becblack bg-becwhite rounded-full w-5 h-5 cursor-pointer hover:scale-125 transition-all ease-in"
+          className="flex items-center justify-center text-sm font-bold text-becblack bg-becwhite rounded-full w-5 h-5 4xl:w-7 4xl:h-7 4xl:text-base cursor-pointer hover:scale-125 transition-all ease-in"
           onClick={handleInfoClick}
         >
           i

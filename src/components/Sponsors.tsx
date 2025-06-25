@@ -16,7 +16,7 @@ const logos = [
 const Sponsors = () => {
   return (
     <section className="container">
-      <h2 className="text-center text-bec text-4xl font-extrabold mb-10">
+      <h2 className="text-center text-bec text-4xl font-extrabold mb-10 3xl:text-[42px] 4xl:text-5xl 4xl:mb-15">
         НАС ПІДТРИМУЮТЬ
       </h2>
       <div className="flex flex-col gap-8 justify-center items-center">

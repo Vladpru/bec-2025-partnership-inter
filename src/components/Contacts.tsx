@@ -35,28 +35,29 @@ const Contacts = forwardRef<HTMLDivElement, object>((props, ref) => {
   return (
     <section ref={ref} className="pb-7 scroll-m-28">
       <div className="container">
-        <h1 className="text-center text-4xl text-bec font-black mb-10 uppercase">
+        <h1 className="text-center text-4xl text-bec font-black mb-10 uppercase 3xl:text-[42px] 4xl:text-5xl">
           Контакти
         </h1>
         <div className="flex justify-around">
           {teamMembers.map((member, index) => (
-            <div key={index} className="flex flex-col items-center w-[360px] text-center">
+            <div key={index} className="flex flex-col items-center w-[360px] 4xl:w-[420px] text-center">
               <Image
                 src={member.src}
                 alt="person"
                 width={300}
                 height={600}
+                className="4xl:w-[400px]"
               />
               <h1 className="text-2xl uppercase mt-3 w-[300px]">{member.role}</h1>
               <Image
                 src="/images/organisers/card_el.svg"
-                alt="solomia"
+                alt="pp"
                 width={300}
                 height={50}
               />
-              <h1 className="text-3xl mt-3 font-black uppercase">{member.name}</h1>
-              <p><a href={`mailto:${member.email}`} className="underline text-xl">{member.email}</a></p>
-              <p className="mt-2"><a href={`tel:${member.phone}`} className="text-xl">{member.phone}</a></p>
+              <h1 className="text-3xl mt-3 font-black uppercase 4xl:text-4xl">{member.name}</h1>
+              <p><a href={`mailto:${member.email}`} className="underline text-xl 4xl:text-2xl">{member.email}</a></p>
+              <p className="mt-2"><a href={`tel:${member.phone}`} className="text-xl 4xl:text-2xl">{member.phone}</a></p>
             </div>
           ))}
         </div>
