@@ -9,7 +9,7 @@ const Interr = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BEC'2025",
+  title: "Partnership BEC'2025",
   description: "",
 };
 
@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/Bec-logo.svg" />
+      </head>
       <body
         className={Interr.className}
         cz-shortcut-listen="true"

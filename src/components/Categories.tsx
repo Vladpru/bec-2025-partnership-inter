@@ -16,18 +16,18 @@ const Categories = () => {
             alt="Decorative line 3"
             width={300}
             height={60}
-            // className={`transition-opacity duration-1000 ${(isVisible) ? "opacity-100" : "opacity-0"}`}
+            className="3xl:w-[350] 4xl:w-[400]"
           />
           <div className="flex flex-col text-center justify-center items-center">
-            <h3 className="text-center text-becblack border font-bold px-13 py-1 bg-bec">Тема:</h3>
-            <h1 className="font-black text-4xl mt-2">Повоєнне відновлення</h1>
+            <h3 className="text-center text-becblack border font-bold px-13 py-1 bg-bec 3xl:text-3xl 3xl:px-15 3xl:py-2 4xl:text-4xl">Тема:</h3>
+            <h1 className="font-black text-4xl mt-2 4xl:text-[44px]">Повоєнне відновлення</h1>
           </div>
           <Image
             src="/images/categories/right-arrow.svg" 
             alt="Decorative line 3"
             width={300}
             height={60}
-            // className={`transition-opacity duration-1000 ${(isVisible) ? "opacity-100" : "opacity-0"}`}
+            className="3xl:w-[350] 4xl:w-[400]"
           />
         </div>
         <div className="text-xl mt-30">

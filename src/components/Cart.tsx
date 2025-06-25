@@ -2,7 +2,8 @@
 import { CartProps } from '@/types/types';
 import { Audiowide } from 'next/font/google'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import emailjs from "@emailjs/browser";
 
 const awide = Audiowide({
   weight: ['400'],
@@ -13,7 +14,6 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
 
   const basicPackageName = "Basic";
   const basicPackagePrice = packagesPrice[basicPackageName] || 0;
-
   const selectedPackage = selectedPackages[0];
   const selectedPackagePrice = selectedPackage?.name ? packagesPrice[selectedPackage.name] || 0 : 0;
 
@@ -21,9 +21,40 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
     (sum, name) => sum + (servicesPrice[name] || 0),
     0
   );
-
   const total = basicPackagePrice + selectedPackagePrice + totalServicesPrice;
 
+  const [companyName, setCompanyName] = useState("");
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    emailjs.init("_8KlxS0-6bbPQMhDy");
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const templateParams = {
+        smth: customServices.join(", ") || "Немає додаткових послуг",
+        company_email: email
+      };
+
+      const res = await emailjs.send(
+        "service_u8kyhtg",
+        "template_jti1nou",
+        templateParams,
+        "_8KlxS0-6bbPQMhDy"
+      );
+
+      console.log("Email sent:", res.status, res.text);
+      alert("Дякуємо! Ми зв'яжемося з вами найближчим часом.");
+      setCompanyName("");
+      setEmail("");
+    } catch (error: any) {
+      console.error("Email sending error:", error?.text || error);
+      alert("Помилка надсилання! " + (error?.text || "Спробуйте ще раз."));
+    }
+  };
   return (
     <div className="container pt-40 relative">
       <h1 className="text-center text-5xl text-bec font-black mb-8 uppercase">Кошик</h1>
@@ -38,13 +69,12 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
           />
         </div>
         <div className="mb-4 w-[600px]">
-          <div className="">
+          <div>
             <h3 className="text-bec font-extrabold mb-2 text-3xl uppercase">Пакети</h3>
             <div className="flex justify-between mb-5 border-b border-becwhite pl-2 pr-10">
               <span className='font-bold text-2xl'>{basicPackageName}</span>
               <span className={`${awide.className}`}>{basicPackagePrice}$</span>
             </div>
-            {/* Додатковий пакет — опціональний */}
             {selectedPackages
               .filter(pkg => pkg.name !== basicPackageName)
               .map(pkg => (
@@ -63,7 +93,11 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
           <div className="mb-4">
             <h3 className="text-bec font-extrabold mb-2 mt-15 text-3xl uppercase">Додаткові пропозиції</h3>
             {customServices.length ? (
-              <div className="max-h-[290px] overflow-y-auto pr-2 custom-scroll">
+              <div
+                className={`overflow-y-auto pr-2 custom-scroll
+                  ${selectedPackages.length >= 1 ? 'max-h-[200px]' : 'max-h-[280px]'}
+                `}
+              >
                 {customServices.map(name => (
                   <div key={name} className="relative flex justify-between mb-5 border-b border-becwhite pl-2 pr-10">
                     <span>{name}</span>
@@ -80,26 +114,34 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
             ) : (
               <div className="pl-2 text-becwhite">Немає</div>
             )}
-          </div>
-          <div className="flex justify-end gap-7 text-3xl font-extrabold mt-3">
-            <span className="text-bec">TOTAL:</span>
-            <span className={`${awide.className} text-shadow-lg shadow-bec`}>{total}$</span>
+            <div className="flex justify-end gap-7 text-3xl font-extrabold mt-3">
+              <span className="text-bec">TOTAL:</span>
+              <span className={`${awide.className} text-shadow-lg shadow-bec`}>{total}$</span>
+            </div>
           </div>
         </div>
         <div className="max-w-[350px] z-2">
-          <form className="mt-6">
+          <form className="mt-6" onSubmit={handleSubmit}>
             <input
               type="email"
               placeholder="Введіть пошту"
               className="text-xl w-full py-3 px-2 mb-2 bg-transparent border-2 border-becwhite text-becwhite placeholder-gray-400"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <input
               type="text"
               placeholder="Введіть назву компанії"
               className="mt-2 text-xl w-full py-3 px-2 mb-2 bg-transparent border-2 border-becwhite text-becwhite placeholder-gray-400"
+              value={companyName}
+              onChange={(e) => setCompanyName(e.target.value)}
+              required
             />
-            <button className='cursor-pointer w-full mt-4 text-center py-3 font-medium text-xl bg-[#5A5A58] text-[#CFCFCF] border border-[#CFCFCF] shadow-[inset_-3px_1px_15px_rgba(0,0,0,0.5)]
-              hover:bg-[#727270] hover:text-white hover:border-white hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-400 ease-out'>
+            <button
+              type="submit"
+              className='cursor-pointer w-full mt-4 text-center py-3 font-medium text-xl bg-[#5A5A58] text-[#CFCFCF] border border-[#CFCFCF] shadow-[inset_-3px_1px_15px_rgba(0,0,0,0.5)]
+                hover:bg-[#727270] hover:text-white hover:border-white hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-400 ease-out'>
               Оформити
             </button>
           </form>
@@ -146,4 +188,4 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
   )
 }
 
-export default Cart
+export default Cart;

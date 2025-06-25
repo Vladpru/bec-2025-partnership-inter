@@ -19,6 +19,12 @@ const EngineerDetails = ({ onClose, pack }: DetailsProps) => {
 
   useEffect(() => {
     setTimeout(() => setShow(true), 10);
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      // Повертаємо скрол при закритті
+      document.body.style.overflow = '';
+    };
   }, []);
 
   return (

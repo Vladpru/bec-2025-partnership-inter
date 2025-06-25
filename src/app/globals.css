@@ -23,6 +23,11 @@
     --headercolor: rgba(33, 33, 33, 0.32);
   }
 }
+@theme {
+  --breakpoint-3xl: 1677px;
+  --breakpoint-4xl: 1920px;
+}
+
 .shadoww-bec {
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -89,6 +94,11 @@ body {
 @media (max-width: 1609px) {
   .container{
     max-width: 1400px;
+  }
+}
+@media (max-width: 1409px) {
+  .container{
+    max-width: 1200px;
   }
 }
 
