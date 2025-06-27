@@ -98,8 +98,8 @@
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background: #171717;
+  color: #CFCFCF;
   padding: 0;
   margin: 0;
   font-size: 22px;
