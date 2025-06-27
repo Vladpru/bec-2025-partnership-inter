@@ -24,8 +24,71 @@
   }
 }
 @theme {
+  --breakpoint-xs: 370px;
+  --breakpoint-540px: 540px;
+  --breakpoint-660px: 660px;
+  --breakpoint-840px: 840px;
+  --breakpoint-940px: 940px;
+  --breakpoint-1070px: 1070px;
+  --breakpoint-1140px: 1140px;
+  --breakpoint-1240px: 1240px;
+  --breakpoint-1340px: 1340px;
+  --breakpoint-1440px: 1440px;
   --breakpoint-3xl: 1677px;
   --breakpoint-4xl: 1920px;
+}
+.container {
+  margin: 0 auto;
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1820px;
+  }
+}
+@media (min-width: 1720px) and (max-width: 1919px) {
+  .container {
+    max-width: 1780px;
+  }
+}
+@media (min-width: 1610px) and (max-width: 1719px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+@media (max-width: 1609px) {
+  .container{
+    max-width: 1400px;
+  }
+}
+@media (max-width: 1450px) {
+  .container {
+    max-width: 1220px;
+  }
+}
+@media (max-width: 1320px) {
+  .container {
+    max-width: 1130px;
+  }
+}
+@media (max-width: 1160px) {
+  .container {
+    max-width: 1020px;
+  }
+}
+@media (max-width: 1060px) {
+  .container {
+    max-width: 920px;
+  }
+}
+@media (max-width: 940px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 650px;
+  }
 }
 
 .shadoww-bec {
@@ -39,8 +102,9 @@ body {
   margin: 0;
   font-size: 22px;
   overflow-x: hidden;
+  
 }
-
+html {overflow-y: scroll;}
 .hero-btn {
   background-image: url('/images/hero/hero-btn.svg');
   background-size: cover;
@@ -71,35 +135,6 @@ body {
 
 .backdrop-blur {
   backdrop-filter: blur(4px);
-}
-
-.container {
-  margin: 0 auto;
-}
-@media (min-width: 1920px) {
-  .container {
-    max-width: 1820px;
-  }
-}
-@media (min-width: 1720px) and (max-width: 1919px) {
-  .container {
-    max-width: 1780px;
-  }
-}
-@media (min-width: 1610px) and (max-width: 1719px) {
-  .container {
-    max-width: 1600px;
-  }
-}
-@media (max-width: 1609px) {
-  .container{
-    max-width: 1400px;
-  }
-}
-@media (max-width: 1409px) {
-  .container{
-    max-width: 1200px;
-  }
 }
 
 .swiper_skl .swiper-slide {

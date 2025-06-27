@@ -20,10 +20,10 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
 
   return (
     <header className={`${exo2.className} font-audiowide bg-header fixed top-0 left-0 w-full z-50 backdrop-blur `}>
-      <div className="container pt-7 pb-7 flex items-center justify-between 4xl:h-[135px]">
+      <div className={`540px:pt-7 540px:pb-7 flex items-center justify-between 4xl:h-[135px] lg:px-5 sm:px-5 xs:px-5 xs:pt-3 xs:pb-3`}>
         <div>
           <a onClick={() => handleMenuClick(refs?.topRef)} className="cursor-pointer">
-            <Image src="/images/header/BEC_logo.svg" className='4xl:w-[170px]' alt="Logo" width={134} height={44} />
+            <Image src="/images/header/BEC_logo.svg" className='4xl:w-[170px] xs:w-[120px] 540px:w-[128px]' alt="Logo" width={134} height={44} />
           </a>
         </div>
         <ul className="hidden xl:flex gap-37 4xl:text-[26px]">

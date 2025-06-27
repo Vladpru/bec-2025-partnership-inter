@@ -8,26 +8,84 @@ const Categories = () => {
   const [arrowsRef] = useOnScreen(0.1) as [React.RefObject<HTMLDivElement>, boolean];
   
   return (
-    <section className="mb-50 relative 4xl:mt-20">
+    <section className="mb-50 relative 4xl:mt-20 mt-120 1140px:mt-0">
       <div className="container">
-        <div className="flex justify-between items-start pr-40 pl-40 " ref={arrowsRef}>
+        <div
+          className="
+            flex items-center gap-6
+            flex-row justify-center 540px:justify-between sm:px-10 
+            md:px-20 
+            lg:px-28 
+            xl:px-36 
+            2xl:px-40 
+            3xl:px-[80px] 
+            4xl:px-[120px]
+            relative
+          "
+          ref={arrowsRef}
+        >
           <Image
-            src="/images/categories/left-arrow.svg" 
+            src="/images/categories/left-arrow.svg"
             alt="Decorative line 3"
             width={300}
             height={60}
-            className="3xl:w-[350] 4xl:w-[400]"
+            className="
+              xs:absolute
+              -top-2
+              -left-3
+              540px:static
+              w-[150px]
+              md:w-[200px]
+              lg:w-[250px]
+              xl:w-[280px]
+              3xl:w-[350px]
+              4xl:w-[400px]
+            "
           />
+          
           <div className="flex flex-col text-center justify-center items-center">
-            <h3 className="text-center text-becblack border font-bold px-13 py-1 bg-bec 3xl:text-3xl 3xl:px-15 3xl:py-2 4xl:text-4xl">Тема:</h3>
-            <h1 className="font-black text-4xl mt-2 4xl:text-[44px]">Повоєнне відновлення</h1>
+            <h3
+              className="
+                text-becblack font-bold bg-bec border 
+                text-base py-1
+                md:text-xl px-5 
+                lg:text-2xl lg:px-10 
+                3xl:text-3xl 3xl:px-15 3xl:py-2 
+                4xl:text-4xl
+              "
+            >
+              Тема:
+            </h3>
+
+            <h1
+              className="
+                font-black text-xl mt-2 
+                md:text-3xl 
+                lg:text-4xl 
+                4xl:text-[44px]
+              "
+            >
+              Повоєнне відновлення
+            </h1>
           </div>
+
           <Image
-            src="/images/categories/right-arrow.svg" 
+            src="/images/categories/right-arrow.svg"
             alt="Decorative line 3"
             width={300}
             height={60}
-            className="3xl:w-[350] 4xl:w-[400]"
+            className="
+              xs:absolute
+              -top-2
+              -right-3
+              540px:static
+              w-[150px]
+              md:w-[200px]
+              lg:w-[250px]
+              xl:w-[280px]
+              3xl:w-[350px]
+              4xl:w-[400px]
+            "
           />
         </div>
         <div className="text-xl mt-30 4xl:mt-40">

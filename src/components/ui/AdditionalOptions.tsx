@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
 import { Audiowide } from 'next/font/google';
 import addOptions from '../../data/additionals';
@@ -19,12 +19,6 @@ const AdditionalOptions = ({
 }: AdditionalOptionsProps) => {
   const [openTooltipId, setOpenTooltipId] = useState<string | null>(null);
   const modalRef = useRef<HTMLDivElement>(null);
-
-  const handleClickOutside = (e: React.MouseEvent) => {
-    if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
-      setOpenTooltipId(null);
-    }
-  };
 
   return (
     <div className="mt-25 relative">

@@ -50,9 +50,15 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
       alert("Дякуємо! Ми зв'яжемося з вами найближчим часом.");
       setCompanyName("");
       setEmail("");
-    } catch (error: any) {
-      console.error("Email sending error:", error?.text || error);
-      alert("Помилка надсилання! " + (error?.text || "Спробуйте ще раз."));
+    }
+    catch (error: unknown) {
+      if (error && typeof error === 'object' && 'text' in error) {
+        console.error("Email sending error:", (error as { text: string }).text);
+        alert("Помилка надсилання! " + (error as { text: string }).text);
+      } else {
+        console.error("Email sending error:", error);
+        alert("Помилка надсилання! Спробуйте ще раз.");
+      }
     }
   };
   return (
