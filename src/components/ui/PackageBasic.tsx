@@ -21,7 +21,7 @@ const PackageBasic = () => {
   };
 
   return (
-    <div className="p-10 border-4 border-bec mx-auto mt-10 relative max-w-[760px] info_bg">
+    <div className="p-10 border-4 border-bec mx-auto mt-10 relative w-[420px] 580px:w-[540px] 660px:w-[580px] 840px:w-full max-w-[760px] info_bg">
       <h2 className={`text-4xl font-bold text-becwhite mb-4 text-start ${awide.className} leading-[1.3]`}>Basic</h2>
       <p className="text-base font-extralight text-center text-becwhite mb-4 py-2 border-1 border-becwhite px-3 max-w-[250px] 4xl:max-w-[300px] 4xl:text-xl">Цей пакет є обов&apos;язковим</p>
       <ul className="mb-6">

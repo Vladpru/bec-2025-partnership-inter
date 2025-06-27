@@ -64,9 +64,9 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
   return (
     <section className="mt-10 mb-50 scroll-m-28 relative" ref={ref}>
       <div className="container relative">
-        <h1 className='uppercase font-black text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Пропозиції</h1>
+        <h1 className='uppercase font-black text-2xl 700px:text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Пропозиції</h1>
         <PackageBasic />
-        <div className="flex justify-around z-10">
+        <div className="flex flex-col items-center 1070px:flex-row justify-around z-10 relative">
           <PackageRecruiter
             onChoose={handleChoosePackage}
             selectedPackageName={selectedPackages.find(p => p.name === "Explorer")?.name}
@@ -75,8 +75,15 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
             onChoose={handleChoosePackage}
             selectedPackageName={selectedPackages.find(p => p.name === "Engineer")?.name}
           />
+          <Image
+          height={60}
+          width={420}
+          alt="Decorative line 3"
+          src="/images/elipses/left_contacts.png" 
+          className="absolute top-0 -left-15 1070px:hidden"
+        />
         </div>
-        <p className="mt-7 max-w-[500px] text-start text-base mx-auto 4xl:text-xl 4xl:max-w-[600px]">
+        <p className="mt-7 w-[420px] 580px:w-[500px] text-start text-base mx-auto 4xl:text-xl 4xl:max-w-[600px]">
           <span className="text-bec font-bold">10%</span> отриманих коштів будуть передані на підтримку ЗСУ.
           Оплата буде здійснюватись за курсом НБУ. Після завершення змагань кожна компанія–партнер
           отримає повну звітність з усіма фотографіями компанії та aftermovie.
@@ -91,7 +98,7 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
           width={120}
           alt="Decorative line 3"
           src="/images/propositions/left.svg" 
-          className="absolute top-100 -left-30 1440px:-left-15 z-1 3xl:w-[180px] 4xl:w-[250px]"
+          className="absolute -z-1 top-100 -left-13 1240px:-left-25 1340px:-left-30 1440px:-left-15 3xl:w-[180px] 4xl:w-[250px]"
         />
         <Image
           height={60}
@@ -105,7 +112,7 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
           width={130}
           alt="Decorative line 3"
           src="/images/propositions/right.svg" 
-          className="absolute top-120 -right-30 1440px:-right-15 -z-10 3xl:w-[180px] 4xl:w-[250px]"
+          className="absolute top-120 -right-13 1240px:-right-23 1340px:-right-30 1440px:-right-15 -z-10 3xl:w-[180px] 4xl:w-[250px]"
         />
       </div>
       <Cart 

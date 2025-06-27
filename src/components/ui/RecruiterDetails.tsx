@@ -21,10 +21,20 @@ const RecruiterDetails = ({ onClose, pack }: DetailsProps) => {
   useEffect(() => {
     setTimeout(() => setShow(true), 10);
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+
+    // Зняти z-index з хедера
+    const header = document.querySelector('header');
+    if (header) {
+      (header as HTMLElement).style.zIndex = '0';
+    }
 
     return () => {
-      // Повертаємо скрол при закритті
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      if (header) {
+        (header as HTMLElement).style.zIndex = '50';
+      }
     };
   }, []);
 

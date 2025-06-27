@@ -8,7 +8,7 @@ const Categories = () => {
   const [arrowsRef] = useOnScreen(0.1) as [React.RefObject<HTMLDivElement>, boolean];
   
   return (
-    <section className="mb-50 relative 4xl:mt-20 mt-120 1140px:mt-0">
+    <section className="mb-20 540px:mb-50 relative 4xl:mt-20 mt-100 1140px:mt-0">
       <div className="container">
         <div
           className="
@@ -31,10 +31,10 @@ const Categories = () => {
             height={60}
             className="
               xs:absolute
-              -top-2
-              -left-3
+              -top-3
+              -left-12
               540px:static
-              w-[150px]
+              w-[180px]
               md:w-[200px]
               lg:w-[250px]
               xl:w-[280px]
@@ -47,8 +47,8 @@ const Categories = () => {
             <h3
               className="
                 text-becblack font-bold bg-bec border 
-                text-base py-1
-                md:text-xl px-5 
+                text-lg py-1
+                md:text-xl px-8 
                 lg:text-2xl lg:px-10 
                 3xl:text-3xl 3xl:px-15 3xl:py-2 
                 4xl:text-4xl
@@ -59,7 +59,7 @@ const Categories = () => {
 
             <h1
               className="
-                font-black text-xl mt-2 
+                font-black text-2xl mt-2 
                 md:text-3xl 
                 lg:text-4xl 
                 4xl:text-[44px]
@@ -76,10 +76,10 @@ const Categories = () => {
             height={60}
             className="
               xs:absolute
-              -top-2
-              -right-3
+              -top-3
+              -right-12
               540px:static
-              w-[150px]
+              w-[180px]
               md:w-[200px]
               lg:w-[250px]
               xl:w-[280px]
@@ -88,7 +88,7 @@ const Categories = () => {
             "
           />
         </div>
-        <div className="text-xl mt-30 4xl:mt-40 px-4 660px:px-0">
+        <div className="text-xl mt-20 4xl:mt-40 px-4 660px:px-0">
           <h1 className="uppercase text-center xs:text-3xl 660px:text-4xl font-black text-bec mt-15 mb-15 3xl:text-[42px] 4xl:text-5xl">Категорії змагань</h1>
           <div className="flex font-light flex-col lg:flex-row items-center justify-center lg:justify-between">
             <div className="flex max-w-[400px] sm:max-w-[600px] 3xl:max-w-[700px] 4xl:max-w-[800px]">
@@ -117,9 +117,9 @@ const Categories = () => {
               alt="Decorative line 3"
               width={225}
               height={60}
-              className="lg:hidden xs:w-[440px] sm:w-[500px] my-10 w-[350px]"
+              className="lg:hidden xs:w-[440px] sm:w-[500px] my-5 w-[350px]"
             />
-            <div className="flex max-w-[400px] sm:max-w-[600px] lg:max-w-[700px] 3xl:max-w-[800px] 4xl:max-w-[900px]">
+            <div className="flex max-w-[400px] sm:max-w-[600px] lg:max-w-[700px] 3xl:max-w-[800px] 4xl:max-w-[900px] z-10">
               <Image
                 src="/images/categories/text-divider.svg" 
                 alt="Decorative line 3"
@@ -150,7 +150,7 @@ const Categories = () => {
         alt="Decorative line 3"
         width={400}
         src="/images/elipses/categ_right.png" 
-        className="absolute top-40 right-0"
+        className="absolute top-40 right-0 -z-1"
       />
     </section>
   )

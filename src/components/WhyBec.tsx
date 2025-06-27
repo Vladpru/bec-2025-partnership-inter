@@ -16,7 +16,7 @@ const WhyBec = () => {
   ]
 
   return (
-    <section className="mt-30">
+    <section className="mt-5 540px:mt-30">
       <div className="container">
         <h1 className="font-black text-center text-2xl 700px:text-4xl uppercase text-bec 3xl:text-[42px] 4xl:text-5xl">ЧОМУ ВАМ ВАРТО ПІДТРИМАТИ BEC</h1>
         <div className="flex justify-center mt-15 items-center 1070px:gap-20 gap-6 relative 1070px:flex-row flex-col">
@@ -36,13 +36,13 @@ const WhyBec = () => {
               <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
               <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Наша цільова аудиторія – перспективні студенти-інженери. Серед них Ви можете знайти потенційних працівників для Вашої компанії.</p>
             </div>
-            <Image
+            {/* <Image
               src="/images/whybec/divider-vertical.svg"
               width={90}
               height={50}
               className="1070px:hidden block absolute top-0 -left-15 540px:-left-20 600px:-left-35 w-[55px] 540px:w-[70px] 600px:w-[90px]"
               alt="divider"
-            />
+            /> */}
           </div>
           <Image
             src="/images/whybec/divider-vertical.svg"
@@ -67,13 +67,13 @@ const WhyBec = () => {
               <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
               <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Підтримавши учасників на етапі розробки, Ви можете стати першою компанією, що повірила в ідею і побачила частинки її реалізації.</p>
             </div>
-            <Image
+            {/* <Image
               src="/images/whybec/divider-vertical.svg"
               width={90}
               height={50}
               className="1070px:hidden block absolute top-0 -right-15 540px:-right-20 600px:-right-35 w-[55px] 540px:w-[70px] 600px:w-[90px]"
               alt="divider"
-            />
+            /> */}
           </div>
           <Image
             src="/images/elipses/why_left.png"

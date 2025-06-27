@@ -33,7 +33,7 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             className="3xl:w-[220px] 4xl:w-[280px] xs:w-[160px] 540px:w-[200px]"
             />
         </div>
-        <div className="absolute bottom-30 940px:hidden">
+        <div className="absolute bottom-20 940px:hidden">
             <Image
             src="/images/hero/phone-left.svg" 
             alt="Decorative line 2"
@@ -51,7 +51,7 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             className="opacity-45 3xl:w-[490px] 4xl:w-[530px] xs:w-[250px] 540px:w-[420px]"
             />
         </div>
-        <div className="absolute 940px:top-122 940px:right-89 4xl:right-110 xs:right-0 xs:top-70">
+        <div className="absolute 940px:top-122 940px:right-89 4xl:right-110 xs:right-0 xs:top-40">
             <Image
             src="/images/hero/bottom-right-el.svg" 
             alt="Decorative line 3"
@@ -60,7 +60,7 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             className="3xl:w-[450px] 4xl:w-[500px] xs:w-[250px] 540px:w-[400px]"
             />
         </div>
-        <div className="absolute 940px:bottom-45 940px:right-105 3xl:right-105 xs:bottom-30 xs:right-0">
+        <div className="absolute 940px:bottom-45 940px:right-105 3xl:right-105 xs:bottom-10 xs:right-0">
             <Image
             src="/images/hero/right-el.svg" 
             alt="Decorative line 3"

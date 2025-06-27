@@ -21,10 +21,27 @@ const BasicDetails = ({ onClose, pack }: DetailsProps) => {
     setShow(false);
     setTimeout(onClose, 200); // дає завершити анімацію
   };
-
+  
   useEffect(() => {
     setTimeout(() => setShow(true), 10);
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+
+    // Зняти z-index з хедера
+    const header = document.querySelector('header');
+    if (header) {
+      (header as HTMLElement).style.zIndex = '0';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      if (header) {
+        (header as HTMLElement).style.zIndex = '50';
+      }
+    };
   }, []);
+
 
   return (
     <div

@@ -13,17 +13,32 @@ const EngineerDetails = ({ onClose, pack }: DetailsProps) => {
 
   const handleClickOutside = (event: React.MouseEvent) => {
     if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-      onClose();
+      closeWithAnimation();
     }
+  };
+
+  const closeWithAnimation = () => {
+    setShow(false);
+    setTimeout(onClose, 200); // дає завершити анімацію
   };
 
   useEffect(() => {
     setTimeout(() => setShow(true), 10);
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+
+    // Зняти z-index з хедера
+    const header = document.querySelector('header');
+    if (header) {
+      (header as HTMLElement).style.zIndex = '0';
+    }
 
     return () => {
-      // Повертаємо скрол при закритті
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      if (header) {
+        (header as HTMLElement).style.zIndex = '50';
+      }
     };
   }, []);
 
