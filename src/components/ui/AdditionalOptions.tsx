@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { Audiowide } from 'next/font/google';
 import addOptions from '../../data/additionals';
