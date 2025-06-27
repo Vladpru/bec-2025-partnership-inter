@@ -14,7 +14,7 @@ interface HeroProps {
 
 const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
   return (
-    <section className="mt-15 940px:pt-26 xs:pt-46 sm:pt-26">
+    <section className="mt-15 940px:pt-24 xs:pt-36 sm:pt-26">
         <div className="absolute 940px:top-16 z-0 940px:right-120 4xl:right-140 xs:hidden 940px:block">
             <Image
             src="/images/hero/top-el.svg" 
@@ -33,7 +33,7 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             className="3xl:w-[220px] 4xl:w-[280px] xs:w-[160px] 540px:w-[200px]"
             />
         </div>
-        <div className="absolute -bottom-20 940px:hidden">
+        <div className="absolute bottom-30 940px:hidden">
             <Image
             src="/images/hero/phone-left.svg" 
             alt="Decorative line 2"
@@ -66,7 +66,7 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             alt="Decorative line 3"
             width={250}
             height={60}
-            className="3xl:w-[300px] 4xl:w-[400px] xs:w-[170px]"
+            className="3xl:w-[300px] 4xl:w-[400px] xs:w-[170px] lg:w-[250px]"
             />
         </div>
 
@@ -80,7 +80,7 @@ const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
             className="3xl:w-[665px] 4xl:w-[755px]"
             />
         </div>
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center 940px:justify-between xs:justify-center">
+      <div className="container mx-auto 540px:px-4 xs:px-8 flex flex-col md:flex-row items-center 940px:justify-between xs:justify-center">
         <div className="space-y-2 3xl:space-y-5 z-10 xs:max-w-[360px] 540px:max-w-[440px] sm:max-w-[780px]">
           <h2 className="text-3xl uppercase tracking-wider pl-2 font-light 3xl:text-4xl
           sm:text-[35px] 540px:text-[22px] xs:text-[20px]

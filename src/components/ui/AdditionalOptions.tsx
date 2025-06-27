@@ -112,7 +112,7 @@ const AdditionalOptions = ({
         width={600}
         alt="Decorative line right"
         src="/images/elipses/about_right.png"
-        className="absolute -top-40 -right-15 -z-1"
+        className="absolute -top-40 -right-30 1440px:-right-15 -z-1"
         draggable={false}
       />
       <Image
@@ -120,7 +120,7 @@ const AdditionalOptions = ({
         width={600}
         alt="Decorative line left"
         src="/images/elipses/about_left.png"
-        className="absolute top-10 -left-15 -z-1"
+        className="absolute top-10 -left-30 1440px:-left-15 -z-1"
         draggable={false}
       />
     </div>

@@ -88,8 +88,8 @@ const Categories = () => {
             "
           />
         </div>
-        <div className="text-xl mt-30 4xl:mt-40">
-          <h1 className="uppercase text-center text-4xl font-black text-bec mt-15 mb-15 3xl:text-[42px] 4xl:text-5xl">Категорії змагань</h1>
+        <div className="text-xl mt-30 4xl:mt-40 px-4 660px:px-0">
+          <h1 className="uppercase text-center xs:text-3xl 660px:text-4xl font-black text-bec mt-15 mb-15 3xl:text-[42px] 4xl:text-5xl">Категорії змагань</h1>
           <div className="flex font-light flex-col lg:flex-row items-center justify-center lg:justify-between">
             <div className="flex max-w-[400px] sm:max-w-[600px] 3xl:max-w-[700px] 4xl:max-w-[800px]">
               <Image
@@ -117,7 +117,7 @@ const Categories = () => {
               alt="Decorative line 3"
               width={225}
               height={60}
-              className="lg:hidden sm:w-[500px] my-10 w-[350px]"
+              className="lg:hidden xs:w-[440px] sm:w-[500px] my-10 w-[350px]"
             />
             <div className="flex max-w-[400px] sm:max-w-[600px] lg:max-w-[700px] 3xl:max-w-[800px] 4xl:max-w-[900px]">
               <Image

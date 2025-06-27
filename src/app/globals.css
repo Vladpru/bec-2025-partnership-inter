@@ -25,17 +25,25 @@
 }
 @theme {
   --breakpoint-xs: 370px;
+  --breakpoint-440px: 440px;
+  --breakpoint-460px: 460px;
+  --breakpoint-490px: 490px;
   --breakpoint-540px: 540px;
+  --breakpoint-600px: 600px;
+  --breakpoint-620px: 620px;
   --breakpoint-660px: 660px;
+  --breakpoint-700px: 700px;
+  --breakpoint-780px: 780px;
   --breakpoint-840px: 840px;
   --breakpoint-940px: 940px;
+  --breakpoint-970px: 970px;
+  --breakpoint-1060px: 1063px;
   --breakpoint-1070px: 1070px;
   --breakpoint-1140px: 1140px;
-  --breakpoint-ede: 1140px;
-  --breakpoint-1160px: 1160px;
+  --breakpoint-1160px: 1162px;
   --breakpoint-1240px: 1240px;
   --breakpoint-1340px: 1340px;
-  --breakpoint-1440px: 1440px;
+  --breakpoint-1440px: 1450px;
   --breakpoint-3xl: 1677px;
   --breakpoint-4xl: 1920px;
 }
@@ -110,12 +118,6 @@ html {overflow-y: scroll;}
 .hero-btn {
   background-image: url('/images/hero/hero-btn.svg');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.whybec-bg {
-  background-image: url('/images/whybec/bg-portrait.png');
   background-position: center;
   background-repeat: no-repeat;
 }

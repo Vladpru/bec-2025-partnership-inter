@@ -33,14 +33,14 @@
             width={500}
             alt="Decorative line 3"
             src="/images/elipses/org_left.png" 
-            className="absolute -top-80 -left-15 -z-1"
+            className="absolute -top-80 -left-30 1440px:-left-15 -z-1"
           />
           <Image
             height={60}
             width={500}
             alt="Decorative line 3"
             src="/images/elipses/org_right.png" 
-            className="absolute -top-40 -right-15 -z-1"
+            className="absolute -top-40 -right-30 1440px:-right-15 -z-1"
           />
         </div>
         <div className="flex justify-between container pb-20">

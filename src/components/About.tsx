@@ -44,9 +44,9 @@ const About = forwardRef<HTMLDivElement, object>((_, ref) => {
               className="swiper_skl xs:max-w-[400px] 660px:max-w-[560px] 3xl:max-w-[660px] 4xl:max-w-[760px]"
             >
               {photosDict.map((photo, index) => (
-                <SwiperSlide key={index} className='xs:w-[400px] 660px:w-[560px] 3xl:w-[660px] 4xl:w-[760px] ml-0.5'>
-                  <div className="slide_card xs:w-[400px] 660px:w-[560px] 3xl:w-[660px] 4xl:w-[760px]">
-                    <Image className="slide_card_img xs:w-[400px] 660px:w-[560px] 3xl:w-[680px] 4xl:w-[760px]" width={560} height={300} src={photo.img} alt={photo.alt} />
+                <SwiperSlide key={index} className='xs:w-[410px] 660px:w-[560px] 3xl:w-[660px] 4xl:w-[760px] ml-0.5'>
+                  <div className="slide_card xs:w-[410px] 660px:w-[560px] 3xl:w-[660px] 4xl:w-[760px]">
+                    <Image className="slide_card_img xs:w-[365px] 660px:w-[560px] 3xl:w-[680px] 4xl:w-[760px]" width={560} height={300} src={photo.img} alt={photo.alt} />
                   </div>
                 </SwiperSlide>
               ))}

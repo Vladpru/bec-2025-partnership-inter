@@ -167,28 +167,28 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
         width={300}
         alt="Decorative line 3"
         src="/images/propositions/cart-left.svg" 
-        className="absolute top-15 -left-15 -z-1"
+        className="absolute top-15 -left-30 1440px:-left-15 -z-1"
       />
       <Image
         height={60}
         width={350}
         alt="Decorative line 3"
         src="/images/propositions/cart-right.svg" 
-        className="absolute top-15 -right-15 -z-1"
+        className="absolute top-15 -right-30 1440px:-right-15 -z-1"
       />
       <Image
         height={60}
         width={500}
         alt="Decorative line 3"
         src="/images/elipses/about_right.png" 
-        className="absolute top-10 -right-15 -z-1"
+        className="absolute top-10 -right-30 1440px:-right-15 -z-1"
       />
       <Image
         height={60}
         width={500}
         alt="Decorative line 3"
         src="/images/elipses/about_left.png" 
-        className="absolute top-30 -left-15 -z-1"
+        className="absolute top-30 -left-30 1440px:-left-15 -z-1"
       />
     </div>
   )

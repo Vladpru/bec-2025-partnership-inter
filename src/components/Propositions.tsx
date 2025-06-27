@@ -91,21 +91,21 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
           width={120}
           alt="Decorative line 3"
           src="/images/propositions/left.svg" 
-          className="absolute top-100 -left-15 z-1 3xl:w-[180px] 4xl:w-[250px]"
+          className="absolute top-100 -left-30 1440px:-left-15 z-1 3xl:w-[180px] 4xl:w-[250px]"
         />
         <Image
           height={60}
           width={250}
           alt="Decorative line 3"
           src="/images/propositions/top-right.svg" 
-          className="absolute top-0 -right-15 -z-10 3xl:w-[300px] 4xl:w-[350px]"
+          className="absolute top-0 -right-30 1440px:-right-15 -z-10 3xl:w-[300px] 4xl:w-[350px]"
         />
         <Image
           height={60}
           width={130}
           alt="Decorative line 3"
           src="/images/propositions/right.svg" 
-          className="absolute top-120 -right-15 -z-10 3xl:w-[180px] 4xl:w-[250px]"
+          className="absolute top-120 -right-30 1440px:-right-15 -z-10 3xl:w-[180px] 4xl:w-[250px]"
         />
       </div>
       <Cart 
@@ -121,7 +121,7 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
         width={600}
         alt="Decorative line 3"
         src="/images/elipses/left_propos.png" 
-        className="absolute -top-100 -left-15 -z-1 3xl:w-[750px]" 
+        className="absolute -top-100 -left-30 1440px:-left-15 -z-1 3xl:w-[750px]" 
       />
     </section>
   );

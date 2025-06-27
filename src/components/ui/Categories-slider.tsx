@@ -27,18 +27,29 @@ const CategoriesSlider = () => {
       </div>
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={10}
         loop={true}
+        spaceBetween={10}
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
         }}
         className="swiper_skl"
-        slidesPerView={3}
+        slidesPerView={3} 
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          380: {
+            slidesPerView: 2,
+          },
+          500: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {photosDict.map((photo, index) => (
           <SwiperSlide key={index}>
-            <div className="slide_card">
+            <div className="slide_card sm:scale-100 custom-zoom-380-500">
               <Image
                 src={photo.img}
                 width={500}
@@ -50,6 +61,7 @@ const CategoriesSlider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
       <div className="relative">
         <Image
           src="/images/categories/slider-bottom.svg" 
