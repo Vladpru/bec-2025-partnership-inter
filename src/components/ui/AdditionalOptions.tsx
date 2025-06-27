@@ -18,7 +18,6 @@ const AdditionalOptions = ({
   selectedPackageServices,
 }: AdditionalOptionsProps) => {
   const [openTooltipId, setOpenTooltipId] = useState<string | null>(null);
-  const modalRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className="mt-25 relative">

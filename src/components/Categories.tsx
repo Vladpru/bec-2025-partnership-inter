@@ -90,45 +90,52 @@ const Categories = () => {
         </div>
         <div className="text-xl mt-30 4xl:mt-40">
           <h1 className="uppercase text-center text-4xl font-black text-bec mt-15 mb-15 3xl:text-[42px] 4xl:text-5xl">Категорії змагань</h1>
-          <div className="flex font-light justify-between">
-            <div className="flex max-w-[600px] 3xl:max-w-[700px] 4xl:max-w-[800px]">
+          <div className="flex font-light flex-col lg:flex-row items-center justify-center lg:justify-between">
+            <div className="flex max-w-[400px] sm:max-w-[600px] 3xl:max-w-[700px] 4xl:max-w-[800px]">
               <Image
                 src="/images/categories/text-divider.svg" 
                 alt="Decorative line 3"
                 width={75}
                 height={65}
-                className="3xl:w-[85px] 4xl:w-[95px]"
+                className="3xl:w-[85px] 4xl:w-[95px] lg:block hidden"
               />
-              <div className="flex flex-col justify-between">
-                <h1 className="text-3xl font-black uppercase 3xl:text-4xl 4xl:text-5xl">Team design</h1>
-                <p className="3xl:text-[22px] 4xl:text-[25px] text-xl">
+              <div className="flex flex-col gap-3 justify-center 1160px:justify-between">
+                <h1 className="text-2xl 1160px:text-3xl font-black uppercase 3xl:text-4xl 4xl:text-5xl">Team design</h1>
+                <p className="text-[18px] 3xl:text-[22px] 4xl:text-[25px] 1160px:text-xl">
                   Практична інженерна категорія, у якій команди студентів вирішують реальні 
                   прикладні задачі у сфері embedded-систем, IoT, електроніки та механіки, 
                   створюючи робочі прототипи пристроїв.
                 </p>
-                <p className="3xl:text-[22px] 4xl:text-[25px] text-xl">
+                <p className="text-[18px] 3xl:text-[22px] 4xl:text-[25px] 1160px:text-xl">
                   <span className="font-bold">Приклад:</span> Розробити функціональну модель мінного тральщика для пошуку 
                   та розмінування морських мін, який може керуватися в ручному та автоматичному режимі
                 </p>
               </div>
             </div>
-            <div className="flex max-w-[700px] 3xl:max-w-[800px] 4xl:max-w-[900px]">
+            <Image
+              src="/images/categories/text-divider-horizontal.svg" 
+              alt="Decorative line 3"
+              width={225}
+              height={60}
+              className="lg:hidden sm:w-[500px] my-10 w-[350px]"
+            />
+            <div className="flex max-w-[400px] sm:max-w-[600px] lg:max-w-[700px] 3xl:max-w-[800px] 4xl:max-w-[900px]">
               <Image
                 src="/images/categories/text-divider.svg" 
                 alt="Decorative line 3"
                 width={75}
                 height={60}
-                className="3xl:w-[85px] 4xl:w-[95px]"
+                className="3xl:w-[85px] 4xl:w-[95px] lg:block hidden"
               />
-              <div className="flex flex-col justify-between">
-                <h1 className="text-3xl font-black uppercase 3xl:text-4xl 4xl:text-5xl">Innovative design</h1>
-                <p className="3xl:text-[22px] 4xl:text-[25px] text-xl">
+              <div className="flex flex-col gap-3 justify-center 1160px:justify-between">
+                <h1 className="text-2xl 1160px:text-3xl font-black uppercase 3xl:text-4xl 4xl:text-5xl">Innovative design</h1>
+                <p className="text-[18px] 3xl:text-[22px] 4xl:text-[25px] 1160px:text-xl">
                   Концептуальна категорія, що орієнтована на креативні інженерні ідеї. Команди 
                   пропонують абсолютно нові проєктні рішення для актуальних проблем, які потребують 
                   розв&apos;язання. Таким чином учасники у своїх проєктах демонструють інноваційний підхід, 
                   його переваги та реалістичність втілення, використовуючи креслення або 3D-моделі.
                 </p>
-                <p className="3xl:text-[22px] 4xl:text-[25px] text-xl">
+                <p className="text-[18px] 3xl:text-[22px] 4xl:text-[25px] 1160px:text-xl">
                   <span className="font-bold">Приклад:</span> Розробити концепцію «розумного вулика» з датчиками температури, вологості та 
                   шуму, що передає дані бджоляру в реальному часі на смартфон або інший пристрій.
                 </p>

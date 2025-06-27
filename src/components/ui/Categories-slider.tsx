@@ -15,7 +15,7 @@ const CategoriesSlider = () => {
   ]
 
   return (
-    <div className="mt-60 relative">
+    <div className="mt-35 940px:mt-60 relative">
       <div className="relative">
         <Image
           src="/images/categories/slider-top.svg" 
@@ -26,30 +26,39 @@ const CategoriesSlider = () => {
         />
       </div>
       <Swiper
-        modules={[Autoplay]}
-        spaceBetween={10}
-        loop={true}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
-        className="swiper_skl"
-        slidesPerView={3}
-      >
-        {photosDict.map((photo, index) => (
-          <SwiperSlide key={index}>
-            <div className="slide_card">
-              <Image
-                src={photo.img}
-                width={500}
-                height={400}
-                className="slide_card_img w-full"
-                alt={photo.alt}
-              />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      modules={[Autoplay]}
+      loop={true}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
+      spaceBetween={10}
+      className="swiper_skl"
+    >
+      {photosDict.map((photo, index) => (
+        <SwiperSlide key={index}>
+          <div className="slide_card relative overflow-hidden">
+            <Image
+              src={photo.img}
+              alt={photo.alt}
+              width={500}
+              height={400}
+              className={`
+                slide_card_img 
+                w-full 
+                h-auto 
+                object-cover 
+                transition-transform 
+                duration-300 
+                ease-in-out
+                xs:scale-120 
+                540px:scale-100
+              `}
+            />
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
       <div className="relative">
         <Image
           src="/images/categories/slider-bottom.svg" 
@@ -64,7 +73,7 @@ const CategoriesSlider = () => {
         width={450}
         height={65}
         alt="line"
-        className="absolute left-0 bottom-15 opacity-70"
+        className="absolute left-0 bottom-15 -z-1 opacity-70"
       />
     </div>
   )
