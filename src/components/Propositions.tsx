@@ -62,7 +62,7 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
   };
 
   return (
-    <section className="mt-10 mb-50 scroll-m-28 relative" ref={ref}>
+    <section className="mt-10 mb-20 1140px:mb-50 scroll-m-28 relative" ref={ref}>
       <div className="container relative">
         <h1 className='uppercase font-black text-2xl 700px:text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Пропозиції</h1>
         <PackageBasic />

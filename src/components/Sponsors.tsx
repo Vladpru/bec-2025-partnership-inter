@@ -16,13 +16,13 @@ const logos = [
 const Sponsors = () => {
   return (
     <section className="container">
-      <h2 className="text-center text-bec text-4xl font-extrabold mb-10 3xl:text-[42px] 4xl:text-5xl 4xl:mb-15">
+      <h2 className="text-center text-bec text-2xl 580px:text-3xl 700px:text-4xl font-extrabold mb-10 3xl:text-[42px] 4xl:text-5xl 4xl:mb-15">
         НАС ПІДТРИМУЮТЬ
       </h2>
       <div className="flex flex-col gap-8 justify-center items-center">
-        <div className="grid grid-cols-2 gap-30 max-w-[400px] justify-items-center">
+        <div className="grid grid-cols-2 gap-5 600px:gap-30 max-w-[400px] justify-items-center">
           {logos.slice(0, 2).map((logo, idx) => (
-            <div key={idx} className="w-[220px] h-[100px] relative transition">
+            <div key={idx} className="w-[140px] h-[50px] 600px:w-[180px] 970px:w-[220px] 600px:h-[70px] 970px:h-[100px] relative transition">
               <Image src={logo.src} alt={logo.alt} fill className="object-contain" />
             </div>
           ))}
@@ -30,7 +30,7 @@ const Sponsors = () => {
 
         <div className="flex w-full justify-around items-center">
           {logos.slice(2, 5).map((logo, idx) => (
-            <div key={idx + 2} className="w-[220px] h-[100px] relative transition">
+            <div key={idx + 2} className="w-[110px] h-[40px] 460px:w-[140px] 460px:h-[50px] 600px:w-[180px] 970px:w-[220px] 600px:h-[70px] 970px:h-[100px] relative transition">
               <Image src={logo.src} alt={logo.alt} fill className="object-contain" />
             </div>
           ))}
@@ -38,15 +38,15 @@ const Sponsors = () => {
 
         <div className="flex w-full justify-around items-center">
           {logos.slice(5, 8).map((logo, idx) => (
-            <div key={idx + 5} className="w-[220px] h-[100px] relative transition">
+            <div key={idx + 5} className="w-[110px] h-[40px] 460px:w-[140px] 460px:h-[50px] 600px:w-[180px] 970px:w-[220px] 600px:h-[70px] 970px:h-[100px] relative transition">
               <Image src={logo.src} alt={logo.alt} fill className="object-contain" />
             </div>
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-30 max-w-[400px] justify-items-center">
+        <div className="grid grid-cols-2 gap-5 600px:gap-30 max-w-[400px] justify-items-center">
           {logos.slice(8, 10).map((logo, idx) => (
-            <div key={idx + 8} className="w-[320px] h-[100px] relative transition">
+            <div key={idx + 8} className="w-[140px] h-[50px] 600px:w-[180px] 970px:w-[220px] 600px:h-[70px] 970px:h-[100px] relative transition">
               <Image src={logo.src} alt={logo.alt} fill className="object-contain" />
             </div>
           ))}

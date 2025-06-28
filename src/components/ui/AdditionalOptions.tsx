@@ -25,7 +25,7 @@ const AdditionalOptions = ({
         ДОДАТКОВІ ПРОПОЗИЦІЇ
       </h2>
 
-      <div className="max-w-[1200px] 4xl:max-w-[1400px] flex flex-col mx-auto px-5 1060px:px-0">
+      <div className="max-w-[1200px] 4xl:max-w-[1400px] flex flex-col mx-auto px-2   1060px:px-0">
         {addOptions.map(service => {
           const isDisabled = selectedPackageServices.includes(service.name);
           const isSelected = selectedServices.includes(service.name);
@@ -58,10 +58,10 @@ const AdditionalOptions = ({
                   checked:bg-[url('/images/propositions/checkbox-line.svg')] 
                   checked:bg-center checked:bg-no-repeat checked:bg-contain cursor-pointer"
               />
-              <div className="flex-grow flex justify-between flex-col 540px:flex-row mr-1">
-                <span className="flex-grow text-[13px] 490px:text-sm 580px:text-base 640px:text-lg 840px:text-2xl 4xl:text-2xl 4xl:pl-3">{service.name}</span>
+              <div className="flex-grow flex items-center justify-between flex-col 540px:flex-row mr-1">
+                <span className="flex-grow w-[180px] 460px:w-full text-[13px] 490px:text-sm 580px:text-base 640px:text-lg 840px:text-2xl 4xl:text-2xl 4xl:pl-3">{service.name}</span>
                 {service.available !== 0 && (
-                  <p className="text-[10px] 540px:w-full w-[120px] 490px:text-[12px] 840px:text-sm font-extralight text-center bg-[#585856] text-becwhite 440px:py-1 py-0.5 px-1 440px:px-3 640px:px-6 4xl:py-2 4xl:px-8 4xl:text-lg mr-5 border-1 border-becwhite max-w-[250px]">
+                  <p className="text-[10px] 540px:w-full items-center flex justify-center w-[120px] 490px:text-[12px] 700px:text-sm font-extralight text-center bg-[#585856] text-becwhite 440px:py-1 py-0.5 px-1 440px:px-3 640px:px-6 4xl:py-2 4xl:px-8 4xl:text-lg mr-5 border-1 border-becwhite max-w-[250px]">
                     Залишилось {service.available}
                   </p>
                 )}
@@ -79,7 +79,7 @@ const AdditionalOptions = ({
                 {service.price}
               </button>
               <span
-                className="ml-2 600px:ml-4 flex items-center justify-center text-sm font-bold text-becblack bg-becwhite rounded-full w-4 h-4 460px:w-5 460px:h-5 
+                className="ml-2 600px:ml-4 flex items-center justify-center text-sm font-bold text-becblack bg-becwhite rounded-full w-5 h-5 
                 cursor-pointer hover:scale-125 transition-all ease-in 4xl:w-6 4xl:h-6"
                 onClick={e => {
                   e.stopPropagation();
