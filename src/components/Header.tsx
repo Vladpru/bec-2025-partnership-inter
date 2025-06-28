@@ -138,6 +138,15 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
             className={`-z-1 ${menuOpen ? "block" : 'hidden'}`}
           />
         </div>
+        <div className="absolute top-20 left-0 -z-1 940px:hidden">
+          <Image
+            src="/images/hero/phone-top.svg" 
+            alt="Decorative line 2"
+            width={200}
+            height={70}
+            className={`-z-1 ${menuOpen ? "block" : 'hidden'}`}
+          />
+        </div>
         <div className="absolute bottom-70 -z-1 right-0 940px:hidden">
           <Image
             src="/images/elipses/right_burger.svg" 
