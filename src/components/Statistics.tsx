@@ -91,9 +91,7 @@ const Statistics = forwardRef<HTMLElement, object>((props, ref) => {
               className="absolute bottom-15 1060px:bottom-13 1060px:right-5 w-full h-[250px] 950px:h-full -z-10"
             />
             <p className="text-sm text-gray-300 text-start pt-10 pl-2 4xl:text-base">
-              *Компанії-партнери заново оцінили форму зворотнього зв’язку
-              щодо проведених івентів, напряки які цього тижня будуть
-              вражені у відзвіті
+              *Компанії-партнери заповнювали форму зворотного зв’язку щодо проведення івенту, наприкінці якої оцінювали загальне враження від заходу.
             </p>
           </div>
           <Image
