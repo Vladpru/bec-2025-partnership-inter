@@ -91,17 +91,17 @@ const AdditionalOptions = ({
               {openTooltipId === service.id && (
                 <Modal onClose={() => setOpenTooltipId(null)}>
                   <div
-                    className="extra_bg text-becwhite text-sm border-3 border-becwhite p-6 max-w-md w-full shadow-lg relative z-[100] rounded-md"
+                    className="extra_bg text-becwhite text-sm border-3 border-becwhite p-6 max-w-md w-[310px] 540px:w-full shadow-lg relative z-[100] rounded-md"
                   >
                     <button
                       onClick={() => setOpenTooltipId(null)}
-                      className="absolute top-1 right-3 text-white text-4xl cursor-pointer font-extralight hover:scale-125 transition-all ease-in"
+                      className="absolute -top-1 right-1 540px:top-1 540px:right-3 text-white text-4xl cursor-pointer font-extralight hover:scale-125 transition-all ease-in"
                       aria-label="Close tooltip"
                     >
                       ×
                     </button>
-                    <h2 className="text-2xl font-bold mb-3">{service.name}</h2>
-                    <p className="text-lg">{service.description}</p>
+                    <h2 className="text-xl 1020px:text-2xl font-bold mb-3">{service.name}</h2>
+                    <p className="text-xs 1020px:text-lg">{service.description}</p>
                   </div>
                 </Modal>
               )}

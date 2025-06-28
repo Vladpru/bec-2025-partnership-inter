@@ -14,7 +14,7 @@ interface HeroProps {
 
 const Hero = ({ scrollToSection, sposorRef }: HeroProps) => {
   return (
-    <section className="mt-15 940px:pt-24 xs:pt-36 sm:pt-26">
+    <section className="mt-15 940px:pt-24 pt-26 sm:pt-26">
         <div className="absolute 940px:top-16 z-0 940px:right-120 4xl:right-140 xs:hidden 940px:block">
             <Image
             src="/images/hero/top-el.svg" 

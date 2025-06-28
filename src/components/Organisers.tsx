@@ -18,7 +18,7 @@
                 alt="e"
                 width={300}
                 height={100}
-                className="object-cover 3xl:w-[350px] 4xl:w-[400px] 700px:w-[300px] w-[250px]"
+                className="object-cover 3xl:w-[350px] 4xl:w-[400px] 700px:w-[300px] 620px:w-[250px] w-[200px]"
               />
             </div>
             <p className='max-w-[600px] 660px:w-full w-[360px] 440px:w-[380px] text-lg 3xl:text-xl 3xl:mt-10 4xl:text-2xl 4xl:max-w-[700px]'>
