@@ -8,7 +8,7 @@ import PackageEngineer from "./ui/PackageEngineer"
 import PackageRecruiter from "./ui/PackageRecruiter"
 import packages from "@/data/packages"
 import addOptions from "@/data/additionals"
-import { SelectedPackage, TimeUnit } from "@/types/types"
+import { SelectedPackage } from "@/types/types"
 import { useCountdown } from '../hooks/useCountDown'
 import { Audiowide } from "next/font/google"
 
@@ -124,7 +124,7 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
           Оплата буде здійснюватись за курсом НБУ. Після завершення змагань кожна компанія–партнер
           отримає повну звітність з усіма фотографіями компанії та aftermovie.
         </p>
-        <AdditionalOptions 
+        <AdditionalOptions
           selectedServices={allSelectedServices} 
           onToggleService={handleChooseService}
           selectedPackageServices={selectedPackages.flatMap(p => p.includedServices)}
