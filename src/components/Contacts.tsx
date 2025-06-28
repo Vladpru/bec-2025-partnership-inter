@@ -82,9 +82,9 @@ const Contacts = forwardRef<HTMLDivElement, object>((props, ref) => {
           <Image
             src="/images/statistics/best_logo.svg"
             alt="logo"
-            width={120}
-            height={50}
-            className="object-cover 780px:w-[120px] w-[90px]"
+            width={0}
+            height={0}
+            className="780px:w-[120px] w-[90px]"
           />
         </div>
         <p className={`${play.className} text-xl 780px:text-2xl`}>2025</p>

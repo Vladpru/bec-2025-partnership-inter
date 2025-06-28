@@ -124,6 +124,12 @@ html {overflow-y: scroll;}
   background-position: center;
   background-repeat: no-repeat;
 }
+.header-btn {
+  background-image: url('/images/header/btn_menu.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .info_bg {
   background: linear-gradient(to right, #5A5A58, #181916);
