@@ -53,11 +53,11 @@
           />
           <div className="flex flex-col gap-3 440px:gap-7 660px:gap-10 w-[500px] justify-center text-center pt-13 700px:pt-0 700px:mr-30">
             <div className="flex flex-col gap-2 660px:gap-5">
-              <h1 className={`${awide.className} text-3xl 660px:text-4xl 1162px:text-5xl text-bec`}>84</h1>
+              <h1 className={`${awide.className} text-3xl 660px:text-4xl 1162px:text-5xl text-bec`}>83</h1>
               <p className='text-2xl 660px:text-3xl 1162px:text-5xl'>осередки</p>
             </div>
             <div className="flex flex-col gap-2 660px:gap-5">
-              <h1 className={`${awide.className} text-3xl 660px:text-4xl 1162px:text-5xl text-bec`}>30</h1>
+              <h1 className={`${awide.className} text-3xl 660px:text-4xl 1162px:text-5xl text-bec`}>29</h1>
               <p className='text-2xl 660px:text-3xl 1162px:text-5xl'>країн</p>
             </div>
             <div className="flex flex-col gap-2 660px:gap-5">

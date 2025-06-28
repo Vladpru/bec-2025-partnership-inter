@@ -3,15 +3,14 @@ import Image from "next/image"
 const WhyBec = () => {
 
   const majors = [
+    'Обчислювальна техніка',
+    'Електроніка',
     'Інженерія програмного забезпечення',
     'Кібербезпека',
     'Системна інженерія',
     'Архітектура і містобудування',
-    'Обчислювальна техніка',
     'Телекомунікації та радіотехніка',
     'Промислове та цивільне будівництво',
-    'Робототехніка',
-    'Електроніка',
     'Інші'
   ]
 
@@ -24,25 +23,18 @@ const WhyBec = () => {
             <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[180px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
               <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ЗАЛУЧІТЬ МОЛОДЬ — ЗНАЙДІТЬ НОВЕ РІШЕННЯ</h2>
               <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
-              <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Залучіть учасників BEC’y до вирішення Вашої інженерної задачі та отримайте свіжий погляд та варіанти її розв’язання. </p>
+              <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Запропонуйте свою інженерну задачу учасникам, і отримайте свіжий погляд й інноваційні рішення. </p>
             </div>
             <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[180px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
-              <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ПІДВИЩІТЬ ВПІЗНАВАНІСТЬ ВАШОЇ КОМПАНІЇ</h2>
+              <h2 className="uppercase font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">Підвищити впізнаваність вашої компанії серед студентів</h2>
               <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
               <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Таким чином Ви посилите імідж роботодавця, який підтримує нове покоління інженерів. </p>
             </div>
             <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[180px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
-              <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ЗНАЙДІТЬ МОЛОДИХ ТАЛАНТІВ</h2>
+              <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ЗНАЙТИ МОЛОДІ ТАЛАНТИ</h2>
               <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
-              <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Наша цільова аудиторія – перспективні студенти-інженери. Серед них Ви можете знайти потенційних працівників для Вашої компанії.</p>
+              <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Наші учасники – перспективні студенти-інженери. Серед них Ви можете знайти потенційних працівників для Вашої компанії.</p>
             </div>
-            {/* <Image
-              src="/images/whybec/divider-vertical.svg"
-              width={90}
-              height={50}
-              className="1070px:hidden block absolute top-0 -left-15 540px:-left-20 600px:-left-35 w-[55px] 540px:w-[70px] 600px:w-[90px]"
-              alt="divider"
-            /> */}
           </div>
           <Image
             src="/images/whybec/divider-vertical.svg"
@@ -53,27 +45,20 @@ const WhyBec = () => {
           />
           <div className="flex flex-col gap-6 relative">
             <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[180px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
-              <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ОТРИМАЙТЕ ЕФЕКТИВНИЙ ПІАР</h2>
+              <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ОТРИМАТИ ЕФЕКТИВНИЙ ПІАР</h2>
               <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
-              <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Ваша впізнаваність зросте без прямих витрат на маркетинг.</p>
+              <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Так Ви привернете увагу більшої кількості людей з цільової аудиторії.</p>
             </div>
-            <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[180px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
-              <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ПІДТРИМАЙТЕ ЗБРОЙНІ СИЛИ УКРАЇНИ</h2>
-              <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
-              <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Частина коштів йде на допомогу нашим військовим.</p>
-            </div>
-            <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[180px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
-              <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ЗРОБІТЬ ВАГОМИЙ ВНЕСОК В МОЖЛИВІСТЬ РЕАЛІЗАЦІЇ СТАРТАПУ</h2>
+            <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[200px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
+              <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl uppercase">ЗРОБити вагомий внесок в можливість реалізації стартапу</h2>
               <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
               <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Підтримавши учасників на етапі розробки, Ви можете стати першою компанією, що повірила в ідею і побачила частинки її реалізації.</p>
             </div>
-            {/* <Image
-              src="/images/whybec/divider-vertical.svg"
-              width={90}
-              height={50}
-              className="1070px:hidden block absolute top-0 -right-15 540px:-right-20 600px:-right-35 w-[55px] 540px:w-[70px] 600px:w-[90px]"
-              alt="divider"
-            /> */}
+            <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[180px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
+              <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ПІДТРИМАЙТИ ЗБРОЙНІ СИЛИ УКРАЇНИ</h2>
+              <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
+              <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Частина зібраних коштів буде спрямована на допомогу українським військовим. Це Ваша можливість зробити внесок у спільну перемогу.</p>
+            </div>
           </div>
           <Image
             src="/images/elipses/why_left.png"
@@ -116,7 +101,8 @@ const WhyBec = () => {
           940px:bg-[url('/images/whybec/bg-portrait.png')]
           bg-no-repeat
           bg-center
-          bg-[length:115%]
+          bg-[length:120%]
+          410px:bg-[length:115%]
           490px:bg-[length:105%]
           540px:bg-[length:95%]
           620px:bg-[length:83%]

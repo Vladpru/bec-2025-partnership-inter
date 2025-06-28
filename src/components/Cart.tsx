@@ -14,14 +14,17 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
 
   const basicPackageName = "Basic";
   const basicPackagePrice = packagesPrice[basicPackageName] || 0;
-  const selectedPackage = selectedPackages[0];
-  const selectedPackagePrice = selectedPackage?.name ? packagesPrice[selectedPackage.name] || 0 : 0;
 
   const totalServicesPrice = customServices.reduce(
     (sum, name) => sum + (servicesPrice[name] || 0),
     0
   );
-  const total = basicPackagePrice + selectedPackagePrice + totalServicesPrice;
+  const totalPackagesPrice = selectedPackages.reduce(
+    (sum, pkg) => sum + (packagesPrice[pkg.name] || 0),
+    0
+  );
+
+  const total = basicPackagePrice + totalPackagesPrice + totalServicesPrice;
 
   const [companyName, setCompanyName] = useState("");
   const [email, setEmail] = useState("");
@@ -35,8 +38,9 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
 
     try {
       const templateParams = {
-        smth: customServices.join(", ") || "Немає додаткових послуг",
-        company_email: email
+        company_email: email,
+        packages: selectedPackages.map(pkg => pkg.name).join(", ") || "Немає вибраних пакетів",
+        options: customServices.join(", ") || "Немає додаткових послуг",
       };
 
       const res = await emailjs.send(
@@ -167,14 +171,14 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
         width={300}
         alt="Decorative line 3"
         src="/images/propositions/cart-left.svg" 
-        className="absolute top-15 -left-30 1440px:-left-15 -z-1"
+        className="absolute top-15 -left-20 440px:-left-30 1440px:-left-15 -z-1 440px:w-[300px] w-[200px]"
       />
       <Image
         height={60}
         width={350}
         alt="Decorative line 3"
         src="/images/propositions/cart-right.svg" 
-        className="absolute top-15 -right-30 1440px:-right-15 -z-1"
+        className="absolute top-15 -right-20 440px:-right-30 1440px:-right-15 -z-1 440px:w-[300px] w-[200px]"
       />
       <Image
         height={60}

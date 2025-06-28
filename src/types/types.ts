@@ -62,3 +62,8 @@ export interface HeaderProps {
 		sposorRef: React.RefObject<HTMLElement | null>;
 	};
 };
+
+export interface TimeUnit{
+	label: string,
+	value: string,
+}

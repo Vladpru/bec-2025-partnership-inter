@@ -28,7 +28,7 @@ const Contacts = forwardRef<HTMLDivElement, object>((props, ref) => {
       role: "Відповідальний за корпоративні зв’язки",
       email: "Dmytro.Martyniuk@Best-Eu.Org",
       phone: "+380672710270",
-      src: "/images/organisers/tomas.png"
+      src: "/images/organisers/tomas_dima.jpg"
     }
   ];
 

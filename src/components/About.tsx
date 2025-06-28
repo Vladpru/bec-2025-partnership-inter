@@ -22,9 +22,10 @@ const About = forwardRef<HTMLDivElement, object>((_, ref) => {
           <div className="flex flex-col gap-5 1240px:text-xl 3xl:text-[22px] 3xl:max-w-[800px] 4xl:text-[24px] xs:px-3">
             <h1 className="uppercase text-bec xs:text-3xl sm:text-5xl font-bold 3xl:text-6xl 4xl:text-7xl">Про наш івент</h1>
             <p className='sm:text-[18px] xs:text-[16px]'>
-              <span className='text-bec font-extrabold'>BEC</span> – змагання, які мають на меті дати можливість молодим інженерам продемонструвати свої знання,
-              командну роботу та практичні навички для вирішення прикладних задач, які є реальними викликами сучасності.
-              Учасники зможуть проявити себе в двох категоріях Team Design (TD) та Innovative Design (ID).
+              <span className='text-bec font-extrabold'>BEC</span> – змагання, що організовані з метою надання можливості 
+              молодим інженерам продемонструвати свої знання, командну роботу та практичні навички для розв’язання 
+              прикладних задач – реальних викликів сучасності. Тут учасники зможуть проявити себе у двох категоріях: 
+              Team Design (TD) та Innovative Design (ID).
             </p>
             <p className='mt-4 sm:text-[18px] xs:text-[16px]'>
               <span className='text-bec font-bold'>Наша ціль:</span> Сформувати спільноту компетентних і вмотивованих студентів-інженерів,

@@ -38,27 +38,26 @@ const AdditionalOptions = ({
           return (
             <div
               key={service.id}
-              className={`relative flex items-center 600px:p-3 px-2 py-3 4xl:p-5 mb-4 transition-colors info_bg cursor-pointer
+              className={`relative flex items-center 600px:p-3 px-2 py-3 4xl:p-5 mb-4 info_bg cursor-pointer
                 ${isSelected ? 'border_is' : 'border_not'}`}
               onClick={() => {
-                if (!isDisabled && openTooltipId !== service.id) {
+                if (!isDisabled) {
                   onToggleService(service.name);
                 }
               }}
             >
               <input
                 type="checkbox"
+                id={service.name}
                 checked={isSelected}
+                onChange={() => {}}
                 disabled={isDisabled}
-                onChange={e => {
-                  e.stopPropagation();
-                  onToggleService(service.name);
-                }}
-                className="mr-1 490px:mr-2 w-6 h-6 490px:w-7 490px:h-7 600px:w-9 600px:h-9 border-2 border-becwhite rounded-[5px] appearance-none 
+                className="mr-1 490px:mr-2 z-10 w-6 h-6 490px:w-7 490px:h-7 600px:w-9 600px:h-9 border-2 border-becwhite rounded-[5px] appearance-none 
                   checked:bg-[url('/images/propositions/checkbox-line.svg')] 
-                  checked:bg-center checked:bg-no-repeat checked:bg-contain cursor-pointer"
+                  checked:bg-center checked:bg-no-repeat checked:bg-contain cursor-pointer 
+                  "
               />
-              <div className="flex-grow flex items-center justify-between flex-col 540px:flex-row mr-1">
+              <div className="flex-grow flex items-start pl-3 490px:gap-0 gap-0.5 490px:pl-0 justify-between flex-col 540px:flex-row mr-1">
                 <span className="flex-grow w-[180px] 460px:w-full text-[13px] 490px:text-sm 580px:text-base 640px:text-lg 840px:text-2xl 4xl:text-2xl 4xl:pl-3">{service.name}</span>
                 {service.available !== 0 && (
                   <p className="text-[10px] 540px:w-full items-center flex justify-center w-[120px] 490px:text-[12px] 700px:text-sm font-extralight text-center bg-[#585856] text-becwhite 440px:py-1 py-0.5 px-1 440px:px-3 640px:px-6 4xl:py-2 4xl:px-8 4xl:text-lg mr-5 border-1 border-becwhite max-w-[250px]">

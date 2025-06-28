@@ -8,9 +8,19 @@ import PackageEngineer from "./ui/PackageEngineer"
 import PackageRecruiter from "./ui/PackageRecruiter"
 import packages from "@/data/packages"
 import addOptions from "@/data/additionals"
-import { SelectedPackage } from "@/types/types"
+import { SelectedPackage, TimeUnit } from "@/types/types"
+import { useCountdown } from '../hooks/useCountDown'
+import { Audiowide } from "next/font/google"
+
+const awide = Audiowide({
+  weight: ['400'],
+  subsets: ['latin'],
+});
 
 const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
+
+  const [days, hours, minutes, seconds] = useCountdown(new Date('2025-08-01T00:00:00'));
+
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [selectedPackages, setSelectedPackages] = useState<SelectedPackage[]>([]);
 
@@ -61,10 +71,43 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
     setSelectedServices(prev => prev.filter(service => service !== name));
   };
 
+  const checkEnding = (num: number, titles: [string, string, string]) => titles[ (num % 10) === 1 ? 0 
+                                                                                : (num % 10 >= 2 && num % 10 <= 4) ? 1 : 2 ];
+
   return (
     <section className="mt-10 mb-20 1140px:mb-50 scroll-m-28 relative" ref={ref}>
+      <div className="container pb-15 flex flex-col items-center gap-3">
+        <h1 className='uppercase font-black text-2xl 700px:text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Акція "рання пташка"</h1>
+        <div className="flex justify-center gap-3 490px:gap-6 p-2">
+          <div className="flex flex-col items-center text-becwhite">
+            <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
+              <span>{String(days).padStart(2, '0')}</span>
+            </div>
+            <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['День', 'Дні', 'Днів'])}</div>
+          </div>
+          <div className="flex flex-col items-center text-becwhite">
+            <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
+              <span>{String(hours).padStart(2, '0')}</span>
+            </div>
+            <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['Година', 'Години', 'Годин'])}</div>
+          </div>
+          <div className="flex flex-col items-center text-becwhite">
+            <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
+              <span>{String(minutes).padStart(2, '0')}</span>
+            </div>
+            <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['Хвилина', 'Хвилин', 'Хвилин'])}</div>
+          </div>
+          <div className="flex flex-col items-center text-becwhite">
+            <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
+              <span>{String(seconds).padStart(2, '0')}</span>
+            </div>
+            <div className="mt-2 text-xl font-semibold">Секунд</div>
+          </div>
+        </div>
+        <p className="text-base text-center 700px:text-lg"><span className="text-bec"> -5% </span>для партнерів, які куплять та оплатять пакети у перший місяць пропозиції.</p>
+      </div>
       <div className="container relative">
-        <h1 className='uppercase font-black text-2xl 700px:text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Пропозиції</h1>
+        <h1 className='uppercase font-black text-2xl 700px:text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Пакети пропозицій</h1>
         <PackageBasic />
         <div className="flex flex-col items-center 1070px:flex-row justify-around z-10 relative">
           <PackageRecruiter
@@ -98,7 +141,7 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
           width={250}
           alt="Decorative line 3"
           src="/images/propositions/top-right.svg" 
-          className="absolute top-0 -right-30 1440px:-right-15 -z-1 3xl:w-[300px] 4xl:w-[350px]"
+          className="absolute top-0 490px:w-[250px] w-[200px] -right-23 490px:-right-30 1440px:-right-20 -z-1 3xl:w-[300px] 4xl:w-[350px]"
         />
         <Image
           height={60}
