@@ -77,7 +77,7 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
   return (
     <section className="mt-10 mb-20 1140px:mb-50 scroll-m-28 relative" ref={ref}>
       <div className="container pb-15 flex flex-col items-center gap-3">
-        <h1 className='uppercase font-black text-2xl 700px:text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Акція "рання пташка"</h1>
+        <h1 className='uppercase font-black text-2xl 700px:text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Акція &quot;рання пташка&quot;</h1>
         <div className="flex justify-center gap-3 490px:gap-6 p-2">
           <div className="flex flex-col items-center text-becwhite">
             <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
