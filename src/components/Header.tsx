@@ -1,7 +1,7 @@
 import { HeaderProps } from '@/types/types';
 import { Exo_2 } from 'next/font/google';
 import Image from 'next/image';
-import { RefObject, useState } from 'react';
+import { RefObject, useEffect, useState } from 'react';
 
 const exo2 = Exo_2({
   weight: ['400'],
@@ -17,6 +17,22 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
     }
     setMenuOpen(false);
   };
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add('overflow-hidden');
+      document.documentElement.classList.add('overflow-hidden'); // <-- html
+    } else {
+      document.body.classList.remove('overflow-hidden');
+      document.documentElement.classList.remove('overflow-hidden'); // <-- html
+    }
+
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+      document.documentElement.classList.remove('overflow-hidden');
+    };
+  }, [menuOpen]);
+
 
   return (
     <header className={`${exo2.className} font-audiowide bg-header fixed top-0 left-0 w-full z-50 backdrop-blur `}>
@@ -90,7 +106,7 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
 
       {/* Mobile Menu Fullscreen */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-[#212121] backdrop-blur-xl text-white flex flex-col items-center justify-center gap-10 text-2xl transition-transform duration-300 ease-in-out z-40 ${
+        className={`fixed pb-[60px] top-0 left-0 w-full h-screen bg-[#212121] backdrop-blur-xl text-white flex flex-col items-center justify-center gap-10 text-2xl transition-transform duration-300 ease-in-out z-40 ${
           menuOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -113,7 +129,7 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
           src="/images/elipses/add_left.png" 
           className={`absolute -top-20 -left-30 -z-1 ${menuOpen ? "block" : 'hidden'}`}
         />
-        <div className="absolute bottom-10 left-0 940px:hidden">
+        <div className="absolute bottom-25 left-0 -z-1 940px:hidden">
           <Image
             src="/images/hero/phone-left.svg" 
             alt="Decorative line 2"
@@ -122,7 +138,7 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
             className={`-z-1 ${menuOpen ? "block" : 'hidden'}`}
           />
         </div>
-        <div className="absolute bottom-40 right-0 940px:hidden">
+        <div className="absolute bottom-70 -z-1 right-0 940px:hidden">
           <Image
             src="/images/elipses/right_burger.svg" 
             alt="Decorative line 2"

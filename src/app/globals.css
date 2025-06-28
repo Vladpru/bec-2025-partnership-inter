@@ -130,7 +130,9 @@ html {overflow-y: scroll;}
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.overflow-hidden {
+  overflow: hidden;
+}
 .info_bg {
   background: linear-gradient(to right, #5A5A58, #181916);
 }
