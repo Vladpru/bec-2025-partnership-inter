@@ -20,8 +20,8 @@ const AdditionalOptions = ({
   const [openTooltipId, setOpenTooltipId] = useState<string | null>(null);
 
   return (
-    <div className="mt-25 relative">
-      <h2 className="text-bec text-center mb-15  text-2xl 700px:text-3xl font-black 3xl:text-[42px] 4xl:text-5xl">
+    <div className="mt-10 490px:mt-25 relative">
+      <h2 className="text-bec text-center mb-8 490px:mb-15  text-2xl 700px:text-3xl font-black 3xl:text-[42px] 4xl:text-5xl">
         ДОДАТКОВІ ПРОПОЗИЦІЇ
       </h2>
 
@@ -54,16 +54,18 @@ const AdditionalOptions = ({
                   e.stopPropagation();
                   onToggleService(service.name);
                 }}
-                className="mr-2 w-7 h-7 600px:w-9 600px:h-9 border-2 border-becwhite rounded-[5px] appearance-none 
+                className="mr-1 490px:mr-2 w-6 h-6 490px:w-7 490px:h-7 600px:w-9 600px:h-9 border-2 border-becwhite rounded-[5px] appearance-none 
                   checked:bg-[url('/images/propositions/checkbox-line.svg')] 
                   checked:bg-center checked:bg-no-repeat checked:bg-contain cursor-pointer"
               />
-              <span className="flex-grow text-sm 580px:text-base 640px:text-lg 840px:text-2xl 4xl:text-2xl 4xl:pl-3">{service.name}</span>
-              {service.available !== 0 && (
-                <p className="text-[12px] 840px:text-sm font-extralight text-center bg-[#585856] text-becwhite py-1 px-3 640px:px-6 4xl:py-2 4xl:px-8 4xl:text-lg mr-5 border-1 border-becwhite max-w-[250px]">
-                  Залишилось {service.available}
-                </p>
-              )}
+              <div className="flex-grow flex justify-between flex-col 540px:flex-row mr-1">
+                <span className="flex-grow text-[13px] 490px:text-sm 580px:text-base 640px:text-lg 840px:text-2xl 4xl:text-2xl 4xl:pl-3">{service.name}</span>
+                {service.available !== 0 && (
+                  <p className="text-[10px] 540px:w-full w-[120px] 490px:text-[12px] 840px:text-sm font-extralight text-center bg-[#585856] text-becwhite 440px:py-1 py-0.5 px-1 440px:px-3 640px:px-6 4xl:py-2 4xl:px-8 4xl:text-lg mr-5 border-1 border-becwhite max-w-[250px]">
+                    Залишилось {service.available}
+                  </p>
+                )}
+              </div>
               <button
                 className={`text-center px-4 840px:px-7 py-1 text-base 580px:text-lg 840px:text-xl bg-[#5A5A58] text-becwhite border-2 border-[#CFCFCF] 
                   shadow-[inset_-3px_1px_15px_rgba(0,0,0,0.5)] cursor-pointer
@@ -77,7 +79,7 @@ const AdditionalOptions = ({
                 {service.price}
               </button>
               <span
-                className="ml-2 600px:ml-4 flex items-center justify-center text-sm font-bold text-becblack bg-becwhite rounded-full w-5 h-5 
+                className="ml-2 600px:ml-4 flex items-center justify-center text-sm font-bold text-becblack bg-becwhite rounded-full w-4 h-4 460px:w-5 460px:h-5 
                 cursor-pointer hover:scale-125 transition-all ease-in 4xl:w-6 4xl:h-6"
                 onClick={e => {
                   e.stopPropagation();
@@ -112,7 +114,7 @@ const AdditionalOptions = ({
         width={600}
         alt="Decorative line right"
         src="/images/elipses/about_right.png"
-        className="absolute -top-40 -right-30 1440px:-right-15 -z-1"
+        className="absolute -top-40 -right-30 1440px:-right-15 -z-1 hidden 460px:block"
         draggable={false}
       />
       <Image

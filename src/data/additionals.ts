@@ -3,7 +3,7 @@ import { AdditionalOption } from "@/types/types";
 const addOptions: AdditionalOption[] = [ 
   {
     id: "1",
-    name: "Відео-представлення компанії",
+    name: "Відео-представлення компанії    ",
     price: "100$",
     description: "Можливість презентувати свою компанію учасникам перед нетворкінгом у вигляді відео, яке триватиме до 5 хвилин.",
     available: 0

@@ -75,15 +75,8 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
             onChoose={handleChoosePackage}
             selectedPackageName={selectedPackages.find(p => p.name === "Engineer")?.name}
           />
-          <Image
-          height={60}
-          width={420}
-          alt="Decorative line 3"
-          src="/images/elipses/left_contacts.png" 
-          className="absolute top-0 -left-15 1070px:hidden"
-        />
         </div>
-        <p className="mt-7 w-[420px] 580px:w-[500px] text-start text-base mx-auto 4xl:text-xl 4xl:max-w-[600px]">
+        <p className="mt-7 w-[360px] 440px:w-[420px] 580px:w-[500px] text-start text-base mx-auto 4xl:text-xl 4xl:max-w-[600px]">
           <span className="text-bec font-bold">10%</span> отриманих коштів будуть передані на підтримку ЗСУ.
           Оплата буде здійснюватись за курсом НБУ. Після завершення змагань кожна компанія–партнер
           отримає повну звітність з усіма фотографіями компанії та aftermovie.
@@ -105,14 +98,14 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
           width={250}
           alt="Decorative line 3"
           src="/images/propositions/top-right.svg" 
-          className="absolute top-0 -right-30 1440px:-right-15 -z-10 3xl:w-[300px] 4xl:w-[350px]"
+          className="absolute top-0 -right-30 1440px:-right-15 -z-1 3xl:w-[300px] 4xl:w-[350px]"
         />
         <Image
           height={60}
           width={130}
           alt="Decorative line 3"
           src="/images/propositions/right.svg" 
-          className="absolute top-120 -right-13 1240px:-right-23 1340px:-right-30 1440px:-right-15 -z-10 3xl:w-[180px] 4xl:w-[250px]"
+          className="absolute top-120 -right-13 1240px:-right-23 1340px:-right-30 1440px:-right-15 -z-1 3xl:w-[180px] 4xl:w-[250px]"
         />
       </div>
       <Cart 

@@ -30,23 +30,24 @@ const PackageEngineer = ({ onChoose, selectedPackageName }: PackageProps) => {
 
   return (
     <div
-      className={`py-10 pl-6 pr-30 mt-10 relative w-[420px] 580px:w-[490px] 3xl:max-w-[540px] 4xl:max-w-[620px] info_bg border-bec border-3 cursor-pointer transition-all duration-300 ease-in-out
+      className={`py-5 440px:py-10 pl-6 pr-30 mt-10 relative w-[360px] 440px:w-[420px] 580px:w-[490px] 3xl:max-w-[540px] 4xl:max-w-[620px] info_bg border-bec border-3 cursor-pointer transition-all duration-300 ease-in-out
         ${isSelected ? 'border_is' : 'border_not'}
         `}
       onClick={handleChooseClick}
     >
-      <h2 className={`pl-5 text-4xl 4xl:text-5xl font-bold text-becwhite mb-4 text-start ${awide.className} leading-[1.3]`}>
+      <h2 className={`pl-5 text-3xl 440px:text-4xl 4xl:text-5xl font-bold text-becwhite mb-4 text-start ${awide.className} leading-[1.3]`}>
         Engineer
       </h2>
 
       <ul className="mb-6">
         {pack1.features.map((feature, index) => (
-          <li key={index} className="text-lg flex font-extralight justify-start">
+          <li key={index} className="text-base 440px:text-lg flex font-extralight justify-start">
             <Image
               src="/images/propositions/checkbox-line.svg"
               alt="participant"
               width={40}
               height={40}
+              className="440px:w-[40px] w-[35px]"
             />
             <span className="flex items-center 4xl:text-[22px]">{feature}</span>
           </li>

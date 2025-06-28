@@ -25,6 +25,7 @@
 }
 @theme {
   --breakpoint-xs: 370px;
+  --breakpoint-410px: 410px;
   --breakpoint-440px: 440px;
   --breakpoint-460px: 460px;
   --breakpoint-490px: 490px;
