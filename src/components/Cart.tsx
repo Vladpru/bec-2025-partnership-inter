@@ -50,12 +50,6 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
         templateParams,
         "_8KlxS0-6bbPQMhDy"
       );
-      emailjs.send("service_u8kyhtg", "template_jti1nou", {
-        company_email: "test@test.com",
-        company_name: "Тестова компанія",
-        packages: "Explorer",
-        options: "Test Option"
-      })
       console.log("templateParams name: ", templateParams.name);
 
       alert("Дякуємо! Ми зв'яжемося з вами найближчим часом.");
