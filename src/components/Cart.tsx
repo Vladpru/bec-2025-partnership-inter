@@ -162,7 +162,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
             <h4 className="text-bec font-extrabold text-2xl 1160px:text-3xl uppercase">Акції</h4>
             <ul className="mt-2 text-[13px] 1160px:text-sm 4xl:text-lg">
               <li><span className="text-bec">-10%</span> при купівлі 3-х пакетів.</li>
-              <li><span className="text-bec">-5%</span> для компаній–партнерів EBEC’2021 та/або BEC’2023 (застосовується після узгодження з організаторами).</li>              
+              <li><span className="text-bec">-5%</span> для компаній–партнерів BEC’2023 та/або BEC’2024 (застосовується після узгодження з організаторами).</li>              
               <li><span className="text-orange-500">-10%</span>для всіх партнерів, що працюють у сфері military та military–tech (застосовується після узгодження з організаторами).</li>
             </ul>
           </div>
