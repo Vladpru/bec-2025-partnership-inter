@@ -39,18 +39,18 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
     try {
       const templateParams = {
         company_email: email,
+        company_name: companyName,
         packages: selectedPackages.map(pkg => pkg.name).join(", ") || "Немає вибраних пакетів",
         options: customServices.join(", ") || "Немає додаткових послуг",
       };
 
-      const res = await emailjs.send(
+      await emailjs.send(
         "service_u8kyhtg",
         "template_jti1nou",
         templateParams,
         "_8KlxS0-6bbPQMhDy"
       );
 
-      console.log("Email sent:", res.status, res.text);
       alert("Дякуємо! Ми зв'яжемося з вами найближчим часом.");
       setCompanyName("");
       setEmail("");
@@ -65,6 +65,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
       }
     }
   };
+  
   return (
     <div className="container pt-40 relative">
       <h1 className="text-center text-3xl 700px:text-4xl text-bec font-black mb-8 uppercase">Кошик</h1>
@@ -171,14 +172,14 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
         width={300}
         alt="Decorative line 3"
         src="/images/propositions/cart-left.svg" 
-        className="absolute top-15 -left-20 440px:-left-30 1440px:-left-15 -z-1 440px:w-[300px] w-[200px]"
+        className="absolute top-35 -left-22 440px:-left-30 1440px:-left-15 -z-1 440px:w-[300px] w-[200px]"
       />
       <Image
         height={60}
         width={350}
         alt="Decorative line 3"
         src="/images/propositions/cart-right.svg" 
-        className="absolute top-15 -right-20 440px:-right-30 1440px:-right-15 -z-1 440px:w-[300px] w-[200px]"
+        className="absolute top-10 -right-20 440px:-right-30 1440px:-right-15 -z-1 440px:w-[300px] w-[200px]"
       />
       <Image
         height={60}

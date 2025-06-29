@@ -68,7 +68,7 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
             </a>
           </li>
         </ul>
-        <div className="hidden xl:block">
+        <div className="hidden xl:block mr-10">
           <button
             className="h-10 4xl:h-12 text-center px-6 4xl:px-8 4xl:text-xl text-base bg-[#5A5A58] text-[#CFCFCF] border border-[#CFCFCF] shadow-[inset_-3px_1px_15px_rgba(0,0,0,0.5)] cursor-pointer
               hover:bg-[#727270] hover:text-white hover:border-white hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-400 ease-out"

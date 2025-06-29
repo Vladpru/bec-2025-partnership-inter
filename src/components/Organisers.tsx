@@ -8,7 +8,7 @@
  
   const Organisers = () => {
     return (
-      <section className='mt-30 mb-7'>
+      <section className='940px:mt-30 mt-15 940px:mb-7 mb-8'>
         <div className="container mb-20 relative 4xl:mb-40">
           <h1 className="text-center text-2xl 700px:text-4xl text-bec font-black mb-10 uppercase 3xl:text-[42px] 4xl:text-5xl">Про організаторів події</h1>
           <div className="flex 1060px:justify-around 1060px:flex-row flex-col 1060px:gap-0 700px:gap-20 gap-10 justify-center items-center">
@@ -43,7 +43,7 @@
             className="absolute -top-40 -right-30 1440px:-right-15 -z-1"
           />
         </div>
-        <div className="flex flex-col 700px:flex-row items-center justify-between container pb-20">
+        <div className="flex flex-col 700px:flex-row items-center justify-between container pb-0 940px:pb-20">
           <Image
             src="/images/organisers/best_map.png"
             alt="e"

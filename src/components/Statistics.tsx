@@ -88,7 +88,7 @@ const Statistics = forwardRef<HTMLElement, object>((props, ref) => {
               alt="фон"
               width={90}
               height={40}
-              className="absolute bottom-17 1060px:bottom-18 1060px:right-5 w-full h-[250px] 950px:h-full -z-10"
+              className="absolute bottom-15 1060px:bottom-18 1060px:right-5 w-full h-[250px] 950px:h-full -z-10"
             />
             <p className="text-sm text-gray-300 text-start pt-10 pl-2 4xl:text-base">
               *Компанії-партнери заповнювали форму зворотного зв’язку щодо проведення івенту, наприкінці якої оцінювали загальне враження від заходу.

@@ -1,5 +1,5 @@
 'use client'
-import { forwardRef, useState } from "react"
+import { forwardRef, useEffect, useState } from "react"
 import Image from "next/image"
 import AdditionalOptions from "./ui/AdditionalOptions"
 import Cart from "./Cart"
@@ -74,38 +74,45 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
   const checkEnding = (num: number, titles: [string, string, string]) => titles[ (num % 10) === 1 ? 0 
                                                                                 : (num % 10 >= 2 && num % 10 <= 4) ? 1 : 2 ];
 
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);                                                                        
   return (
-    <section className="mt-10 mb-20 1140px:mb-50 scroll-m-28 relative" ref={ref}>
-      <div className="container pb-15 flex flex-col items-center gap-3">
-        <h1 className='uppercase font-black text-2xl 700px:text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Акція &quot;рання пташка&quot;</h1>
-        <div className="flex justify-center gap-3 490px:gap-6 p-2">
-          <div className="flex flex-col items-center text-becwhite">
-            <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
-              <span>{String(days).padStart(2, '0')}</span>
+    <section className="mt-10 mb-10 940px:mb-20 1140px:mb-50 scroll-m-28 relative" ref={ref}>
+      {isClient && (
+        <div className="container flex flex-col items-center gap-3 pb-24">
+          <h1 className='uppercase font-black text-2xl mb-3 700px:text-4xl text-bec mt-3 text-center 3xl:text-[42px] 4xl:text-5xl'>ЗАЛИШИЛОСЬ</h1>
+          <div className="flex justify-center gap-3 490px:gap-6 p-2">
+            <div className="flex flex-col items-center text-becwhite">
+              <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
+                <span>{String(days).padStart(2, '0')}</span>
+              </div>
+              <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['День', 'Дні', 'Днів'])}</div>
             </div>
-            <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['День', 'Дні', 'Днів'])}</div>
-          </div>
-          <div className="flex flex-col items-center text-becwhite">
-            <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
-              <span>{String(hours).padStart(2, '0')}</span>
+            <div className="flex flex-col items-center text-becwhite">
+              <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
+                <span>{String(hours).padStart(2, '0')}</span>
+              </div>
+              <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['Година', 'Години', 'Годин'])}</div>
             </div>
-            <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['Година', 'Години', 'Годин'])}</div>
-          </div>
-          <div className="flex flex-col items-center text-becwhite">
-            <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
-              <span>{String(minutes).padStart(2, '0')}</span>
+            <div className="flex flex-col items-center text-becwhite">
+              <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
+                <span>{String(minutes).padStart(2, '0')}</span>
+              </div>
+              <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['Хвилина', 'Хвилин', 'Хвилин'])}</div>
             </div>
-            <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['Хвилина', 'Хвилин', 'Хвилин'])}</div>
-          </div>
-          <div className="flex flex-col items-center text-becwhite">
-            <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
-              <span>{String(seconds).padStart(2, '0')}</span>
+            <div className="flex flex-col items-center text-becwhite">
+              <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
+                <span>{String(seconds).padStart(2, '0')}</span>
+              </div>
+              <div className="mt-2 text-xl font-semibold">Секунд</div>
             </div>
-            <div className="mt-2 text-xl font-semibold">Секунд</div>
           </div>
+          <h1 className='uppercase font-bold text-xl 700px:text-3xl text-whitebec mt-3 text-center 3xl:text-[42px] 4xl:text-5xl'>Акція &quot;рання пташка&quot;</h1>
+          <p className="text-base text-center 700px:text-lg"><span className="text-bec"> -5% </span>для партнерів, які куплять та оплатять пакети у перший місяць пропозиції.</p>
         </div>
-        <p className="text-base text-center 700px:text-lg"><span className="text-bec"> -5% </span>для партнерів, які куплять та оплатять пакети у перший місяць пропозиції.</p>
-      </div>
+      )}
       <div className="container relative">
         <h1 className='uppercase font-black text-2xl 700px:text-4xl text-bec mb-10 text-center 3xl:text-[42px] 4xl:text-5xl'>Пакети пропозицій</h1>
         <PackageBasic />
@@ -159,12 +166,12 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
         onRemovePackage={handleRemovePackage}
         onRemoveService={handleRemoveService}
       />
-      <Image
+      <img
         height={60}
         width={600}
         alt="Decorative line 3"
         src="/images/elipses/left_propos.png" 
-        className="absolute -top-100 -left-30 1440px:-left-15 -z-1 3xl:w-[750px]" 
+        className="absolute -top-[200px] -left-30 1440px:-left-15 -z-1 3xl:w-[750px]" 
       />
     </section>
   );

@@ -17,15 +17,15 @@ const WhyBec = () => {
   return (
     <section className="mt-5 540px:mt-30">
       <div className="container">
-        <h1 className="font-black text-center text-2xl 700px:text-4xl uppercase text-bec 3xl:text-[42px] 4xl:text-5xl">ЧОМУ ВАМ ВАРТО ПІДТРИМАТИ BEC</h1>
-        <div className="flex justify-center mt-15 items-center 1070px:gap-20 gap-6 relative 1070px:flex-row flex-col">
+        <h1 className="font-black text-center text-2xl mb-10 700px:mb-15 700px:text-4xl uppercase text-bec 3xl:text-[42px] 4xl:text-5xl">ЧОМУ ВАМ ВАРТО ПІДТРИМАТИ BEC</h1>
+        <div className="flex justify-center items-center 1070px:gap-20 gap-6 relative 1070px:flex-row flex-col">
           <div className="flex flex-col gap-6 relative">
             <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[180px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
               <h2 className="font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">ЗАЛУЧІТЬ МОЛОДЬ — ЗНАЙДІТЬ НОВЕ РІШЕННЯ</h2>
               <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
               <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Запропонуйте свою інженерну задачу учасникам, і отримайте свіжий погляд й інноваційні рішення. </p>
             </div>
-            <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[180px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
+            <div className="bg-[#645E58] p-3 4xl:p-5 max-w-[270px] 540px:max-w-[300px] 700px:max-w-[500px] 1070px:max-w-[350px] 1160px:max-w-[450px] h-[200px] flex flex-col justify-center 4xl:max-w-[530px] 4xl:h-[260px]">
               <h2 className="uppercase font-bold text-lg 700px:text-xl leading-snug 1160px:text-xl 4xl:text-3xl">Підвищити впізнаваність вашої компанії серед студентів</h2>
               <hr className="border-t-2 border-becwhite my-3 4xl:border-t-3"/>
               <p className="text-[12px] 700px:text-[14px] 1340px:text-base leading-relaxed 4xl:text-xl">Таким чином Ви посилите імідж роботодавця, який підтримує нове покоління інженерів. </p>
@@ -76,7 +76,7 @@ const WhyBec = () => {
           />
         </div>
       </div>
-      <div className="container pt-20 700px:pt-30">
+      <div className="container pt-13 700px:pt-30">
         <div className="relative">
           <Image
             src="/images/whybec/right-el.svg" 
@@ -96,12 +96,13 @@ const WhyBec = () => {
           />
         </div>
         <h1 className="font-black text-center text-2xl 700px:text-4xl uppercase text-bec 3xl:text-[42px] 4xl:text-5xl">Портрет учасника</h1>
-        <div className="flex flex-col 940px:flex-row justify-center items-center gap-5 490px:gap-15 1070px:gap-30 1340px:gap-40 mx-auto 4xl:bg-[length:85%] 1140px:bg-[lenght:80%] 1440px:bg-[length:100%] py-30 px-25 940px:py-45 940px:px-35 max-h-[1000px]
+        <div className="flex flex-col 940px:flex-row justify-center items-center gap-5 490px:gap-15 1070px:gap-30 1340px:gap-40 mx-auto 4xl:bg-[length:85%] 1140px:bg-[lenght:80%] 1440px:bg-[length:100%] py-18 700px:py-30 px-25 940px:py-45 940px:px-35 max-h-[1000px]
           bg-[url('/images/whybec/bg-portrait-vert.png')]
           940px:bg-[url('/images/whybec/bg-portrait.png')]
           bg-no-repeat
           bg-center
-          bg-[length:120%]
+          bg-[length:115%]
+          390px:bg-[length:110%]
           410px:bg-[length:115%]
           490px:bg-[length:105%]
           540px:bg-[length:95%]

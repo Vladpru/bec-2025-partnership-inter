@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Audiowide } from 'next/font/google';
 import addOptions from '../../data/additionals';
@@ -18,6 +18,22 @@ const AdditionalOptions = ({
   selectedPackageServices,
 }: AdditionalOptionsProps) => {
   const [openTooltipId, setOpenTooltipId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (openTooltipId !== null) {
+      // Заборонити скрол
+      document.body.classList.add('overflow-hidden');
+    } else {
+      // Дозволити скрол
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Очистка при unmount
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, [openTooltipId]);
+
 
   return (
     <div className="mt-10 490px:mt-25 relative">
@@ -38,8 +54,9 @@ const AdditionalOptions = ({
           return (
             <div
               key={service.id}
-              className={`relative flex items-center 600px:p-3 px-2 py-3 4xl:p-5 mb-4 info_bg cursor-pointer
-                ${isSelected ? 'border_is' : 'border_not'}`}
+              className={`relative flex items-center 600px:p-3 px-2 py-3 4xl:p-5 mb-4 info_bg cursor-pointer transition-all duration-100 ease-in-out
+                ${isSelected ? 'border_is' : 'border_not'}
+              `}
               onClick={() => {
                 if (!isDisabled) {
                   onToggleService(service.name);
@@ -89,8 +106,8 @@ const AdditionalOptions = ({
               </span>
               {openTooltipId === service.id && (
                 <Modal onClose={() => setOpenTooltipId(null)}>
-                  <div
-                    className="extra_bg text-becwhite text-sm border-3 border-becwhite p-6 max-w-md w-[310px] 540px:w-full shadow-lg relative z-[100] rounded-md"
+                  <div 
+                    className="extra_bg text-becwhite text-sm border-3 border-becwhite p-6 w-full shadow-lg relative z-[100] rounded-md"
                   >
                     <button
                       onClick={() => setOpenTooltipId(null)}
@@ -99,8 +116,8 @@ const AdditionalOptions = ({
                     >
                       ×
                     </button>
-                    <h2 className="text-xl 1020px:text-2xl font-bold mb-3">{service.name}</h2>
-                    <p className="text-xs 1020px:text-lg">{service.description}</p>
+                    <h2 className="text-xl 600px:text-3xl font-bold mb-3">{service.name}</h2>
+                    <p className="text-xs 600px:text-base">{service.description}</p>
                   </div>
                 </Modal>
               )}

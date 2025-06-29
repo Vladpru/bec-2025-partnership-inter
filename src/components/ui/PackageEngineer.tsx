@@ -31,7 +31,7 @@ const PackageEngineer = ({ onChoose, selectedPackageName }: PackageProps) => {
   return (
     <div
       className={`py-5 440px:py-10 pl-6 pr-30 mt-10 relative w-[360px] 440px:w-[420px] 580px:w-[490px] 3xl:max-w-[540px] 4xl:max-w-[620px] info_bg border-bec border-3 cursor-pointer transition-all duration-300 ease-in-out
-        ${isSelected ? 'border_is' : 'border_not'}
+        ${isSelected ? 'border_is' : 'border_not'} hover:scale-103
         `}
       onClick={handleChooseClick}
     >

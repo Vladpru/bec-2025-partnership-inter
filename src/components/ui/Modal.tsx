@@ -14,9 +14,10 @@ const Modal = ({ children, onClose }: ModalProps) => {
   useEffect(() => {
     setShow(true);
     document.body.style.overflow = 'hidden';
-
+    document.documentElement.style.overflow = 'hidden';
     return () => {
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
     };
   }, []);
 
@@ -36,7 +37,7 @@ const Modal = ({ children, onClose }: ModalProps) => {
       <div
         ref={modalContentRef}
         onClick={e => e.stopPropagation()} // щоб клік всередині модалки не закривав її
-        className={`bg-extra_bg p-6 rounded-md max-w-md w-full relative shadow-lg
+        className={`bg-extra_bg p-6 rounded-md max-w-md w-full relative shadow-lg 1140px:max-w-[800px]
           transform transition-all duration-300 ease-out flex justify-center
           ${show ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}
       >
