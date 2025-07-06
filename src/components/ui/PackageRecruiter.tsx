@@ -30,8 +30,10 @@ const PackageBasic = ({ onChoose, selectedPackageName }: PackageProps) => {
 
   return (
     <div
-      className={`p-8 440px:py-10 pl-6 pr-30 mt-10 relative w-[360px] 440px:w-[420px] 580px:w-[490px] 3xl:max-w-[540px] 4xl:max-w-[650px] info_bg border-bec border-3 cursor-pointer transition-all duration-300 ease-in-out
-        ${isSelected ? 'border_is' : 'border_not'} hover:scale-103
+      className={`p-8 440px:py-10 pl-6 pr-30 mt-10 relative w-[360px] 440px:w-[420px] 
+        580px:w-[490px] 3xl:max-w-[540px] 4xl:max-w-[650px] info_bg border-bec border-3 
+        cursor-pointer transition-all duration-300 ease-in-out border_is_hover
+        ${isSelected ? 'border_is' : 'border_not'}
         `}
       onClick={handleChooseClick}
     >
@@ -42,7 +44,7 @@ const PackageBasic = ({ onChoose, selectedPackageName }: PackageProps) => {
       </h2>
       <ul className="mb-6">
         {pack1.features.map((feature, index) => (
-          <li key={index} className="text-base 440px:text-lg flex font-extralight justify-start">
+          <li key={index} className="text-base 440px:text-lg flex items-center font-extralight justify-start">
             <Image
               src="/images/propositions/checkbox-line.svg"
               alt="participant"

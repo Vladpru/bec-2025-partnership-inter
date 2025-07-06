@@ -79,13 +79,15 @@ const Contacts = forwardRef<HTMLDivElement, object>((props, ref) => {
           </a>
         </div>
         <div className="780px:w-[370px] absolute left-1/2">
-          <Image
-            src="/images/statistics/best_logo.svg"
-            alt="logo"
-            width={0}
-            height={0}
-            className="780px:w-[120px] w-[90px]"
-          />
+          <a href="https://best-lviv.org.ua/ua" target="_blank">
+            <Image
+              src="/images/statistics/best_logo.svg"
+              alt="logo"
+              width={0}
+              height={0}
+              className="780px:w-[120px] w-[90px]"
+            />
+          </a>
         </div>
         <p className={`${play.className} text-xl 780px:text-2xl`}>2025</p>
 

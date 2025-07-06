@@ -94,13 +94,13 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
               <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
                 <span>{String(hours).padStart(2, '0')}</span>
               </div>
-              <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['Година', 'Години', 'Годин'])}</div>
+              <div className="mt-2 text-xl font-semibold">{checkEnding(hours, ['Година', 'Години', 'Годин'])}</div>
             </div>
             <div className="flex flex-col items-center text-becwhite">
               <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
                 <span>{String(minutes).padStart(2, '0')}</span>
               </div>
-              <div className="mt-2 text-xl font-semibold">{checkEnding(days, ['Хвилина', 'Хвилин', 'Хвилин'])}</div>
+              <div className="mt-2 text-xl font-semibold">{checkEnding(minutes, ['Хвилина', 'Хвилин', 'Хвилин'])}</div>
             </div>
             <div className="flex flex-col items-center text-becwhite">
               <div className={`border border-white 490px:px-6 px-5 py-4 490px:py-5 w-[85px] 490px:w-[100px] 700px:w-[150px] flex items-center justify-center text-3xl 490px:text-4xl 700px:text-6xl font-mono text-bec ${awide.className}`}>
