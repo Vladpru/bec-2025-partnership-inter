@@ -19,7 +19,7 @@ const awide = Audiowide({
 
 const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
 
-  const [days, hours, minutes, seconds] = useCountdown(new Date('2025-08-01T00:00:00'));
+  const [days, hours, minutes, seconds] = useCountdown(new Date('2025-08-11T00:00:00'));
 
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [selectedPackages, setSelectedPackages] = useState<SelectedPackage[]>([]);
