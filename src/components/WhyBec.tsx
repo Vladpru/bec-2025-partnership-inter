@@ -96,8 +96,8 @@ const WhyBec = () => {
           620px:bg-[length:83%]
           780px:bg-[length:70%]
           940px:bg-[length:100%]">
-          <div className="flex flex-col-reverse 490px:flex-col items-start gap-3 490px:gap-7 1340px:gap-10">
-            <h1 className="uppercase font-black text-lg 490px:text-xl 1340px:text-2xl 4xl:text-3xl 940px:hidden text-center">Студенти Віком 17-21 рік</h1>
+            <div className="flex flex-col-reverse 490px:flex-col items-start gap-3 490px:gap-7 1340px:gap-10">
+              <h1 className="uppercase font-black text-lg 490px:text-xl 1340px:text-2xl 4xl:text-3xl 940px:hidden text-center">Students Age: 17–21 years old</h1>
             <Image 
               src="/images/whybec/portrait.png"
               alt="participant"
@@ -105,10 +105,10 @@ const WhyBec = () => {
               height={70}
               className="4xl:w-[440px] 1440px:w-[400px] w-[300px]"
             />
-            <h1 className="uppercase font-black text-xl 1340px:text-2xl 4xl:text-3xl hidden 940px:block">Студенти Віком 17-21 рік</h1>
+            <h1 className="uppercase font-black text-xl 1340px:text-2xl 4xl:text-3xl hidden 940px:block">Students Age: 17–21 years old</h1>
           </div>
           <div className="flex flex-col">
-            <h1 className="uppercase font-black text-base 490px:text-lg 1160px:text-xl 1340px:text-2xl 4xl:text-3xl 4xl:mb-4 ">Спеціальності учасників:</h1>
+            <h1 className="uppercase font-black text-base 490px:text-lg 1160px:text-xl 1340px:text-2xl 4xl:text-3xl 4xl:mb-4 ">Participants' majors:</h1>
             <ul className="space-y-1 1160px:space-y-2 md:text-base">
             {majors.map((item, i) => (
               <li key={i} className="flex items-start gap-1 1160px:gap-2 text-[12px] 490px:text-sm 1340px:text-base 4xl:text-xl">
