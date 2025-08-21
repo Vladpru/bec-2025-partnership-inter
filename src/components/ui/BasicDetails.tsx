@@ -1,11 +1,5 @@
 import { useRef, useEffect, useState } from "react";
 import { DetailsProps } from "@/types/types";
-import { Audiowide } from "next/font/google";
-
-const awide = Audiowide({
-  weight: ['400'],
-  subsets: ['latin'],
-});
 
 const BasicDetails = ({ onClose, pack }: DetailsProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
@@ -52,8 +46,8 @@ const BasicDetails = ({ onClose, pack }: DetailsProps) => {
     >
       <div
         ref={modalRef}
-        className={`extra_bg border-4 border-becwhite px-5 pt-13 pb-5 700px:px-8 700px:pt-10 700px:pb-8
-          max-w-[380px] 700px:max-w-[600px] w-full max-h-[80vh] 700px:max-h-[90vh] relative rounded-md
+        className={`extra_bg border-2 border-bec px-5 pt-13 pb-5 700px:px-8 700px:pt-10 700px:pb-8
+          max-w-[380px] 700px:max-w-[600px] w-full max-h-[80vh] 700px:max-h-[90vh] relative
           transform transition-all duration-300 ease-out 
           ${show ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}
       >
@@ -66,13 +60,14 @@ const BasicDetails = ({ onClose, pack }: DetailsProps) => {
         </button>
 
         <div className="overflow-y-auto custom-scroll-md max-h-[calc(80vh-80px)] 700px:max-h-[calc(90vh-100px)] pr-2">
-          <h2 className={`text-2xl 700px:text-3xl font-bold text-white mb-4 leading-[1.2] ${awide.className}`}>
+          <h2 className={`text-2xl 700px:text-3xl font-bold text-white mb-4 leading-[1.2]`}>
             Basic 350$
           </h2>
           <div className="text-white space-y-8">
             {pack.descriptions.map((desc, index) => (
               <div key={index} className="space-y-1">
                 <h3 className="text-xl 700px:text-2xl font-bold leading-[1.3]">{pack.features[index]}</h3>
+                <hr className="bg-amber-300"/>
                 <p className="text-sm 700px:text-base font-extralight leading-[1.6]">{desc}</p>
               </div>
             ))}

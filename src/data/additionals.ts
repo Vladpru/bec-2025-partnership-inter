@@ -3,72 +3,44 @@ import { AdditionalOption } from "@/types/types";
 const addOptions: AdditionalOption[] = [ 
   {
     id: "1",
-    name: "Відео-представлення компанії",
-    price: "100$",
-    description: "Можливість презентувати свою компанію учасникам перед нетворкінгом у вигляді відео, яке триватиме до 5 хвилин.",
-    available: 0
+    name: "Task for the TD category",
+    price: "250$",
+    description: "The opportunity to provide a task (the task is agreed with the organizers) for the TD category. This applies to the more technical implementation of an invention.",
+    available: 1
   },
   {
     id: "2",
-    name: "Логотип на футболці",
-    price: "200$",
-    description: "Логотип компанії буде використовуватись на фірмовій футболці івенту, яку отримають переможці, а також організатори.",
-    available: 2
+    name: "Task for the ID category",
+    price: "250$",
+    description: "Opportunity to submit a task (the task is agreed upon with the organizers) for the ID category. Applies to the implementation of a task in the form of a 3D model.",
+    available: 1
   },
   {
     id: "3",
-    name: "Тестові співбесіди з учасниками",
-    price: "100$",
-    description: "Під час нетворкінгу учасники змагань спробують себе у короткій співбесіді разом з представниками Вашої компанії. Це можливість виявити нові таланти та перспективних працівників серед студентської спільноти.",
-    available: 0
+    name: "Logo on a T-shirt",
+    price: "200$",
+    description: "The company logo will be used on the event's branded T-shirt, which will be given to the winners and organizers.",
+    available: 2
   },
   {
     id: "4",
-    name: "Розсилка вакансій у Telegram-боті",
-    price: "100$",
-    description: "Піврічна розсилка вакансій компанії у нашому Telegram-боті, що призначений для реєстрації, важливих анонсів та комунікації під час події.",
+    name: "Access to the participants' CV database",
+    price: "150$",
+    description: "The opportunity to access the database of competition participants' CVs.",
     available: 0
   },
   {
     id: "5",
-    name: "Доступ до бази CV учасників",
-    price: "150$",
-    description: "Можливість отримати доступ до бази CV учасників змагань.",
+    name: "Job postings in the Telegram bot",
+    price: "100$",
+    description: "Every month, for six months, your company's current job openings will be posted in the BEC'2025 Telegram bot.",
     available: 0
   },
   {
     id: "6",
-    name: "Завдання на категорію TD",
-    price: "250$",
-    description: "Можливість надати завдання на категорію TD. Стосується більш технічної реалізації якогось винаходу.",
-    available: 1
-  },
-  {
-    id: "7",
-    name: "Завдання на категорію ID",
-    price: "250$",
-    description: "Можливість надати завдання на категорію ID. Стосується реалізації завдання у вигляді 3D моделі.",
-    available: 1
-  },
-  {
-    id: "8",
-    name: "Instagram-інтерактив «День із компанією»",
+    name: "A day with the company",
     price: "70$",
-    description: "Після проведення події Instagram–stories нашої сторінки будуть наповнені контентом Вашої компанії. Ви можете надіслати свої відео або ж наша команда допоможе у їх створенні. Таких сторіз буде до 3.",
-    available: 0
-  },
-  {
-    id: "9",
-    name: "Проведення інтерактивних розіграшів",
-    price: "70$",
-    description: "Можливість провести розіграш від компанії — це може бути Kahoot, Quiz або можете приєднатись до благодійного розіграшу нашої компанії, про Вашу участь скажуть на сцені.",
-    available: 0
-  },
-  {
-    id: "10",
-    name: "Проведення воркшопу",
-    price: "150$",
-    description: "Можливість провести воркшоп або тренінг для учасників під час офіційного відкриття змагань тривалістю до 40 хвилин.",
+    description: "After the event, our Instagram stories will be filled with content from your company. You can send your videos or our team will help you create them. There will be up to 3 such stories.",
     available: 0
   },
 ];

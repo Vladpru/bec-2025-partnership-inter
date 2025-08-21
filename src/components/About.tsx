@@ -20,16 +20,16 @@ const About = forwardRef<HTMLDivElement, object>((_, ref) => {
       <div className="relative">
         <div className="container flex flex-col 1140px:flex-row 1140px:gap-30 gap-15 3xl:gap-15 4xl:justify-between 3xl:justify-between">
           <div className="flex flex-col gap-5 1240px:text-xl 3xl:text-[22px] 3xl:max-w-[800px] 4xl:text-[24px] xs:px-3">
-            <h1 className="uppercase text-bec xs:text-3xl sm:text-5xl font-bold 3xl:text-6xl 4xl:text-7xl">Про наш івент</h1>
+            <h1 className="uppercase text-bec xs:text-3xl sm:text-5xl font-bold 3xl:text-6xl 4xl:text-7xl">about the event</h1>
             <p className='sm:text-[18px] xs:text-[16px]'>
-              <span className='text-bec font-extrabold'>BEC</span> – змагання, що організовані з метою надання можливості 
-              молодим інженерам продемонструвати свої знання, командну роботу та практичні навички для розв’язання 
-              прикладних задач – реальних викликів сучасності. Тут учасники зможуть проявити себе у двох категоріях: 
-              Team Design (TD) та Innovative Design (ID).
+              <span className='text-bec font-extrabold'>BEC</span> a competition organised 
+              to allow young engineers to demonstrate their knowledge, teamwork, and practical 
+              skills in solving applied tasks. Here, participants will be able to compete using 
+              their engineering knowledge in two categories: Team Design (TD) and Innovative Design (ID).
             </p>
             <p className='mt-4 sm:text-[18px] xs:text-[16px]'>
-              <span className='text-bec font-bold'>Наша ціль:</span> Сформувати спільноту компетентних і вмотивованих студентів-інженерів,
-              готових вирішувати нестандартні задачі.
+              <span className='text-bec font-bold'>Our goal:</span> To build a community of competent 
+              and motivated students of engineering ready to tackle unconventional tasks.
             </p>
           </div>
           <div className="4xl:mr-10 540px:mr-0 xs:mr-6">

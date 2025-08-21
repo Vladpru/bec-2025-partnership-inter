@@ -55,7 +55,7 @@ const PackageEngineer = ({ onChoose, selectedPackageName }: PackageProps) => {
       </ul>
 
       <p className="text-base 4xl:text-xl font-extralight text-center text-becwhite mb-4 py-2 border-1 border-becwhite px-3 max-w-[250px]">
-        Залишилось 2
+        Limited to 2
       </p>
 
       <div className={`text-start ${awide.className} leading-[1.3]`}>

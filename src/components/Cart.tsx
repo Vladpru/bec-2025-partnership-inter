@@ -69,7 +69,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
   
   return (
     <div className="container pt-40 relative">
-      <h1 className="text-center text-3xl 700px:text-4xl text-bec font-black mb-8 uppercase">Кошик</h1>
+      <h1 className="text-center text-3xl 700px:text-4xl text-bec font-black mb-8 uppercase">CART</h1>
       <div className="relative flex items-center 940px:flex-row flex-col justify-center mt-10 1160px:p-16 p-10 gap-1 940px:gap-20 z-10">
         <div className="absolute hidden 940px:block left-1/2 -translate-x-1/2 top-0 1160px:w-[1150px] w-[910px] 4xl:w-[1350px] -z-10">
           <Image 
@@ -82,7 +82,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
         </div>
         <div className="mb-4 w-[320px] 460px:w-[400px] 700px:w-[500px] 940px:w-[320px] 1160px:w-[600px] 4xl:w-[700px]">
           <div className=''>
-            <h3 className="text-bec font-extrabold mb-2 4xl:mb-4 text-2xl 1160px:text-3xl uppercase 4xl:text-4xl">Пакети</h3>
+            <h3 className="text-bec font-extrabold mb-2 4xl:mb-4 text-2xl 1160px:text-3xl uppercase 4xl:text-4xl">PACKAGES</h3>
             <div className="flex justify-between mb-5 border-b border-becwhite pl-2 pr-10 4xl:text-3xl">
               <span className='font-bold text-xl 1160px:text-2xl 4xl:text-3xl'>{basicPackageName}</span>
               <span className={`${awide.className} text-xl 1160px:text-2xl`}>{basicPackagePrice}$</span>
@@ -103,7 +103,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
             ))}
           </div>
           <div className="mb-4">
-            <h3 className="text-bec font-extrabold mb-2 4xl:mb-4 mt-15 text-2xl 1160px:text-3xl uppercase 4xl:text-4xl">Додаткові пропозиції</h3>
+            <h3 className="text-bec font-extrabold mb-2 4xl:mb-4 mt-15 text-2xl 1160px:text-3xl uppercase 4xl:text-4xl">ADDITIONAL OFFERS</h3>
             {customServices.length ? (
               <div
                 className={`overflow-y-auto pr-2 custom-scroll
@@ -124,7 +124,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
                 ))}
               </div>
             ) : (
-              <div className="pl-2 text-becwhite">Немає</div>
+              <div className="pl-2 text-becwhite">None</div>
             )}
             <div className="flex justify-end 1160px:gap-7 gap-5 text-2xl 1160px:text-3xl font-extrabold mt-3">
               <span className="text-bec">TOTAL:</span>
@@ -159,11 +159,9 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
           </form>
 
           <div className="mt-6 text-sm text-becwhite">
-            <h4 className="text-bec font-extrabold text-2xl 1160px:text-3xl uppercase">Акції</h4>
+            <h4 className="text-bec font-extrabold text-2xl 1160px:text-3xl uppercase">Promotions</h4>
             <ul className="mt-2 text-[13px] 1160px:text-sm 4xl:text-lg">
-              <li><span className="text-bec">-10%</span> при купівлі 3-х пакетів.</li>
-              <li><span className="text-bec">-5%</span> для компаній–партнерів BEC’2023 та/або BEC’2024 (застосовується після узгодження з організаторами).</li>              
-              <li><span className="text-orange-500">-10%</span>для всіх партнерів, що працюють у сфері military та military–tech (застосовується після узгодження з організаторами).</li>
+              <li><span className="text-bec">-10%</span> discount when purchasing 3 packages</li>
             </ul>
           </div>
         </div>

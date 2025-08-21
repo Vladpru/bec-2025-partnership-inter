@@ -110,13 +110,12 @@
 }
 
 body {
-  background: #171717;
+  background: #131411;
   color: #CFCFCF;
   padding: 0;
   margin: 0;
   font-size: 22px;
   overflow-x: hidden;
-  
 }
 html {overflow-y: scroll;}
 .hero-btn {
@@ -138,7 +137,7 @@ html {overflow-y: scroll;}
   background: linear-gradient(to right, #5A5A58, #181916);
 }
 .extra_bg {
-    background: linear-gradient(180deg, #5A5A58 0%, #181916 100%);
+  background: linear-gradient(90deg, #5A5A58 0%, #181916 100%);
 }
 
 .border_is {
@@ -238,4 +237,8 @@ html {overflow-y: scroll;}
 html {
   scrollbar-width: thin;
   scrollbar-color: #555 #1e1e1e;
+}
+
+.bg-header {
+  background-image: url("/images/hero/hero-bg.svg");
 }

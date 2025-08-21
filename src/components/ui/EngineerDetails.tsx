@@ -1,11 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { DetailsProps } from "@/types/types";
-import { Audiowide } from "next/font/google";
-
-const awide = Audiowide({
-  weight: ['400'],
-  subsets: ['latin'],
-});
 
 const EngineerDetails = ({ onClose, pack }: DetailsProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
@@ -51,7 +45,7 @@ const EngineerDetails = ({ onClose, pack }: DetailsProps) => {
     >
       <div
         ref={modalRef}
-        className={`extra_bg border-4 border-becwhite p-5 700px:p-8 max-w-[380px] 700px:max-w-[600px] w-full max-h-[80vh] 700px:max-h-[90vh] overflow-y-auto relative rounded-md custom-scroll-md
+        className={`extra_bg border-2 border-bec p-5 700px:p-8 max-w-[380px] 700px:max-w-[600px] w-full max-h-[80vh] 700px:max-h-[90vh] overflow-y-auto relative custom-scroll-md
         transform transition-all duration-300 ease-out 
         ${show ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}
       >
@@ -61,14 +55,15 @@ const EngineerDetails = ({ onClose, pack }: DetailsProps) => {
         >
           ×
         </button>
-        <h2 className={`text-2xl 700px:text-3xl font-bold text-white mb-4 leading-[1.2] ${awide.className}`}>
+        <h2 className={`text-2xl 700px:text-3xl font-bold text-white mb-4 leading-[1.2]`}>
           Engineer 700$
         </h2>
-        <p className="text-base font-extralight text-center text-becwhite mb-4 py-2 border-1 border-becwhite px-3 max-w-[200px]">Залишилось 2</p>
+        <p className="text-base font-extralight text-center text-becwhite mb-4 py-2 border-1 border-becwhite px-3 max-w-[200px]">Limited to 2</p>
         <div className="text-white space-y-8">
           {pack.descriptions.map((desc, index) => (
             <div key={index} className="space-y-1">
               <h3 className="text-xl 700px:text-2xl font-bold leading-[1.3]">{pack.features[index]}</h3>
+              <hr />
               <p className="text-sm 700px:text-[16px] font-extralight leading-[1.6]">{desc}</p>
             </div>
           ))}

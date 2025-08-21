@@ -54,7 +54,7 @@ const Categories = () => {
                 4xl:text-4xl
               "
             >
-              Тема:
+              Theme:
             </h3>
 
             <h1
@@ -65,7 +65,7 @@ const Categories = () => {
                 4xl:text-[44px]
               "
             >
-              Повоєнне відновлення
+              Post-war Reconstruction
             </h1>
           </div>
 
@@ -89,7 +89,7 @@ const Categories = () => {
           />
         </div>
         <div className="text-xl mt-20 4xl:mt-40 px-4 660px:px-0">
-          <h1 className="uppercase text-center xs:text-3xl 660px:text-4xl font-black text-bec 700px:mt-15 mb-10 mt-10 700px:mb-15 3xl:text-[42px] 4xl:text-5xl">Категорії змагань</h1>
+          <h1 className="uppercase text-center xs:text-3xl 660px:text-4xl font-black text-bec 700px:mt-15 mb-10 mt-10 700px:mb-15 3xl:text-[42px] 4xl:text-5xl">competition categories</h1>
           <div className="flex font-light flex-col lg:flex-row items-center justify-center lg:justify-between">
             <div className="flex max-w-[400px] sm:max-w-[600px] 3xl:max-w-[700px] 4xl:max-w-[800px]">
               <Image
@@ -97,18 +97,19 @@ const Categories = () => {
                 alt="Decorative line 3"
                 width={75}
                 height={65}
-                className="3xl:w-[85px] 4xl:w-[95px] lg:block hidden"
+                className="3xl:w-[85px] 4xl:w-[95px] lg:block hidden -z-1"
               />
               <div className="flex flex-col gap-3 justify-center 1160px:justify-between">
                 <h1 className="text-2xl 1160px:text-3xl font-black uppercase 3xl:text-4xl 4xl:text-5xl">Team design</h1>
                 <p className="text-[18px] 3xl:text-[22px] 4xl:text-[25px] 1160px:text-xl">
-                  Практична інженерна категорія, у якій команди студентів вирішують реальні 
-                  прикладні задачі у сфері embedded-систем, IoT, електроніки та механіки, 
-                  створюючи робочі прототипи пристроїв.
+                  A practical engineering category where student teams tackle real-world  
+                  problems in the field of embedded systems, IoT, electronics, 
+                  and mechanics by constructing working prototypes.
                 </p>
                 <p className="text-[18px] 3xl:text-[22px] 4xl:text-[25px] 1160px:text-xl">
-                  <span className="font-bold">Приклад:</span> Розробити функціональну модель мінного тральника для пошуку 
-                  та розмінування морських мін, який може керуватися в ручному та автоматичному режимі
+                  <span className="font-bold">Example:</span> Develop an operational model of a 
+                  mine-hunting device capable of detecting and neutralizing naval mines, which 
+                  can be operated both manually and automatically.
                 </p>
               </div>
             </div>
@@ -125,17 +126,18 @@ const Categories = () => {
                 alt="Decorative line 3"
                 width={75}
                 height={60}
-                className="3xl:w-[85px] 4xl:w-[95px] lg:block hidden"
+                className="3xl:w-[85px] 4xl:w-[95px] lg:block hidden "
               />
               <div className="flex flex-col gap-3 justify-center 1160px:justify-between">
                 <h1 className="text-2xl 1160px:text-3xl font-black uppercase 3xl:text-4xl 4xl:text-5xl">Innovative design</h1>
                 <p className="text-[18px] 3xl:text-[22px] 4xl:text-[25px] 1160px:text-xl">
-                  Концептуальна категорія, зосереджена на креативних інженерних ідеях та нестандартному мисленні.
-                  Команди пропонують нові або вдосконалюють наявні проєктні рішення для актуальних проблем, демонструючи інноваційний підхід, 
-                  його переваги та реалістичність втілення. Використовують креслення або 3D-моделі.
+                  A conceptual engineering category focused on creative ideas and unconventional  thinking. 
+                  Student teams propose new or improved project solutions to relevant  real-world problems, 
+                  showcasing an innovative approach, its advantages, and realistic implementation. Visual 
+                  representations such as technical drawings or 3D models are used to support the concept.
                 </p>
                 <p className="text-[18px] 3xl:text-[22px] 4xl:text-[25px] 1160px:text-xl">
-                  <span className="font-bold">Приклад:</span> «розумний вулик», оснащений датчиками, що передають дані бджоляру в реальному часі.
+                  <span className="font-bold">Example:</span> A “smart beehive” equipped with sensors that transmit real-time data to the beekeeper.
                 </p>
               </div>
             </div>

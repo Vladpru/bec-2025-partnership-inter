@@ -38,7 +38,7 @@ const AdditionalOptions = ({
   return (
     <div className="mt-10 490px:mt-25 relative">
       <h2 className="text-bec text-center mb-8 490px:mb-15  text-2xl 700px:text-3xl font-black 3xl:text-[42px] 4xl:text-5xl">
-        ДОДАТКОВІ ПРОПОЗИЦІЇ
+        ADDITIONAL OFFERS
       </h2>
 
       <div className="max-w-[1200px] 4xl:max-w-[1400px] flex flex-col mx-auto px-2   1060px:px-0">
