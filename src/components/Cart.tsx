@@ -136,7 +136,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
           <form className="mt-6" onSubmit={handleSubmit}>
             <input
               type="email"
-              placeholder="Введіть пошту"
+              placeholder="Enter email"
               className="1160px:text-xl text-base w-full py-3 px-2 mb-2 bg-transparent border-2 border-becwhite text-becwhite placeholder-gray-400"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -144,7 +144,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
             />
             <input
               type="text"
-              placeholder="Введіть назву компанії"
+              placeholder="Enter company name"
               className="mt-2 1160px:text-xl text-base w-full py-3 px-2 mb-2 bg-transparent border-2 border-becwhite text-becwhite placeholder-gray-400"
               value={companyName}
               onChange={(e) => setCompanyName(e.target.value)}
@@ -154,7 +154,7 @@ const Cart = ({ selectedPackages, customServices, servicesPrice, packagesPrice, 
               type="submit"
               className='cursor-pointer w-full 1160px:mt-4 mt-1 text-center py-3 font-medium 1160px:text-xl text-base bg-[#5A5A58] text-[#CFCFCF] border border-[#CFCFCF] shadow-[inset_-3px_1px_15px_rgba(0,0,0,0.5)]
                 hover:bg-[#727270] hover:text-white hover:border-white hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-400 ease-out'>
-              Оформити
+              SUBMIT
             </button>
           </form>
 

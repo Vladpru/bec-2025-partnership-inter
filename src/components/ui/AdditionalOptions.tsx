@@ -78,7 +78,7 @@ const AdditionalOptions = ({
                 <span className="flex-grow w-[180px] 460px:w-full text-[13px] 490px:text-sm 580px:text-base 640px:text-lg 840px:text-2xl 4xl:text-2xl 4xl:pl-3">{service.name}</span>
                 {service.available !== 0 && (
                   <p className="text-[10px] 540px:w-full items-center flex justify-center w-[120px] 490px:text-[12px] 700px:text-sm font-extralight text-center bg-[#585856] text-becwhite 440px:py-1 py-0.5 px-1 440px:px-3 640px:px-6 4xl:py-2 4xl:px-8 4xl:text-lg mr-5 border-1 border-becwhite max-w-[250px]">
-                    Залишилось {service.available}
+                    Limited to {service.available}
                   </p>
                 )}
               </div>
@@ -107,7 +107,7 @@ const AdditionalOptions = ({
               {openTooltipId === service.id && (
                 <Modal onClose={() => setOpenTooltipId(null)}>
                   <div 
-                    className="extra_bg text-becwhite text-sm border-3 border-becwhite p-6 w-full shadow-lg relative z-[100] rounded-md"
+                    className="extra_bg text-becwhite text-sm border-2 border-bec p-6 w-full shadow-lg relative z-[100]"
                   >
                     <button
                       onClick={() => setOpenTooltipId(null)}
